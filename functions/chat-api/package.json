@@ -1,0 +1,13 @@
+{
+  "name": "chat-api",
+  "version": "1.0.0",
+  "description": "SAHAYA AI — Chat API (Catalyst Advanced I/O Function)",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "express": "^4.21.0",
+    "zcatalyst-sdk-node": "^4.0.0"
+  }
+}
