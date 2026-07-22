@@ -1,0 +1,548 @@
+[
+  {
+    "district": "Bengaluru Urban",
+    "crime_category": "Theft",
+    "month": "2025-11",
+    "count": 1,
+    "computed_at": "2026-07-21T05:34:35.142Z"
+  },
+  {
+    "district": "Bengaluru Urban",
+    "crime_category": "Theft",
+    "month": "2025-06",
+    "count": 1,
+    "computed_at": "2026-07-21T05:34:35.142Z"
+  },
+  {
+    "district": "Bengaluru Urban",
+    "crime_category": "Theft",
+    "month": "2025-08",
+    "count": 1,
+    "computed_at": "2026-07-21T05:34:35.142Z"
+  },
+  {
+    "district": "Bengaluru Urban",
+    "crime_category": "Theft",
+    "month": "2024-06",
+    "count": 1,
+    "computed_at": "2026-07-21T05:34:35.142Z"
+  },
+  {
+    "district": "Bengaluru Urban",
+    "crime_category": "Theft",
+    "month": "2024-05",
+    "count": 1,
+    "computed_at": "2026-07-21T05:34:35.142Z"
+  },
+  {
+    "district": "Bengaluru Urban",
+    "crime_category": "Theft",
+    "month": "2024-12",
+    "count": 1,
+    "computed_at": "2026-07-21T05:34:35.142Z"
+  },
+  {
+    "district": "Kalaburagi",
+    "crime_category": "Drug",
+    "month": "2025-08",
+    "count": 1,
+    "computed_at": "2026-07-21T05:34:35.142Z"
+  },
+  {
+    "district": "Bengaluru Rural",
+    "crime_category": "Drug",
+    "month": "2024-09",
+    "count": 1,
+    "computed_at": "2026-07-21T05:34:35.142Z"
+  },
+  {
+    "district": "Kalaburagi",
+    "crime_category": "Drug",
+    "month": "2024-09",
+    "count": 1,
+    "computed_at": "2026-07-21T05:34:35.142Z"
+  },
+  {
+    "district": "Mangaluru",
+    "crime_category": "Drug",
+    "month": "2024-03",
+    "count": 1,
+    "computed_at": "2026-07-21T05:34:35.142Z"
+  },
+  {
+    "district": "Tumakuru",
+    "crime_category": "Drug",
+    "month": "2025-03",
+    "count": 1,
+    "computed_at": "2026-07-21T05:34:35.142Z"
+  },
+  {
+    "district": "Bengaluru Urban",
+    "crime_category": "Cybercrime",
+    "month": "2024-11",
+    "count": 1,
+    "computed_at": "2026-07-21T05:34:35.142Z"
+  },
+  {
+    "district": "Bengaluru Urban",
+    "crime_category": "Cybercrime",
+    "month": "2025-08",
+    "count": 2,
+    "computed_at": "2026-07-21T05:34:35.142Z"
+  },
+  {
+    "district": "Bengaluru Urban",
+    "crime_category": "Cybercrime",
+    "month": "2025-05",
+    "count": 1,
+    "computed_at": "2026-07-21T05:34:35.142Z"
+  },
+  {
+    "district": "Bengaluru Urban",
+    "crime_category": "Cybercrime",
+    "month": "2025-02",
+    "count": 1,
+    "computed_at": "2026-07-21T05:34:35.142Z"
+  },
+  {
+    "district": "Bengaluru Rural",
+    "crime_category": "Robbery",
+    "month": "2025-03",
+    "count": 1,
+    "computed_at": "2026-07-21T05:34:35.142Z"
+  },
+  {
+    "district": "Davangere",
+    "crime_category": "Robbery",
+    "month": "2024-05",
+    "count": 1,
+    "computed_at": "2026-07-21T05:34:35.142Z"
+  },
+  {
+    "district": "Kalaburagi",
+    "crime_category": "Robbery",
+    "month": "2025-03",
+    "count": 1,
+    "computed_at": "2026-07-21T05:34:35.142Z"
+  },
+  {
+    "district": "Shivamogga",
+    "crime_category": "Robbery",
+    "month": "2025-07",
+    "count": 1,
+    "computed_at": "2026-07-21T05:34:35.142Z"
+  },
+  {
+    "district": "Bengaluru Rural",
+    "crime_category": "Theft",
+    "month": "2025-05",
+    "count": 1,
+    "computed_at": "2026-07-21T05:34:35.142Z"
+  },
+  {
+    "district": "Mangaluru",
+    "crime_category": "Cybercrime",
+    "month": "2025-06",
+    "count": 1,
+    "computed_at": "2026-07-21T05:34:35.142Z"
+  },
+  {
+    "district": "Bengaluru Rural",
+    "crime_category": "Cybercrime",
+    "month": "2025-12",
+    "count": 1,
+    "computed_at": "2026-07-21T05:34:35.142Z"
+  },
+  {
+    "district": "Shivamogga",
+    "crime_category": "Drug",
+    "month": "2024-05",
+    "count": 1,
+    "computed_at": "2026-07-21T05:34:35.142Z"
+  },
+  {
+    "district": "Mangaluru",
+    "crime_category": "Missing",
+    "month": "2024-12",
+    "count": 1,
+    "computed_at": "2026-07-21T05:34:35.142Z"
+  },
+  {
+    "district": "Mysuru",
+    "crime_category": "Cybercrime",
+    "month": "2025-03",
+    "count": 1,
+    "computed_at": "2026-07-21T05:34:35.142Z"
+  },
+  {
+    "district": "Mangaluru",
+    "crime_category": "Assault",
+    "month": "2025-06",
+    "count": 1,
+    "computed_at": "2026-07-21T05:34:35.142Z"
+  },
+  {
+    "district": "Belagavi",
+    "crime_category": "Fraud",
+    "month": "2024-10",
+    "count": 1,
+    "computed_at": "2026-07-21T05:34:35.142Z"
+  },
+  {
+    "district": "Mangaluru",
+    "crime_category": "Theft",
+    "month": "2024-12",
+    "count": 1,
+    "computed_at": "2026-07-21T05:34:35.142Z"
+  },
+  {
+    "district": "Mysuru",
+    "crime_category": "Missing",
+    "month": "2025-09",
+    "count": 1,
+    "computed_at": "2026-07-21T05:34:35.142Z"
+  },
+  {
+    "district": "Davangere",
+    "crime_category": "Cybercrime",
+    "month": "2024-11",
+    "count": 1,
+    "computed_at": "2026-07-21T05:34:35.142Z"
+  },
+  {
+    "district": "Kalaburagi",
+    "crime_category": "Drug",
+    "month": "2024-11",
+    "count": 1,
+    "computed_at": "2026-07-21T05:34:35.142Z"
+  },
+  {
+    "district": "Mysuru",
+    "crime_category": "Assault",
+    "month": "2024-03",
+    "count": 1,
+    "computed_at": "2026-07-21T05:34:35.142Z"
+  },
+  {
+    "district": "Hubli-Dharwad",
+    "crime_category": "Cybercrime",
+    "month": "2024-07",
+    "count": 1,
+    "computed_at": "2026-07-21T05:34:35.142Z"
+  },
+  {
+    "district": "Tumakuru",
+    "crime_category": "Missing",
+    "month": "2024-09",
+    "count": 1,
+    "computed_at": "2026-07-21T05:34:35.142Z"
+  },
+  {
+    "district": "Tumakuru",
+    "crime_category": "Robbery",
+    "month": "2024-01",
+    "count": 1,
+    "computed_at": "2026-07-21T05:34:35.142Z"
+  },
+  {
+    "district": "Davangere",
+    "crime_category": "Theft",
+    "month": "2025-04",
+    "count": 1,
+    "computed_at": "2026-07-21T05:34:35.142Z"
+  },
+  {
+    "district": "Mangaluru",
+    "crime_category": "Assault",
+    "month": "2024-04",
+    "count": 1,
+    "computed_at": "2026-07-21T05:34:35.142Z"
+  },
+  {
+    "district": "Mangaluru",
+    "crime_category": "Drug",
+    "month": "2024-08",
+    "count": 1,
+    "computed_at": "2026-07-21T05:34:35.142Z"
+  },
+  {
+    "district": "Belagavi",
+    "crime_category": "Cybercrime",
+    "month": "2025-06",
+    "count": 1,
+    "computed_at": "2026-07-21T05:34:35.142Z"
+  },
+  {
+    "district": "Kalaburagi",
+    "crime_category": "Cybercrime",
+    "month": "2025-11",
+    "count": 1,
+    "computed_at": "2026-07-21T05:34:35.142Z"
+  },
+  {
+    "district": "Mangaluru",
+    "crime_category": "Fraud",
+    "month": "2025-01",
+    "count": 1,
+    "computed_at": "2026-07-21T05:34:35.142Z"
+  },
+  {
+    "district": "Mysuru",
+    "crime_category": "Theft",
+    "month": "2024-04",
+    "count": 1,
+    "computed_at": "2026-07-21T05:34:35.142Z"
+  },
+  {
+    "district": "Shivamogga",
+    "crime_category": "Murder",
+    "month": "2024-04",
+    "count": 1,
+    "computed_at": "2026-07-21T05:34:35.142Z"
+  },
+  {
+    "district": "Kalaburagi",
+    "crime_category": "Drug",
+    "month": "2024-06",
+    "count": 1,
+    "computed_at": "2026-07-21T05:34:35.142Z"
+  },
+  {
+    "district": "Hubli-Dharwad",
+    "crime_category": "Murder",
+    "month": "2025-11",
+    "count": 1,
+    "computed_at": "2026-07-21T05:34:35.142Z"
+  },
+  {
+    "district": "Mysuru",
+    "crime_category": "Assault",
+    "month": "2025-02",
+    "count": 1,
+    "computed_at": "2026-07-21T05:34:35.142Z"
+  },
+  {
+    "district": "Hubli-Dharwad",
+    "crime_category": "Cybercrime",
+    "month": "2024-08",
+    "count": 1,
+    "computed_at": "2026-07-21T05:34:35.142Z"
+  },
+  {
+    "district": "Mysuru",
+    "crime_category": "Theft",
+    "month": "2025-02",
+    "count": 1,
+    "computed_at": "2026-07-21T05:34:35.142Z"
+  },
+  {
+    "district": "Davangere",
+    "crime_category": "Robbery",
+    "month": "2025-09",
+    "count": 1,
+    "computed_at": "2026-07-21T05:34:35.142Z"
+  },
+  {
+    "district": "Tumakuru",
+    "crime_category": "Murder",
+    "month": "2025-02",
+    "count": 1,
+    "computed_at": "2026-07-21T05:34:35.142Z"
+  },
+  {
+    "district": "Mysuru",
+    "crime_category": "Assault",
+    "month": "2025-06",
+    "count": 1,
+    "computed_at": "2026-07-21T05:34:35.142Z"
+  },
+  {
+    "district": "Mangaluru",
+    "crime_category": "Missing",
+    "month": "2025-02",
+    "count": 1,
+    "computed_at": "2026-07-21T05:34:35.142Z"
+  },
+  {
+    "district": "Belagavi",
+    "crime_category": "Drug",
+    "month": "2024-11",
+    "count": 1,
+    "computed_at": "2026-07-21T05:34:35.142Z"
+  },
+  {
+    "district": "Kalaburagi",
+    "crime_category": "Assault",
+    "month": "2025-03",
+    "count": 1,
+    "computed_at": "2026-07-21T05:34:35.142Z"
+  },
+  {
+    "district": "Bengaluru Rural",
+    "crime_category": "Assault",
+    "month": "2024-09",
+    "count": 1,
+    "computed_at": "2026-07-21T05:34:35.142Z"
+  },
+  {
+    "district": "Davangere",
+    "crime_category": "Fraud",
+    "month": "2024-08",
+    "count": 1,
+    "computed_at": "2026-07-21T05:34:35.142Z"
+  },
+  {
+    "district": "Davangere",
+    "crime_category": "Missing",
+    "month": "2025-07",
+    "count": 1,
+    "computed_at": "2026-07-21T05:34:35.142Z"
+  },
+  {
+    "district": "Kalaburagi",
+    "crime_category": "Robbery",
+    "month": "2025-02",
+    "count": 1,
+    "computed_at": "2026-07-21T05:34:35.142Z"
+  },
+  {
+    "district": "Mysuru",
+    "crime_category": "Drug",
+    "month": "2025-05",
+    "count": 1,
+    "computed_at": "2026-07-21T05:34:35.142Z"
+  },
+  {
+    "district": "Hubli-Dharwad",
+    "crime_category": "Fraud",
+    "month": "2024-06",
+    "count": 1,
+    "computed_at": "2026-07-21T05:34:35.142Z"
+  },
+  {
+    "district": "Kalaburagi",
+    "crime_category": "Drug",
+    "month": "2024-02",
+    "count": 1,
+    "computed_at": "2026-07-21T05:34:35.142Z"
+  },
+  {
+    "district": "Mangaluru",
+    "crime_category": "Drug",
+    "month": "2024-06",
+    "count": 1,
+    "computed_at": "2026-07-21T05:34:35.142Z"
+  },
+  {
+    "district": "Tumakuru",
+    "crime_category": "Drug",
+    "month": "2025-05",
+    "count": 1,
+    "computed_at": "2026-07-21T05:34:35.142Z"
+  },
+  {
+    "district": "Belagavi",
+    "crime_category": "Theft",
+    "month": "2024-07",
+    "count": 1,
+    "computed_at": "2026-07-21T05:34:35.142Z"
+  },
+  {
+    "district": "Mysuru",
+    "crime_category": "Cybercrime",
+    "month": "2024-05",
+    "count": 1,
+    "computed_at": "2026-07-21T05:34:35.142Z"
+  },
+  {
+    "district": "Mangaluru",
+    "crime_category": "Murder",
+    "month": "2024-06",
+    "count": 1,
+    "computed_at": "2026-07-21T05:34:35.142Z"
+  },
+  {
+    "district": "Hubli-Dharwad",
+    "crime_category": "Robbery",
+    "month": "2025-10",
+    "count": 1,
+    "computed_at": "2026-07-21T05:34:35.142Z"
+  },
+  {
+    "district": "Kalaburagi",
+    "crime_category": "Theft",
+    "month": "2024-05",
+    "count": 1,
+    "computed_at": "2026-07-21T05:34:35.142Z"
+  },
+  {
+    "district": "Bengaluru Urban",
+    "crime_category": "Robbery",
+    "month": "2024-01",
+    "count": 1,
+    "computed_at": "2026-07-21T05:34:35.142Z"
+  },
+  {
+    "district": "Belagavi",
+    "crime_category": "Theft",
+    "month": "2025-04",
+    "count": 1,
+    "computed_at": "2026-07-21T05:34:35.142Z"
+  },
+  {
+    "district": "Mysuru",
+    "crime_category": "Cybercrime",
+    "month": "2024-04",
+    "count": 2,
+    "computed_at": "2026-07-21T05:34:35.142Z"
+  },
+  {
+    "district": "Belagavi",
+    "crime_category": "Cybercrime",
+    "month": "2025-02",
+    "count": 1,
+    "computed_at": "2026-07-21T05:34:35.142Z"
+  },
+  {
+    "district": "Bengaluru Urban",
+    "crime_category": "Fraud",
+    "month": "2024-07",
+    "count": 1,
+    "computed_at": "2026-07-21T05:34:35.142Z"
+  },
+  {
+    "district": "Bengaluru Urban",
+    "crime_category": "Drug",
+    "month": "2025-08",
+    "count": 1,
+    "computed_at": "2026-07-21T05:34:35.142Z"
+  },
+  {
+    "district": "Hubli-Dharwad",
+    "crime_category": "Murder",
+    "month": "2024-04",
+    "count": 1,
+    "computed_at": "2026-07-21T05:34:35.142Z"
+  },
+  {
+    "district": "Tumakuru",
+    "crime_category": "Cybercrime",
+    "month": "2025-08",
+    "count": 1,
+    "computed_at": "2026-07-21T05:34:35.142Z"
+  },
+  {
+    "district": "Shivamogga",
+    "crime_category": "Murder",
+    "month": "2024-08",
+    "count": 1,
+    "computed_at": "2026-07-21T05:34:35.142Z"
+  },
+  {
+    "district": "Kalaburagi",
+    "crime_category": "Cybercrime",
+    "month": "2025-05",
+    "count": 1,
+    "computed_at": "2026-07-21T05:34:35.142Z"
+  }
+]

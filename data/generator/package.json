@@ -1,0 +1,11 @@
+{
+  "name": "sahaya-data-generator",
+  "version": "1.0.0",
+  "description": "Synthetic crime data generator for SAHAYA AI — KSP Datathon",
+  "main": "generate-data.js",
+  "scripts": {
+    "generate": "node generate-data.js"
+  },
+  "keywords": ["sahaya", "ksp", "synthetic-data"],
+  "license": "MIT"
+}

@@ -1,0 +1,653 @@
+[
+  {
+    "victim_id": "V001",
+    "name": "Nikhil Sharma",
+    "age": 42,
+    "gender": "Male",
+    "district": "Bengaluru Urban"
+  },
+  {
+    "victim_id": "V002",
+    "name": "Rohan Patil",
+    "age": 62,
+    "gender": "Male",
+    "district": "Bengaluru Urban"
+  },
+  {
+    "victim_id": "V003",
+    "name": "Rashmi Swamy",
+    "age": 59,
+    "gender": "Female",
+    "district": "Bengaluru Urban"
+  },
+  {
+    "victim_id": "V004",
+    "name": "Swathi Nayak",
+    "age": 29,
+    "gender": "Female",
+    "district": "Bengaluru Urban"
+  },
+  {
+    "victim_id": "V005",
+    "name": "Varun Sharma",
+    "age": 60,
+    "gender": "Male",
+    "district": "Bengaluru Urban"
+  },
+  {
+    "victim_id": "V006",
+    "name": "Arun Hegde",
+    "age": 17,
+    "gender": "Male",
+    "district": "Bengaluru Urban"
+  },
+  {
+    "victim_id": "V007",
+    "name": "Ananya Reddy",
+    "age": 69,
+    "gender": "Female",
+    "district": "Bengaluru Urban"
+  },
+  {
+    "victim_id": "V008",
+    "name": "Mohan Joshi",
+    "age": 49,
+    "gender": "Male",
+    "district": "Bengaluru Urban"
+  },
+  {
+    "victim_id": "V009",
+    "name": "Geeta Kumar",
+    "age": 66,
+    "gender": "Female",
+    "district": "Bengaluru Urban"
+  },
+  {
+    "victim_id": "V010",
+    "name": "Karthik Reddy",
+    "age": 38,
+    "gender": "Male",
+    "district": "Bengaluru Urban"
+  },
+  {
+    "victim_id": "V011",
+    "name": "Divya Gowda",
+    "age": 68,
+    "gender": "Female",
+    "district": "Kalaburagi"
+  },
+  {
+    "victim_id": "V012",
+    "name": "Kavitha Hosamani",
+    "age": 42,
+    "gender": "Female",
+    "district": "Bengaluru Rural"
+  },
+  {
+    "victim_id": "V013",
+    "name": "Swathi Naik",
+    "age": 69,
+    "gender": "Female",
+    "district": "Bengaluru Rural"
+  },
+  {
+    "victim_id": "V014",
+    "name": "Arjun Reddy",
+    "age": 17,
+    "gender": "Male",
+    "district": "Kalaburagi"
+  },
+  {
+    "victim_id": "V015",
+    "name": "Nikhil Shetty",
+    "age": 20,
+    "gender": "Male",
+    "district": "Mangaluru"
+  },
+  {
+    "victim_id": "V016",
+    "name": "Vinay Gowda",
+    "age": 47,
+    "gender": "Male",
+    "district": "Mangaluru"
+  },
+  {
+    "victim_id": "V017",
+    "name": "Kavitha Angadi",
+    "age": 61,
+    "gender": "Female",
+    "district": "Tumakuru"
+  },
+  {
+    "victim_id": "V018",
+    "name": "Sachin Nayak",
+    "age": 15,
+    "gender": "Male",
+    "district": "Tumakuru"
+  },
+  {
+    "victim_id": "V019",
+    "name": "Rohit Murthy",
+    "age": 22,
+    "gender": "Male",
+    "district": "Bengaluru Urban"
+  },
+  {
+    "victim_id": "V020",
+    "name": "Nikhil Shetty",
+    "age": 37,
+    "gender": "Male",
+    "district": "Bengaluru Urban"
+  },
+  {
+    "victim_id": "V021",
+    "name": "Arun Kumar",
+    "age": 71,
+    "gender": "Male",
+    "district": "Bengaluru Urban"
+  },
+  {
+    "victim_id": "V022",
+    "name": "Sunil Naik",
+    "age": 42,
+    "gender": "Male",
+    "district": "Bengaluru Urban"
+  },
+  {
+    "victim_id": "V023",
+    "name": "Girish Sharma",
+    "age": 66,
+    "gender": "Male",
+    "district": "Bengaluru Urban"
+  },
+  {
+    "victim_id": "V024",
+    "name": "Geeta Bhat",
+    "age": 35,
+    "gender": "Female",
+    "district": "Bengaluru Rural"
+  },
+  {
+    "victim_id": "V025",
+    "name": "Bhavya Kulkarni",
+    "age": 61,
+    "gender": "Female",
+    "district": "Kalaburagi"
+  },
+  {
+    "victim_id": "V026",
+    "name": "Vikram Gowda",
+    "age": 43,
+    "gender": "Male",
+    "district": "Kalaburagi"
+  },
+  {
+    "victim_id": "V027",
+    "name": "Girish Reddy",
+    "age": 66,
+    "gender": "Male",
+    "district": "Shivamogga"
+  },
+  {
+    "victim_id": "V028",
+    "name": "Rashmi Gowda",
+    "age": 57,
+    "gender": "Female",
+    "district": "Shivamogga"
+  },
+  {
+    "victim_id": "V029",
+    "name": "Vinay Swamy",
+    "age": 23,
+    "gender": "Male",
+    "district": "Mangaluru"
+  },
+  {
+    "victim_id": "V030",
+    "name": "Vinay Gowda",
+    "age": 75,
+    "gender": "Male",
+    "district": "Mangaluru"
+  },
+  {
+    "victim_id": "V031",
+    "name": "Arjun Naik",
+    "age": 41,
+    "gender": "Male",
+    "district": "Shivamogga"
+  },
+  {
+    "victim_id": "V032",
+    "name": "Vinay Murthy",
+    "age": 68,
+    "gender": "Male",
+    "district": "Mysuru"
+  },
+  {
+    "victim_id": "V033",
+    "name": "Sachin Desai",
+    "age": 60,
+    "gender": "Male",
+    "district": "Mysuru"
+  },
+  {
+    "victim_id": "V034",
+    "name": "Rashmi Desai",
+    "age": 42,
+    "gender": "Female",
+    "district": "Mangaluru"
+  },
+  {
+    "victim_id": "V035",
+    "name": "Vikram Nayak",
+    "age": 36,
+    "gender": "Male",
+    "district": "Belagavi"
+  },
+  {
+    "victim_id": "V036",
+    "name": "Sachin Joshi",
+    "age": 53,
+    "gender": "Male",
+    "district": "Belagavi"
+  },
+  {
+    "victim_id": "V037",
+    "name": "Mohan Kumar",
+    "age": 24,
+    "gender": "Male",
+    "district": "Mangaluru"
+  },
+  {
+    "victim_id": "V038",
+    "name": "Meera Patil",
+    "age": 51,
+    "gender": "Female",
+    "district": "Mysuru"
+  },
+  {
+    "victim_id": "V039",
+    "name": "Nikhil Shetty",
+    "age": 30,
+    "gender": "Male",
+    "district": "Mysuru"
+  },
+  {
+    "victim_id": "V040",
+    "name": "Sachin Hegde",
+    "age": 56,
+    "gender": "Male",
+    "district": "Hubli-Dharwad"
+  },
+  {
+    "victim_id": "V041",
+    "name": "Girish Joshi",
+    "age": 55,
+    "gender": "Male",
+    "district": "Hubli-Dharwad"
+  },
+  {
+    "victim_id": "V042",
+    "name": "Mohan Reddy",
+    "age": 72,
+    "gender": "Male",
+    "district": "Tumakuru"
+  },
+  {
+    "victim_id": "V043",
+    "name": "Nikhil Rao",
+    "age": 74,
+    "gender": "Male",
+    "district": "Davangere"
+  },
+  {
+    "victim_id": "V044",
+    "name": "Mohan Hegde",
+    "age": 57,
+    "gender": "Male",
+    "district": "Davangere"
+  },
+  {
+    "victim_id": "V045",
+    "name": "Girish Nayak",
+    "age": 69,
+    "gender": "Male",
+    "district": "Kalaburagi"
+  },
+  {
+    "victim_id": "V046",
+    "name": "Divya Desai",
+    "age": 71,
+    "gender": "Female",
+    "district": "Mangaluru"
+  },
+  {
+    "victim_id": "V047",
+    "name": "Sneha Desai",
+    "age": 39,
+    "gender": "Female",
+    "district": "Mysuru"
+  },
+  {
+    "victim_id": "V048",
+    "name": "Sneha Kulkarni",
+    "age": 41,
+    "gender": "Female",
+    "district": "Mysuru"
+  },
+  {
+    "victim_id": "V049",
+    "name": "Varun Joshi",
+    "age": 29,
+    "gender": "Male",
+    "district": "Shivamogga"
+  },
+  {
+    "victim_id": "V050",
+    "name": "Sarita Patil",
+    "age": 45,
+    "gender": "Female",
+    "district": "Shivamogga"
+  },
+  {
+    "victim_id": "V051",
+    "name": "Pallavi Murthy",
+    "age": 63,
+    "gender": "Female",
+    "district": "Kalaburagi"
+  },
+  {
+    "victim_id": "V052",
+    "name": "Rohit Desai",
+    "age": 55,
+    "gender": "Male",
+    "district": "Kalaburagi"
+  },
+  {
+    "victim_id": "V053",
+    "name": "Arun Swamy",
+    "age": 42,
+    "gender": "Male",
+    "district": "Hubli-Dharwad"
+  },
+  {
+    "victim_id": "V054",
+    "name": "Rohan Gowda",
+    "age": 44,
+    "gender": "Male",
+    "district": "Mysuru"
+  },
+  {
+    "victim_id": "V055",
+    "name": "Meera Hegde",
+    "age": 39,
+    "gender": "Female",
+    "district": "Mysuru"
+  },
+  {
+    "victim_id": "V056",
+    "name": "Pavan Shetty",
+    "age": 62,
+    "gender": "Male",
+    "district": "Mysuru"
+  },
+  {
+    "victim_id": "V057",
+    "name": "Karthik Swamy",
+    "age": 45,
+    "gender": "Male",
+    "district": "Davangere"
+  },
+  {
+    "victim_id": "V058",
+    "name": "Nikhil Bhat",
+    "age": 61,
+    "gender": "Male",
+    "district": "Tumakuru"
+  },
+  {
+    "victim_id": "V059",
+    "name": "Arjun Bhat",
+    "age": 30,
+    "gender": "Male",
+    "district": "Tumakuru"
+  },
+  {
+    "victim_id": "V060",
+    "name": "Chaitra Reddy",
+    "age": 53,
+    "gender": "Female",
+    "district": "Mysuru"
+  },
+  {
+    "victim_id": "V061",
+    "name": "Nandini Shetty",
+    "age": 45,
+    "gender": "Female",
+    "district": "Mangaluru"
+  },
+  {
+    "victim_id": "V062",
+    "name": "Vikram Kumar",
+    "age": 21,
+    "gender": "Male",
+    "district": "Belagavi"
+  },
+  {
+    "victim_id": "V063",
+    "name": "Swathi Desai",
+    "age": 72,
+    "gender": "Female",
+    "district": "Belagavi"
+  },
+  {
+    "victim_id": "V064",
+    "name": "Kavitha Kumar",
+    "age": 16,
+    "gender": "Female",
+    "district": "Kalaburagi"
+  },
+  {
+    "victim_id": "V065",
+    "name": "Rohit Sharma",
+    "age": 18,
+    "gender": "Male",
+    "district": "Kalaburagi"
+  },
+  {
+    "victim_id": "V066",
+    "name": "Mohan Sharma",
+    "age": 28,
+    "gender": "Male",
+    "district": "Davangere"
+  },
+  {
+    "victim_id": "V067",
+    "name": "Nikhil Naik",
+    "age": 30,
+    "gender": "Male",
+    "district": "Davangere"
+  },
+  {
+    "victim_id": "V068",
+    "name": "Girish Naik",
+    "age": 25,
+    "gender": "Male",
+    "district": "Davangere"
+  },
+  {
+    "victim_id": "V069",
+    "name": "Rohit Patil",
+    "age": 47,
+    "gender": "Male",
+    "district": "Kalaburagi"
+  },
+  {
+    "victim_id": "V070",
+    "name": "Chaitra Patil",
+    "age": 66,
+    "gender": "Female",
+    "district": "Mysuru"
+  },
+  {
+    "victim_id": "V071",
+    "name": "Swathi Naik",
+    "age": 27,
+    "gender": "Female",
+    "district": "Mysuru"
+  },
+  {
+    "victim_id": "V072",
+    "name": "Girish Joshi",
+    "age": 59,
+    "gender": "Male",
+    "district": "Hubli-Dharwad"
+  },
+  {
+    "victim_id": "V073",
+    "name": "Vinay Gowda",
+    "age": 70,
+    "gender": "Male",
+    "district": "Hubli-Dharwad"
+  },
+  {
+    "victim_id": "V074",
+    "name": "Sachin Nayak",
+    "age": 26,
+    "gender": "Male",
+    "district": "Kalaburagi"
+  },
+  {
+    "victim_id": "V075",
+    "name": "Varun Murthy",
+    "age": 25,
+    "gender": "Male",
+    "district": "Kalaburagi"
+  },
+  {
+    "victim_id": "V076",
+    "name": "Nikhil Bhat",
+    "age": 62,
+    "gender": "Male",
+    "district": "Mangaluru"
+  },
+  {
+    "victim_id": "V077",
+    "name": "Rohan Naik",
+    "age": 41,
+    "gender": "Male",
+    "district": "Mysuru"
+  },
+  {
+    "victim_id": "V078",
+    "name": "Rohit Patil",
+    "age": 43,
+    "gender": "Male",
+    "district": "Mangaluru"
+  },
+  {
+    "victim_id": "V079",
+    "name": "Pavan Joshi",
+    "age": 49,
+    "gender": "Male",
+    "district": "Mangaluru"
+  },
+  {
+    "victim_id": "V080",
+    "name": "Meera Hegde",
+    "age": 73,
+    "gender": "Female",
+    "district": "Hubli-Dharwad"
+  },
+  {
+    "victim_id": "V081",
+    "name": "Rohan Angadi",
+    "age": 40,
+    "gender": "Male",
+    "district": "Hubli-Dharwad"
+  },
+  {
+    "victim_id": "V082",
+    "name": "Kavitha Swamy",
+    "age": 19,
+    "gender": "Female",
+    "district": "Bengaluru Urban"
+  },
+  {
+    "victim_id": "V083",
+    "name": "Sachin Hosamani",
+    "age": 55,
+    "gender": "Male",
+    "district": "Bengaluru Urban"
+  },
+  {
+    "victim_id": "V084",
+    "name": "Arun Madiwalar",
+    "age": 44,
+    "gender": "Male",
+    "district": "Belagavi"
+  },
+  {
+    "victim_id": "V085",
+    "name": "Kavitha Desai",
+    "age": 68,
+    "gender": "Female",
+    "district": "Mysuru"
+  },
+  {
+    "victim_id": "V086",
+    "name": "Swathi Hiremath",
+    "age": 26,
+    "gender": "Female",
+    "district": "Bengaluru Urban"
+  },
+  {
+    "victim_id": "V087",
+    "name": "Girish Hegde",
+    "age": 29,
+    "gender": "Male",
+    "district": "Hubli-Dharwad"
+  },
+  {
+    "victim_id": "V088",
+    "name": "Vikram Patil",
+    "age": 46,
+    "gender": "Male",
+    "district": "Hubli-Dharwad"
+  },
+  {
+    "victim_id": "V089",
+    "name": "Meera Naik",
+    "age": 63,
+    "gender": "Female",
+    "district": "Mysuru"
+  },
+  {
+    "victim_id": "V090",
+    "name": "Chaitra Bhat",
+    "age": 56,
+    "gender": "Female",
+    "district": "Mysuru"
+  },
+  {
+    "victim_id": "V091",
+    "name": "Vinay Angadi",
+    "age": 48,
+    "gender": "Male",
+    "district": "Shivamogga"
+  },
+  {
+    "victim_id": "V092",
+    "name": "Vinay Kumar",
+    "age": 65,
+    "gender": "Male",
+    "district": "Shivamogga"
+  },
+  {
+    "victim_id": "V093",
+    "name": "Ananya Swamy",
+    "age": 66,
+    "gender": "Female",
+    "district": "Kalaburagi"
+  }
+]
