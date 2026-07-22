@@ -1,296 +1,301 @@
 [
   {
-    "fir_id": "FIR-2025-TUM-0064",
-    "title": "Drug case at Sira PS",
-    "narrative": "On 2025-05-28, a case of drug was reported at Sira PS, Tumakuru district. Ganja seizure at Jayanagar 4th Block. 43kg of marijuana recovered from a goods vehicle. Two suspects arrested. The investigating team identified 2 suspect(s): Suresh Shetty, Mahesh Madiwalar. The modus operandi observed was: Campus-based micro-distribution through student networks. The case was registered under the relevant sections of the IPC and BNS. Investigation revealed connections to 3 prior cases in the Tumakuru area. The case has been resolved and chargesheeted.",
-    "modus_operandi": "Campus-based micro-distribution through student networks",
-    "evidence_summary": "1. FIR registered at Sira PS. 2. 5 witness statements collected. 3. Forensic evidence collected. 4. Vehicle tracking in progress",
-    "investigating_officer": "PSI Mahesh Madiwalar, Sira PS",
-    "suspects_linked": [
-      "S021",
-      "S020"
-    ],
-    "status": "Chargesheeted",
-    "created_at": "2025-05-28T05:00:00.000Z",
-    "updated_at": "2025-06-05T00:00:00.000Z"
-  },
-  {
-    "fir_id": "FIR-2024-BEL-0065",
-    "title": "Theft case at Belagavi Market PS",
-    "narrative": "On 2024-07-17, a case of theft was reported at Belagavi Market PS, Belagavi district. House break-in reported at KR Market. Cash and jewelry worth ₹12,000 stolen while residents were away. The investigating team identified 1 suspect(s): Asha Kumar. The modus operandi observed was: Organized shoplifting using concealed bags and coordinated distraction. The case was registered under the relevant sections of the IPC and BNS. Investigation revealed connections to 2 prior cases in the Belagavi area. The case has been resolved and chargesheeted.",
-    "modus_operandi": "Organized shoplifting using concealed bags and coordinated distraction",
-    "evidence_summary": "1. FIR registered at Belagavi Market PS. 2. 2 witness statements collected. 3. Forensic evidence collected. 4. Vehicle tracking in progress",
-    "investigating_officer": "SI Rajesh Angadi, Belagavi Market PS",
-    "suspects_linked": [
-      "S018"
-    ],
-    "status": "Chargesheeted",
-    "created_at": "2024-07-17T05:00:00.000Z",
-    "updated_at": "2024-08-06T00:00:00.000Z"
-  },
-  {
-    "fir_id": "FIR-2025-BEN-0021",
-    "title": "Theft case at Nelamangala PS",
-    "narrative": "On 2025-05-22, a case of theft was reported at Nelamangala PS, Bengaluru Rural district. House break-in reported at Brigade Road. Cash and jewelry worth ₹3,74,000 stolen while residents were away. The investigating team identified 1 suspect(s): Mahesh Madiwalar. The modus operandi observed was: Target selection of parked vehicles in poorly lit areas during night hours. The case was registered under the relevant sections of the IPC and BNS. Investigation revealed connections to 2 prior cases in the Bengaluru Rural area. The case has been resolved and chargesheeted.",
-    "modus_operandi": "Target selection of parked vehicles in poorly lit areas during night hours",
-    "evidence_summary": "1. FIR registered at Nelamangala PS. 2. 1 witness statements collected. 3. Mobile CDR obtained. 4. Scene of crime inspected",
-    "investigating_officer": "PSI Harish Joshi, Nelamangala PS",
-    "suspects_linked": [
-      "S021"
-    ],
-    "status": "Chargesheeted",
-    "created_at": "2025-05-22T05:00:00.000Z",
-    "updated_at": "2025-05-31T00:00:00.000Z"
-  },
-  {
-    "fir_id": "FIR-2025-BEL-0073",
-    "title": "Cybercrime case at Khanapur PS",
-    "narrative": "On 2025-02-06, a case of cybercrime was reported at Khanapur PS, Belagavi district. Ransomware attack on KR Market business. Systems encrypted, attackers demanded ₹4,09,000 in cryptocurrency. The investigating team identified 1 suspect(s): Meena Hiremath. The modus operandi observed was: Fake investment app with initial real returns to build trust before large fraud. The case was registered under the relevant sections of the IPC and BNS. Investigation revealed connections to 2 prior cases in the Belagavi area. The case has been resolved and chargesheeted.",
-    "modus_operandi": "Fake investment app with initial real returns to build trust before large fraud",
-    "evidence_summary": "1. FIR registered at Khanapur PS. 2. 2 witness statements collected. 3. Mobile CDR obtained. 4. Scene of crime inspected",
-    "investigating_officer": "PSI Ravi Hosamani, Khanapur PS",
-    "suspects_linked": [
-      "S017"
-    ],
-    "status": "Chargesheeted",
-    "created_at": "2025-02-06T05:00:00.000Z",
-    "updated_at": "2025-03-05T00:00:00.000Z"
-  },
-  {
-    "fir_id": "FIR-2025-BEN-0001",
-    "title": "Theft case at JP Nagar PS",
-    "narrative": "On 2025-11-10, a case of theft was reported at JP Nagar PS, Bengaluru Urban district. House break-in reported at Marathahalli Bridge. Cash and jewelry worth ₹2,30,000 stolen while residents were away. The investigating team identified 2 suspect(s): Siddharth Kumar, Kiran Gowda. The modus operandi observed was: Two-wheeler chain snatching — pillion rider executes grab while rider maintains low speed. The case was registered under the relevant sections of the IPC and BNS. Investigation revealed connections to 2 prior cases in the Bengaluru Urban area. The case has been resolved and chargesheeted.",
-    "modus_operandi": "Two-wheeler chain snatching — pillion rider executes grab while rider maintains low speed",
-    "evidence_summary": "1. FIR registered at JP Nagar PS. 2. 2 witness statements collected. 3. CCTV footage analyzed. 4. Scene of crime inspected",
-    "investigating_officer": "PSI Rajesh Murthy, JP Nagar PS",
-    "suspects_linked": [
-      "S001",
-      "S003"
-    ],
-    "status": "Chargesheeted",
-    "created_at": "2025-11-10T05:00:00.000Z",
-    "updated_at": "2025-11-14T00:00:00.000Z"
-  },
-  {
-    "fir_id": "FIR-2025-BEN-0013",
-    "title": "Cybercrime case at Electronic City PS",
-    "narrative": "On 2025-08-08, a case of cybercrime was reported at Electronic City PS, Bengaluru Urban district. Ransomware attack on Brigade Road business. Systems encrypted, attackers demanded ₹1,00,000 in cryptocurrency. The investigating team identified 2 suspect(s): Kiran Angadi, Asha Joshi. The modus operandi observed was: Social engineering via phone calls impersonating bank officials. The case was registered under the relevant sections of the IPC and BNS. Investigation revealed connections to 2 prior cases in the Bengaluru Urban area. Investigation is ongoing with active surveillance on the suspects.",
+    "fir_id": "FIR-2024-BEN-0016",
+    "title": "Cybercrime case at Yeshwanthpur PS",
+    "narrative": "On 2024-12-14, a case of cybercrime was reported at Yeshwanthpur PS, Bengaluru Urban district. Ransomware attack on Rajajinagar business. Systems encrypted, attackers demanded ₹92,000 in cryptocurrency. The investigating team identified 3 suspect(s): Harish Hiremath, Prakash Nayak, Kiran Swamy. The modus operandi observed was: Social engineering via phone calls impersonating bank officials. The case was registered under the relevant sections of the IPC and BNS. Investigation revealed connections to 1 prior cases in the Bengaluru Urban area. The case has been resolved and chargesheeted.",
     "modus_operandi": "Social engineering via phone calls impersonating bank officials",
-    "evidence_summary": "1. FIR registered at Electronic City PS. 2. 3 witness statements collected. 3. Digital evidence recovered. 4. Vehicle tracking in progress",
-    "investigating_officer": "SI Mahesh Hiremath, Electronic City PS",
-    "suspects_linked": [
-      "S010",
-      "S011"
-    ],
-    "status": "Under Investigation",
-    "created_at": "2025-08-08T05:00:00.000Z",
-    "updated_at": "2025-08-23T00:00:00.000Z"
-  },
-  {
-    "fir_id": "FIR-2025-DAV-0058",
-    "title": "Missing case at Davangere Town PS",
-    "narrative": "On 2025-07-29, a case of missing was reported at Davangere Town PS, Davangere district. Elderly person (28) suffering from Alzheimer's, missing from Jayanagar 4th Block since morning. Was last wearing grey t-shirt and jeans. The investigating team identified 2 suspect(s): Asha Kumar, Chandrashekar Kulkarni. The modus operandi observed was: Runaway minor — left home following online contact with stranger. The case was registered under the relevant sections of the IPC and BNS. Investigation revealed connections to 3 prior cases in the Davangere area. Investigation is ongoing with active surveillance on the suspects.",
-    "modus_operandi": "Runaway minor — left home following online contact with stranger",
-    "evidence_summary": "1. FIR registered at Davangere Town PS. 2. 5 witness statements collected. 3. Forensic evidence collected. 4. Vehicle tracking in progress",
-    "investigating_officer": "Inspector Deepak Nayak, Davangere Town PS",
-    "suspects_linked": [
-      "S018",
-      "S024"
-    ],
-    "status": "Under Investigation",
-    "created_at": "2025-07-29T05:00:00.000Z",
-    "updated_at": "2025-08-14T00:00:00.000Z"
-  },
-  {
-    "fir_id": "FIR-2024-TUM-0036",
-    "title": "Robbery case at Madhugiri PS",
-    "narrative": "On 2024-01-17, a case of robbery was reported at Madhugiri PS, Tumakuru district. Daylight robbery near Jayanagar 4th Block. Victim was robbed of ₹2,83,000 at knifepoint while walking. The investigating team identified 2 suspect(s): Shivaraj Angadi, Venkatesh Nayak. The modus operandi observed was: Knifepoint mugging of pedestrians in secluded lanes during late hours. The case was registered under the relevant sections of the IPC and BNS. Investigation revealed connections to 2 prior cases in the Tumakuru area. Investigation is ongoing with active surveillance on the suspects.",
-    "modus_operandi": "Knifepoint mugging of pedestrians in secluded lanes during late hours",
-    "evidence_summary": "1. FIR registered at Madhugiri PS. 2. 1 witness statements collected. 3. Forensic evidence collected. 4. Scene of crime inspected",
-    "investigating_officer": "Inspector Naveen Hegde, Madhugiri PS",
-    "suspects_linked": [
-      "S031",
-      "S023"
-    ],
-    "status": "Under Investigation",
-    "created_at": "2024-01-17T05:00:00.000Z",
-    "updated_at": "2024-01-29T00:00:00.000Z"
-  },
-  {
-    "fir_id": "FIR-2025-BEL-0040",
-    "title": "Cybercrime case at Belagavi Market PS",
-    "narrative": "On 2025-06-21, a case of cybercrime was reported at Belagavi Market PS, Belagavi district. OTP fraud — caller posing as bank executive obtained OTP and withdrew ₹71,000 from the complainant's savings account. The investigating team identified 1 suspect(s): Ramesh Naik. The modus operandi observed was: Social engineering via phone calls impersonating bank officials. The case was registered under the relevant sections of the IPC and BNS. Investigation revealed connections to 2 prior cases in the Belagavi area. Investigation is ongoing with active surveillance on the suspects.",
-    "modus_operandi": "Social engineering via phone calls impersonating bank officials",
-    "evidence_summary": "1. FIR registered at Belagavi Market PS. 2. 4 witness statements collected. 3. Mobile CDR obtained. 4. Scene of crime inspected",
-    "investigating_officer": "PSI Kiran Angadi, Belagavi Market PS",
-    "suspects_linked": [
-      "S029"
-    ],
-    "status": "Under Investigation",
-    "created_at": "2025-06-21T05:00:00.000Z",
-    "updated_at": "2025-07-09T00:00:00.000Z"
-  },
-  {
-    "fir_id": "FIR-2025-MAN-0042",
-    "title": "Fraud case at Bantwal PS",
-    "narrative": "On 2025-01-29, a case of fraud was reported at Bantwal PS, Mangaluru district. Insurance fraud — staged accident at Rajajinagar to claim insurance of ₹4,14,000. Suspect colluded with local garage. The investigating team identified 1 suspect(s): Ramesh Bhat. The modus operandi observed was: Forged property documents with fake registration stamps. The case was registered under the relevant sections of the IPC and BNS. Investigation revealed connections to 3 prior cases in the Mangaluru area. Investigation is ongoing with active surveillance on the suspects.",
-    "modus_operandi": "Forged property documents with fake registration stamps",
-    "evidence_summary": "1. FIR registered at Bantwal PS. 2. 3 witness statements collected. 3. Digital evidence recovered. 4. Scene of crime inspected",
-    "investigating_officer": "Inspector Kiran Naik, Bantwal PS",
-    "suspects_linked": [
-      "S027"
-    ],
-    "status": "Under Investigation",
-    "created_at": "2025-01-29T05:00:00.000Z",
-    "updated_at": "2025-02-28T00:00:00.000Z"
-  },
-  {
-    "fir_id": "FIR-2024-MAN-0063",
-    "title": "Drug case at Surathkal PS",
-    "narrative": "On 2024-06-30, a case of drug was reported at Surathkal PS, Mangaluru district. Drug peddling near Whitefield Main Road college campus. Suspect caught selling cannabis edibles to students. The investigating team identified 2 suspect(s): Kiran Reddy, Anil Desai. The modus operandi observed was: Campus-based micro-distribution through student networks. The case was registered under the relevant sections of the IPC and BNS. Investigation revealed connections to 2 prior cases in the Mangaluru area. The case has been resolved and chargesheeted.",
-    "modus_operandi": "Campus-based micro-distribution through student networks",
-    "evidence_summary": "1. FIR registered at Surathkal PS. 2. 5 witness statements collected. 3. CCTV footage analyzed. 4. Vehicle tracking in progress",
-    "investigating_officer": "Inspector Ganesh Reddy, Surathkal PS",
-    "suspects_linked": [
-      "S030",
-      "S037"
-    ],
-    "status": "Chargesheeted",
-    "created_at": "2024-06-30T05:00:00.000Z",
-    "updated_at": "2024-07-24T00:00:00.000Z"
-  },
-  {
-    "fir_id": "FIR-2025-KAL-0019",
-    "title": "Robbery case at Sedam PS",
-    "narrative": "On 2025-03-14, a case of robbery was reported at Sedam PS, Kalaburagi district. ATM robbery attempt at Yeshwanthpur Industrial Area. Suspects tried to break open the machine using gas cutters. Alert security guard foiled the attempt. The investigating team identified 3 suspect(s): Rajesh Angadi, Suma Madiwalar, Ganesh Madiwalar. The modus operandi observed was: Highway ambush — vehicles forced to stop using road obstacles. The case was registered under the relevant sections of the IPC and BNS. Investigation revealed connections to 2 prior cases in the Kalaburagi area. The case has been resolved and chargesheeted.",
-    "modus_operandi": "Highway ambush — vehicles forced to stop using road obstacles",
-    "evidence_summary": "1. FIR registered at Sedam PS. 2. 4 witness statements collected. 3. Forensic evidence collected. 4. Suspect identification parade conducted",
-    "investigating_officer": "PSI Anand Hiremath, Sedam PS",
-    "suspects_linked": [
-      "S015",
-      "S014",
-      "S016"
-    ],
-    "status": "Chargesheeted",
-    "created_at": "2025-03-14T05:00:00.000Z",
-    "updated_at": "2025-04-10T00:00:00.000Z"
-  },
-  {
-    "fir_id": "FIR-2025-TUM-0077",
-    "title": "Cybercrime case at Tumakuru Town PS",
-    "narrative": "On 2025-08-14, a case of cybercrime was reported at Tumakuru Town PS, Tumakuru district. OTP fraud — caller posing as bank executive obtained OTP and withdrew ₹96,000 from the complainant's savings account. The investigating team identified 2 suspect(s): Meena Hiremath, Asha Kumar. The modus operandi observed was: Phishing websites replicating popular e-commerce platforms. The case was registered under the relevant sections of the IPC and BNS. Investigation revealed connections to 4 prior cases in the Tumakuru area. The case has been resolved and chargesheeted.",
-    "modus_operandi": "Phishing websites replicating popular e-commerce platforms",
-    "evidence_summary": "1. FIR registered at Tumakuru Town PS. 2. 4 witness statements collected. 3. Mobile CDR obtained. 4. Suspect identification parade conducted",
-    "investigating_officer": "SI Kiran Sharma, Tumakuru Town PS",
-    "suspects_linked": [
-      "S017",
-      "S018"
-    ],
-    "status": "Chargesheeted",
-    "created_at": "2025-08-14T05:00:00.000Z",
-    "updated_at": "2025-08-24T00:00:00.000Z"
-  },
-  {
-    "fir_id": "FIR-2024-HUB-0034",
-    "title": "Cybercrime case at Gokul Road PS",
-    "narrative": "On 2024-07-23, a case of cybercrime was reported at Gokul Road PS, Hubli-Dharwad district. Identity theft — suspect created fake Aadhaar and PAN documents using complainant's photos obtained from social media. The investigating team identified 1 suspect(s): Chandrashekar Kulkarni. The modus operandi observed was: Phishing websites replicating popular e-commerce platforms. The case was registered under the relevant sections of the IPC and BNS. Investigation revealed connections to 2 prior cases in the Hubli-Dharwad area. The case has been resolved and chargesheeted.",
-    "modus_operandi": "Phishing websites replicating popular e-commerce platforms",
-    "evidence_summary": "1. FIR registered at Gokul Road PS. 2. 1 witness statements collected. 3. Mobile CDR obtained. 4. Suspect identification parade conducted",
-    "investigating_officer": "PSI Harish Angadi, Gokul Road PS",
-    "suspects_linked": [
-      "S024"
-    ],
-    "status": "Chargesheeted",
-    "created_at": "2024-07-23T05:00:00.000Z",
-    "updated_at": "2024-08-02T00:00:00.000Z"
-  },
-  {
-    "fir_id": "FIR-2025-MAN-0053",
-    "title": "Missing case at Surathkal PS",
-    "narrative": "On 2025-02-17, a case of missing was reported at Surathkal PS, Mangaluru district. Missing person — Shobha Patil (19, female) not seen since leaving home at MG Road on 2025-11-18. The investigating team identified 2 suspect(s): Suresh Reddy, Suresh Shetty. The modus operandi observed was: Voluntary departure — person left due to family disputes. The case was registered under the relevant sections of the IPC and BNS. Investigation revealed connections to 1 prior cases in the Mangaluru area. Investigation is ongoing with active surveillance on the suspects.",
-    "modus_operandi": "Voluntary departure — person left due to family disputes",
-    "evidence_summary": "1. FIR registered at Surathkal PS. 2. 2 witness statements collected. 3. CCTV footage analyzed. 4. Scene of crime inspected",
-    "investigating_officer": "SI Mahesh Hosamani, Surathkal PS",
-    "suspects_linked": [
-      "S020",
-      "S019"
-    ],
-    "status": "Under Investigation",
-    "created_at": "2025-02-17T05:00:00.000Z",
-    "updated_at": "2025-03-08T00:00:00.000Z"
-  },
-  {
-    "fir_id": "FIR-2024-MAN-0067",
-    "title": "Murder case at Mangaluru North PS",
-    "narrative": "On 2024-06-12, a case of murder was reported at Mangaluru North PS, Mangaluru district. Homicide at Brigade Road. Victim (male, 44) found with stab wounds. Dispute over money suspected as motive. The investigating team identified 1 suspect(s): Meena Hiremath. The modus operandi observed was: Staged accident to conceal homicide. The case was registered under the relevant sections of the IPC and BNS. Investigation revealed connections to 2 prior cases in the Mangaluru area. Investigation is ongoing with active surveillance on the suspects.",
-    "modus_operandi": "Staged accident to conceal homicide",
-    "evidence_summary": "1. FIR registered at Mangaluru North PS. 2. 4 witness statements collected. 3. CCTV footage analyzed. 4. Vehicle tracking in progress",
-    "investigating_officer": "Inspector Suresh Kulkarni, Mangaluru North PS",
-    "suspects_linked": [
-      "S017"
-    ],
-    "status": "Under Investigation",
-    "created_at": "2024-06-12T05:00:00.000Z",
-    "updated_at": "2024-06-15T00:00:00.000Z"
-  },
-  {
-    "fir_id": "FIR-2024-BEN-0005",
-    "title": "Theft case at Koramangala PS",
-    "narrative": "On 2024-05-01, a case of theft was reported at Koramangala PS, Bengaluru Urban district. House break-in reported at Silk Board Junction. Cash and jewelry worth ₹4,22,000 stolen while residents were away. The investigating team identified 2 suspect(s): Siddharth Kumar, Ganesh Reddy. The modus operandi observed was: Two-wheeler chain snatching — pillion rider executes grab while rider maintains low speed. The case was registered under the relevant sections of the IPC and BNS. Investigation revealed connections to 4 prior cases in the Bengaluru Urban area. Investigation is ongoing with active surveillance on the suspects.",
-    "modus_operandi": "Two-wheeler chain snatching — pillion rider executes grab while rider maintains low speed",
-    "evidence_summary": "1. FIR registered at Koramangala PS. 2. 2 witness statements collected. 3. Digital evidence recovered. 4. Suspect identification parade conducted",
-    "investigating_officer": "Inspector Naveen Sharma, Koramangala PS",
-    "suspects_linked": [
-      "S001",
-      "S004"
-    ],
-    "status": "Under Investigation",
-    "created_at": "2024-05-01T05:00:00.000Z",
-    "updated_at": "2024-05-13T00:00:00.000Z"
-  },
-  {
-    "fir_id": "FIR-2025-BEN-0015",
-    "title": "Cybercrime case at Whitefield PS",
-    "narrative": "On 2025-02-17, a case of cybercrime was reported at Whitefield PS, Bengaluru Urban district. Online financial fraud — victim lost ₹3,68,000 to fake investment scheme operated through social media. The investigating team identified 3 suspect(s): Kiran Angadi, Asha Joshi, Rekha Rao. The modus operandi observed was: Social engineering via phone calls impersonating bank officials. The case was registered under the relevant sections of the IPC and BNS. Investigation revealed connections to 4 prior cases in the Bengaluru Urban area. Investigation is ongoing with active surveillance on the suspects.",
-    "modus_operandi": "Social engineering via phone calls impersonating bank officials",
-    "evidence_summary": "1. FIR registered at Whitefield PS. 2. 4 witness statements collected. 3. Digital evidence recovered. 4. Scene of crime inspected",
-    "investigating_officer": "SI Siddharth Patil, Whitefield PS",
+    "evidence_summary": "1. FIR registered at Yeshwanthpur PS. 2. 2 witness statements collected. 3. Mobile CDR obtained. 4. Suspect identification parade conducted",
+    "investigating_officer": "SI Prakash Madiwalar, Yeshwanthpur PS",
     "suspects_linked": [
       "S010",
       "S011",
       "S012"
     ],
+    "status": "Chargesheeted",
+    "created_at": "2024-12-14T05:00:00.000Z",
+    "updated_at": "2025-01-08T00:00:00.000Z"
+  },
+  {
+    "fir_id": "FIR-2025-DAV-0026",
+    "title": "Fraud case at Jagalur PS",
+    "narrative": "On 2025-03-28, a case of fraud was reported at Jagalur PS, Davangere district. Ponzi scheme — suspect collected ₹4,41,000 from 42 investors promising 30% monthly returns. The investigating team identified 2 suspect(s): Prakash Hegde, Manoj Rao. The modus operandi observed was: Impersonation of government officials to extract bribes. The case was registered under the relevant sections of the IPC and BNS. Investigation revealed connections to 1 prior cases in the Davangere area. Investigation is ongoing with active surveillance on the suspects.",
+    "modus_operandi": "Impersonation of government officials to extract bribes",
+    "evidence_summary": "1. FIR registered at Jagalur PS. 2. 2 witness statements collected. 3. Forensic evidence collected. 4. Scene of crime inspected",
+    "investigating_officer": "PSI Naveen Joshi, Jagalur PS",
+    "suspects_linked": [
+      "S017",
+      "S036"
+    ],
     "status": "Under Investigation",
-    "created_at": "2025-02-17T05:00:00.000Z",
-    "updated_at": "2025-02-22T00:00:00.000Z"
+    "created_at": "2025-03-28T05:00:00.000Z",
+    "updated_at": "2025-04-10T00:00:00.000Z"
   },
   {
-    "fir_id": "FIR-2025-HUB-0068",
-    "title": "Robbery case at Hubli Vidyanagar PS",
-    "narrative": "On 2025-10-27, a case of robbery was reported at Hubli Vidyanagar PS, Hubli-Dharwad district. Daylight robbery near Marathahalli Bridge. Victim was robbed of ₹3,02,000 at knifepoint while walking. The investigating team identified 2 suspect(s): Anil Madiwalar, Chandrashekar Kulkarni. The modus operandi observed was: Highway ambush — vehicles forced to stop using road obstacles. The case was registered under the relevant sections of the IPC and BNS. Investigation revealed connections to 2 prior cases in the Hubli-Dharwad area. The case has been resolved and chargesheeted.",
+    "fir_id": "FIR-2025-MAN-0020",
+    "title": "Robbery case at Surathkal PS",
+    "narrative": "On 2025-07-03, a case of robbery was reported at Surathkal PS, Mangaluru district. Armed robbery at Malleshwaram Circle jewelry store. Three masked men threatened staff with knives and escaped with gold ornaments worth ₹3,91,000. The investigating team identified 3 suspect(s): Basavaraj Kulkarni, Anil Kumar, Shivaraj Rao. The modus operandi observed was: Highway ambush — vehicles forced to stop using road obstacles. The case was registered under the relevant sections of the IPC and BNS. Investigation revealed connections to 1 prior cases in the Mangaluru area. Investigation is ongoing with active surveillance on the suspects.",
     "modus_operandi": "Highway ambush — vehicles forced to stop using road obstacles",
-    "evidence_summary": "1. FIR registered at Hubli Vidyanagar PS. 2. 2 witness statements collected. 3. Digital evidence recovered. 4. Scene of crime inspected",
-    "investigating_officer": "SI Mahesh Murthy, Hubli Vidyanagar PS",
+    "evidence_summary": "1. FIR registered at Surathkal PS. 2. 2 witness statements collected. 3. CCTV footage analyzed. 4. Vehicle tracking in progress",
+    "investigating_officer": "PSI Venkatesh Kulkarni, Surathkal PS",
     "suspects_linked": [
-      "S024",
-      "S022"
+      "S013",
+      "S014",
+      "S016"
     ],
-    "status": "Chargesheeted",
-    "created_at": "2025-10-27T05:00:00.000Z",
-    "updated_at": "2025-11-17T00:00:00.000Z"
+    "status": "Under Investigation",
+    "created_at": "2025-07-03T05:00:00.000Z",
+    "updated_at": "2025-07-08T00:00:00.000Z"
   },
   {
-    "fir_id": "FIR-2024-DAV-0031",
-    "title": "Cybercrime case at Davangere Town PS",
-    "narrative": "On 2024-11-13, a case of cybercrime was reported at Davangere Town PS, Davangere district. Ransomware attack on Hosur Road business. Systems encrypted, attackers demanded ₹12,000 in cryptocurrency. The investigating team identified 1 suspect(s): Anil Madiwalar. The modus operandi observed was: Phishing websites replicating popular e-commerce platforms. The case was registered under the relevant sections of the IPC and BNS. Investigation revealed connections to 4 prior cases in the Davangere area. The case has been resolved and chargesheeted.",
-    "modus_operandi": "Phishing websites replicating popular e-commerce platforms",
-    "evidence_summary": "1. FIR registered at Davangere Town PS. 2. 5 witness statements collected. 3. Forensic evidence collected. 4. Scene of crime inspected",
-    "investigating_officer": "Inspector Basavaraj Kumar, Davangere Town PS",
+    "fir_id": "FIR-2025-BEN-0014",
+    "title": "Cybercrime case at Indiranagar PS",
+    "narrative": "On 2025-12-14, a case of cybercrime was reported at Indiranagar PS, Bengaluru Urban district. Ransomware attack on Majestic business. Systems encrypted, attackers demanded ₹1,76,000 in cryptocurrency. The investigating team identified 3 suspect(s): Harish Hiremath, Prakash Nayak, Kiran Swamy. The modus operandi observed was: Social engineering via phone calls impersonating bank officials. The case was registered under the relevant sections of the IPC and BNS. Investigation revealed connections to 2 prior cases in the Bengaluru Urban area. The case has been resolved and chargesheeted.",
+    "modus_operandi": "Social engineering via phone calls impersonating bank officials",
+    "evidence_summary": "1. FIR registered at Indiranagar PS. 2. 4 witness statements collected. 3. Forensic evidence collected. 4. Scene of crime inspected",
+    "investigating_officer": "PSI Anil Swamy, Indiranagar PS",
     "suspects_linked": [
-      "S022"
+      "S010",
+      "S011",
+      "S012"
     ],
     "status": "Chargesheeted",
-    "created_at": "2024-11-13T05:00:00.000Z",
-    "updated_at": "2024-11-15T00:00:00.000Z"
+    "created_at": "2025-12-14T05:00:00.000Z",
+    "updated_at": "2025-12-29T00:00:00.000Z"
+  },
+  {
+    "fir_id": "FIR-2025-TUM-0018",
+    "title": "Robbery case at Madhugiri PS",
+    "narrative": "On 2025-05-24, a case of robbery was reported at Madhugiri PS, Tumakuru district. Daylight robbery near Jayanagar 4th Block. Victim was robbed of ₹4,11,000 at knifepoint while walking. The investigating team identified 3 suspect(s): Anil Kumar, Ravi Rao, Shivaraj Rao. The modus operandi observed was: Highway ambush — vehicles forced to stop using road obstacles. The case was registered under the relevant sections of the IPC and BNS. Investigation revealed connections to 4 prior cases in the Tumakuru area. Investigation is ongoing with active surveillance on the suspects.",
+    "modus_operandi": "Highway ambush — vehicles forced to stop using road obstacles",
+    "evidence_summary": "1. FIR registered at Madhugiri PS. 2. 4 witness statements collected. 3. CCTV footage analyzed. 4. Suspect identification parade conducted",
+    "investigating_officer": "Inspector Manoj Bhat, Madhugiri PS",
+    "suspects_linked": [
+      "S016",
+      "S015",
+      "S014"
+    ],
+    "status": "Under Investigation",
+    "created_at": "2025-05-24T05:00:00.000Z",
+    "updated_at": "2025-06-01T00:00:00.000Z"
+  },
+  {
+    "fir_id": "FIR-2024-BEL-0029",
+    "title": "Missing case at Khanapur PS",
+    "narrative": "On 2024-08-21, a case of missing was reported at Khanapur PS, Belagavi district. Missing person — Ravi Sharma (49, female) not seen since leaving home at Mysuru Road toll plaza on 2024-04-30. The investigating team identified 2 suspect(s): Prakash Hegde, Kavya Gowda. The modus operandi observed was: Voluntary departure — person left due to family disputes. The case was registered under the relevant sections of the IPC and BNS. Investigation revealed connections to 4 prior cases in the Belagavi area. The case has been resolved and chargesheeted.",
+    "modus_operandi": "Voluntary departure — person left due to family disputes",
+    "evidence_summary": "1. FIR registered at Khanapur PS. 2. 3 witness statements collected. 3. Mobile CDR obtained. 4. Suspect identification parade conducted",
+    "investigating_officer": "PSI Harish Kulkarni, Khanapur PS",
+    "suspects_linked": [
+      "S032",
+      "S017"
+    ],
+    "status": "Chargesheeted",
+    "created_at": "2024-08-21T05:00:00.000Z",
+    "updated_at": "2024-09-13T00:00:00.000Z"
+  },
+  {
+    "fir_id": "FIR-2024-BEN-0008",
+    "title": "Drug case at Yeshwanthpur PS",
+    "narrative": "On 2024-07-02, a case of drug was reported at Yeshwanthpur PS, Bengaluru Urban district. Interstate drug trafficking — courier intercepted at Jayanagar 4th Block checkpoint with 40kg of narcotics concealed in vehicle panels. The investigating team identified 3 suspect(s): Priya Gowda, Ganesh Patil, Prakash Hosamani. The modus operandi observed was: Drug concealment in modified vehicle compartments for interstate transport. The case was registered under the relevant sections of the IPC and BNS. Investigation revealed connections to 4 prior cases in the Bengaluru Urban area. Investigation is ongoing with active surveillance on the suspects.",
+    "modus_operandi": "Drug concealment in modified vehicle compartments for interstate transport",
+    "evidence_summary": "1. FIR registered at Yeshwanthpur PS. 2. 2 witness statements collected. 3. Forensic evidence collected. 4. Scene of crime inspected",
+    "investigating_officer": "SI Naveen Hegde, Yeshwanthpur PS",
+    "suspects_linked": [
+      "S009",
+      "S008",
+      "S007"
+    ],
+    "status": "Under Investigation",
+    "created_at": "2024-07-02T05:00:00.000Z",
+    "updated_at": "2024-07-28T00:00:00.000Z"
+  },
+  {
+    "fir_id": "FIR-2025-KAL-0024",
+    "title": "Missing case at Sedam PS",
+    "narrative": "On 2025-06-17, a case of missing was reported at Sedam PS, Kalaburagi district. Missing person — Anil Gowda (62, male) not seen since leaving home at Hebbal Flyover on 2024-11-22. The investigating team identified 1 suspect(s): Manoj Gowda. The modus operandi observed was: Voluntary departure — person left due to family disputes. The case was registered under the relevant sections of the IPC and BNS. Investigation revealed connections to 3 prior cases in the Kalaburagi area. The case has been resolved and chargesheeted.",
+    "modus_operandi": "Voluntary departure — person left due to family disputes",
+    "evidence_summary": "1. FIR registered at Sedam PS. 2. 5 witness statements collected. 3. Mobile CDR obtained. 4. Vehicle tracking in progress",
+    "investigating_officer": "PSI Harish Joshi, Sedam PS",
+    "suspects_linked": [
+      "S026"
+    ],
+    "status": "Chargesheeted",
+    "created_at": "2025-06-17T05:00:00.000Z",
+    "updated_at": "2025-07-10T00:00:00.000Z"
+  },
+  {
+    "fir_id": "FIR-2025-BEL-0039",
+    "title": "Assault case at Khanapur PS",
+    "narrative": "On 2025-05-16, a case of assault was reported at Khanapur PS, Belagavi district. Road rage incident near Malleshwaram Circle. Two-wheeler rider assaulted after a minor traffic collision. The investigating team identified 2 suspect(s): Anil Desai, Naveen Reddy. The modus operandi observed was: Gang violence using blunt weapons, targeting rival group members. The case was registered under the relevant sections of the IPC and BNS. Investigation revealed connections to 2 prior cases in the Belagavi area. The case has been resolved and chargesheeted.",
+    "modus_operandi": "Gang violence using blunt weapons, targeting rival group members",
+    "evidence_summary": "1. FIR registered at Khanapur PS. 2. 2 witness statements collected. 3. Mobile CDR obtained. 4. Scene of crime inspected",
+    "investigating_officer": "Inspector Manoj Naik, Khanapur PS",
+    "suspects_linked": [
+      "S031",
+      "S021"
+    ],
+    "status": "Chargesheeted",
+    "created_at": "2025-05-16T05:00:00.000Z",
+    "updated_at": "2025-06-07T00:00:00.000Z"
+  },
+  {
+    "fir_id": "FIR-2024-KAL-0044",
+    "title": "Drug case at Aland PS",
+    "narrative": "On 2024-05-19, a case of drug was reported at Aland PS, Kalaburagi district. Interstate drug trafficking — courier intercepted at Peenya Industrial Area checkpoint with 24kg of narcotics concealed in vehicle panels. The investigating team identified 2 suspect(s): Prakash Hegde, Anand Kulkarni. The modus operandi observed was: Dark web procurement with cryptocurrency payments. The case was registered under the relevant sections of the IPC and BNS. Investigation revealed connections to 1 prior cases in the Kalaburagi area. Investigation is ongoing with active surveillance on the suspects.",
+    "modus_operandi": "Dark web procurement with cryptocurrency payments",
+    "evidence_summary": "1. FIR registered at Aland PS. 2. 4 witness statements collected. 3. Digital evidence recovered. 4. Vehicle tracking in progress",
+    "investigating_officer": "PSI Anand Madiwalar, Aland PS",
+    "suspects_linked": [
+      "S034",
+      "S017"
+    ],
+    "status": "Under Investigation",
+    "created_at": "2024-05-19T05:00:00.000Z",
+    "updated_at": "2024-05-20T00:00:00.000Z"
+  },
+  {
+    "fir_id": "FIR-2025-BEN-0021",
+    "title": "Missing case at Nelamangala PS",
+    "narrative": "On 2025-06-09, a case of missing was reported at Nelamangala PS, Bengaluru Rural district. Minor girl (21) missing from Kengeri Satellite Town. Last seen near school premises. Parents suspect elopement. The investigating team identified 1 suspect(s): Prakash Hegde. The modus operandi observed was: Suspected abduction — last seen with unknown individual. The case was registered under the relevant sections of the IPC and BNS. Investigation revealed connections to 1 prior cases in the Bengaluru Rural area. Investigation is ongoing with active surveillance on the suspects.",
+    "modus_operandi": "Suspected abduction — last seen with unknown individual",
+    "evidence_summary": "1. FIR registered at Nelamangala PS. 2. 1 witness statements collected. 3. Forensic evidence collected. 4. Vehicle tracking in progress",
+    "investigating_officer": "Inspector Manjunath Bhat, Nelamangala PS",
+    "suspects_linked": [
+      "S017"
+    ],
+    "status": "Under Investigation",
+    "created_at": "2025-06-09T05:00:00.000Z",
+    "updated_at": "2025-07-03T00:00:00.000Z"
+  },
+  {
+    "fir_id": "FIR-2024-MYS-0019",
+    "title": "Robbery case at Devaraja PS",
+    "narrative": "On 2024-03-31, a case of robbery was reported at Devaraja PS, Mysuru district. Armed robbery at Devanahalli Highway jewelry store. Three masked men threatened staff with knives and escaped with gold ornaments worth ₹1,85,000. The investigating team identified 3 suspect(s): Basavaraj Kulkarni, Anil Kumar, Shivaraj Rao. The modus operandi observed was: Knifepoint mugging of pedestrians in secluded lanes during late hours. The case was registered under the relevant sections of the IPC and BNS. Investigation revealed connections to 4 prior cases in the Mysuru area. Investigation is ongoing with active surveillance on the suspects.",
+    "modus_operandi": "Knifepoint mugging of pedestrians in secluded lanes during late hours",
+    "evidence_summary": "1. FIR registered at Devaraja PS. 2. 3 witness statements collected. 3. Mobile CDR obtained. 4. Vehicle tracking in progress",
+    "investigating_officer": "PSI Naveen Naik, Devaraja PS",
+    "suspects_linked": [
+      "S013",
+      "S014",
+      "S016"
+    ],
+    "status": "Under Investigation",
+    "created_at": "2024-03-31T05:00:00.000Z",
+    "updated_at": "2024-04-21T00:00:00.000Z"
+  },
+  {
+    "fir_id": "FIR-2025-HUB-0067",
+    "title": "Drug case at Dharwad PS",
+    "narrative": "On 2025-11-27, a case of drug was reported at Dharwad PS, Hubli-Dharwad district. Drug peddling near Whitefield Main Road college campus. Suspect caught selling cannabis edibles to students. The investigating team identified 1 suspect(s): Kavya Bhat. The modus operandi observed was: Dark web procurement with cryptocurrency payments. The case was registered under the relevant sections of the IPC and BNS. Investigation revealed connections to 1 prior cases in the Hubli-Dharwad area. Investigation is ongoing with active surveillance on the suspects.",
+    "modus_operandi": "Dark web procurement with cryptocurrency payments",
+    "evidence_summary": "1. FIR registered at Dharwad PS. 2. 5 witness statements collected. 3. CCTV footage analyzed. 4. Scene of crime inspected",
+    "investigating_officer": "PSI Suresh Murthy, Dharwad PS",
+    "suspects_linked": [
+      "S024"
+    ],
+    "status": "Under Investigation",
+    "created_at": "2025-11-27T05:00:00.000Z",
+    "updated_at": "2025-12-21T00:00:00.000Z"
+  },
+  {
+    "fir_id": "FIR-2024-BEN-0006",
+    "title": "Theft case at Yeshwanthpur PS",
+    "narrative": "On 2024-04-06, a case of theft was reported at Yeshwanthpur PS, Bengaluru Urban district. Mobile phone theft at Marathahalli Bridge bus stop. Suspect blended into the crowd and escaped. The investigating team identified 2 suspect(s): Asha Madiwalar, Asha Reddy. The modus operandi observed was: Two-wheeler chain snatching — pillion rider executes grab while rider maintains low speed. The case was registered under the relevant sections of the IPC and BNS. Investigation revealed connections to 1 prior cases in the Bengaluru Urban area. Investigation is ongoing with active surveillance on the suspects.",
+    "modus_operandi": "Two-wheeler chain snatching — pillion rider executes grab while rider maintains low speed",
+    "evidence_summary": "1. FIR registered at Yeshwanthpur PS. 2. 2 witness statements collected. 3. CCTV footage analyzed. 4. Scene of crime inspected",
+    "investigating_officer": "PSI Ramesh Hegde, Yeshwanthpur PS",
+    "suspects_linked": [
+      "S002",
+      "S003"
+    ],
+    "status": "Under Investigation",
+    "created_at": "2024-04-06T05:00:00.000Z",
+    "updated_at": "2024-04-10T00:00:00.000Z"
+  },
+  {
+    "fir_id": "FIR-2025-DAV-0065",
+    "title": "Cybercrime case at Davangere Town PS",
+    "narrative": "On 2025-08-21, a case of cybercrime was reported at Davangere Town PS, Davangere district. Phishing attack — complainant's bank credentials compromised via fraudulent SMS. ₹89,000 debited from account. The investigating team identified 1 suspect(s): Ganesh Bhat. The modus operandi observed was: SIM swap fraud to intercept OTPs and drain bank accounts. The case was registered under the relevant sections of the IPC and BNS. Investigation revealed connections to 3 prior cases in the Davangere area. Investigation is ongoing with active surveillance on the suspects.",
+    "modus_operandi": "SIM swap fraud to intercept OTPs and drain bank accounts",
+    "evidence_summary": "1. FIR registered at Davangere Town PS. 2. 5 witness statements collected. 3. Mobile CDR obtained. 4. Suspect identification parade conducted",
+    "investigating_officer": "SI Naveen Nayak, Davangere Town PS",
+    "suspects_linked": [
+      "S038"
+    ],
+    "status": "Under Investigation",
+    "created_at": "2025-08-21T05:00:00.000Z",
+    "updated_at": "2025-08-26T00:00:00.000Z"
+  },
+  {
+    "fir_id": "FIR-2025-MAN-0058",
+    "title": "Robbery case at Mangaluru North PS",
+    "narrative": "On 2025-01-31, a case of robbery was reported at Mangaluru North PS, Mangaluru district. Armed robbery at Kengeri Satellite Town jewelry store. Three masked men threatened staff with knives and escaped with gold ornaments worth ₹1,99,000. The investigating team identified 1 suspect(s): Rajesh Gowda. The modus operandi observed was: Highway ambush — vehicles forced to stop using road obstacles. The case was registered under the relevant sections of the IPC and BNS. Investigation revealed connections to 4 prior cases in the Mangaluru area. The case has been resolved and chargesheeted.",
+    "modus_operandi": "Highway ambush — vehicles forced to stop using road obstacles",
+    "evidence_summary": "1. FIR registered at Mangaluru North PS. 2. 5 witness statements collected. 3. Digital evidence recovered. 4. Vehicle tracking in progress",
+    "investigating_officer": "SI Mahesh Sharma, Mangaluru North PS",
+    "suspects_linked": [
+      "S023"
+    ],
+    "status": "Chargesheeted",
+    "created_at": "2025-01-31T05:00:00.000Z",
+    "updated_at": "2025-02-09T00:00:00.000Z"
+  },
+  {
+    "fir_id": "FIR-2024-TUM-0072",
+    "title": "Theft case at Sira PS",
+    "narrative": "On 2024-02-12, a case of theft was reported at Sira PS, Tumakuru district. House break-in reported at Peenya Industrial Area. Cash and jewelry worth ₹3,83,000 stolen while residents were away. The investigating team identified 2 suspect(s): Kavya Hegde, Kavya Gowda. The modus operandi observed was: Organized shoplifting using concealed bags and coordinated distraction. The case was registered under the relevant sections of the IPC and BNS. Investigation revealed connections to 3 prior cases in the Tumakuru area. The case has been resolved and chargesheeted.",
+    "modus_operandi": "Organized shoplifting using concealed bags and coordinated distraction",
+    "evidence_summary": "1. FIR registered at Sira PS. 2. 3 witness statements collected. 3. Forensic evidence collected. 4. Vehicle tracking in progress",
+    "investigating_officer": "PSI Siddharth Naik, Sira PS",
+    "suspects_linked": [
+      "S022",
+      "S032"
+    ],
+    "status": "Chargesheeted",
+    "created_at": "2024-02-12T05:00:00.000Z",
+    "updated_at": "2024-03-03T00:00:00.000Z"
+  },
+  {
+    "fir_id": "FIR-2024-MYS-0037",
+    "title": "Theft case at Nazarbad PS",
+    "narrative": "On 2024-09-25, a case of theft was reported at Nazarbad PS, Mysuru district. Vehicle accessory theft — side mirrors and wiper blades stolen from multiple parked cars at Mysuru Road toll plaza. The investigating team identified 1 suspect(s): Siddharth Madiwalar. The modus operandi observed was: Breaking and entering during festivals/weddings when homes are vacant. The case was registered under the relevant sections of the IPC and BNS. Investigation revealed connections to 2 prior cases in the Mysuru area. The case has been resolved and chargesheeted.",
+    "modus_operandi": "Breaking and entering during festivals/weddings when homes are vacant",
+    "evidence_summary": "1. FIR registered at Nazarbad PS. 2. 5 witness statements collected. 3. Forensic evidence collected. 4. Vehicle tracking in progress",
+    "investigating_officer": "PSI Anil Joshi, Nazarbad PS",
+    "suspects_linked": [
+      "S027"
+    ],
+    "status": "Chargesheeted",
+    "created_at": "2024-09-25T05:00:00.000Z",
+    "updated_at": "2024-10-22T00:00:00.000Z"
+  },
+  {
+    "fir_id": "FIR-2024-DAV-0046",
+    "title": "Robbery case at Harihar PS",
+    "narrative": "On 2024-05-28, a case of robbery was reported at Harihar PS, Davangere district. Highway robbery on Malleshwaram Circle road. Truck driver assaulted and cash of ₹3,08,000 looted. The investigating team identified 1 suspect(s): Ganesh Hegde. The modus operandi observed was: Armed robbery using country-made weapons, targeting isolated shops at closing time. The case was registered under the relevant sections of the IPC and BNS. Investigation revealed connections to 3 prior cases in the Davangere area. The case has been resolved and chargesheeted.",
+    "modus_operandi": "Armed robbery using country-made weapons, targeting isolated shops at closing time",
+    "evidence_summary": "1. FIR registered at Harihar PS. 2. 1 witness statements collected. 3. Mobile CDR obtained. 4. Suspect identification parade conducted",
+    "investigating_officer": "SI Basavaraj Kumar, Harihar PS",
+    "suspects_linked": [
+      "S019"
+    ],
+    "status": "Chargesheeted",
+    "created_at": "2024-05-28T05:00:00.000Z",
+    "updated_at": "2024-06-05T00:00:00.000Z"
+  },
+  {
+    "fir_id": "FIR-2025-TUM-0055",
+    "title": "Theft case at Madhugiri PS",
+    "narrative": "On 2025-02-03, a case of theft was reported at Madhugiri PS, Tumakuru district. Vehicle accessory theft — side mirrors and wiper blades stolen from multiple parked cars at Kengeri Satellite Town. The investigating team identified 2 suspect(s): Kavya Bhat, Manoj Rao. The modus operandi observed was: Breaking and entering during festivals/weddings when homes are vacant. The case was registered under the relevant sections of the IPC and BNS. Investigation revealed connections to 2 prior cases in the Tumakuru area. Investigation is ongoing with active surveillance on the suspects.",
+    "modus_operandi": "Breaking and entering during festivals/weddings when homes are vacant",
+    "evidence_summary": "1. FIR registered at Madhugiri PS. 2. 2 witness statements collected. 3. Digital evidence recovered. 4. Vehicle tracking in progress",
+    "investigating_officer": "Inspector Ganesh Sharma, Madhugiri PS",
+    "suspects_linked": [
+      "S036",
+      "S024"
+    ],
+    "status": "Under Investigation",
+    "created_at": "2025-02-03T05:00:00.000Z",
+    "updated_at": "2025-02-25T00:00:00.000Z"
   }
 ]

@@ -8,8 +8,14 @@ import {
   Network,
   Clock,
   TrendingUp,
+  Map,
 } from "lucide-react";
 import { HotspotCard, StatCard } from "@/components/HotspotCard";
+import { TimeHeatmap } from "@/components/TimeHeatmap";
+import { CorrelationChart } from "@/components/CorrelationChart";
+import { ForecastPanel } from "@/components/ForecastPanel";
+import { AnomalyAlerts } from "@/components/AnomalyAlerts";
+import { CrimeMapWrapper } from "@/components/CrimeMapWrapper";
 import { MOCK_HOTSPOTS } from "@/lib/mock-data";
 
 export default function DashboardPage() {
@@ -26,11 +32,12 @@ export default function DashboardPage() {
           Intelligence Dashboard
         </h1>
         <p className="text-sm text-[var(--color-text-tertiary)] mt-1">
-          Karnataka State Police — Crime Analytics Overview
+          Karnataka State Police — Crime Analytics & Predictive Intelligence
         </p>
         <p className="text-[10px] font-mono text-[var(--color-text-tertiary)] mt-2 flex items-center gap-1.5">
           <Clock className="w-3 h-3" />
-          Last updated: {new Date().toLocaleString("en-IN")} | Data period: 2024-2025
+          Last updated: {new Date().toLocaleString("en-IN")} | Data period: 2024-2025 |
+          Powered by Zoho Catalyst
         </p>
       </div>
 
@@ -63,24 +70,45 @@ export default function DashboardPage() {
         />
       </div>
 
-      {/* Hotspot Grid */}
-      <div className="mb-6">
+      {/* ═══════════ SECTION 1: Geospatial Map ═══════════ */}
+      <div className="mb-8">
+        <h2 className="text-lg font-semibold text-[var(--color-text-primary)] mb-4 flex items-center gap-2">
+          <Map className="w-5 h-5 text-[var(--color-accent-cyan)]" />
+          Geospatial Crime Hotspot Map
+        </h2>
+        <CrimeMapWrapper />
+      </div>
+
+      {/* ═══════════ SECTION 2: Spatiotemporal + Forecasts (side by side) ═══════════ */}
+      <div className="grid grid-cols-2 gap-6 mb-8">
+        <TimeHeatmap />
+        <ForecastPanel />
+      </div>
+
+      {/* ═══════════ SECTION 3: Correlation + Anomalies (side by side) ═══════════ */}
+      <div className="grid grid-cols-2 gap-6 mb-8">
+        <CorrelationChart />
+        <AnomalyAlerts />
+      </div>
+
+      {/* ═══════════ SECTION 4: Hotspot Grid ═══════════ */}
+      <div className="mb-8">
         <h2 className="text-lg font-semibold text-[var(--color-text-primary)] mb-4 flex items-center gap-2">
           <AlertTriangle className="w-5 h-5 text-[var(--color-accent-amber)]" />
-          Crime Hotspots
+          Crime Hotspots by District & Category
         </h2>
         <div className="grid grid-cols-3 gap-4">
-          {sortedHotspots.map((entry, idx) => (
+          {sortedHotspots.slice(0, 9).map((entry, idx) => (
             <HotspotCard key={`${entry.district}-${entry.crime_category}`} entry={entry} rank={idx + 1} />
           ))}
         </div>
       </div>
 
-      {/* District Comparison */}
-      <div className="glass-card rounded-xl p-6">
+      {/* ═══════════ SECTION 5: District Comparison Bar Chart ═══════════ */}
+      <div className="glass-card rounded-xl p-6 mb-8">
         <h2 className="text-lg font-semibold text-[var(--color-text-primary)] mb-4 flex items-center gap-2">
           <Users className="w-5 h-5 text-[var(--color-accent-cyan)]" />
-          District Comparison
+          District Crime Comparison
         </h2>
         <div className="space-y-3">
           {(() => {
@@ -113,6 +141,11 @@ export default function DashboardPage() {
             ));
           })()}
         </div>
+      </div>
+
+      {/* Footer */}
+      <div className="text-center py-4 text-[10px] text-[var(--color-text-tertiary)]">
+        SAHAYA AI • Karnataka State Police × Zoho Datathon • Powered by Catalyst (Functions, Data Store, QuickML, Zia, AppSail, Circuits)
       </div>
     </div>
   );

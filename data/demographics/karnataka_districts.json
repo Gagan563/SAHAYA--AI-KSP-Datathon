@@ -1,0 +1,12 @@
+[
+  { "district": "Bengaluru Urban", "population": 9621551, "literacy_rate": 87.67, "urbanization_pct": 90.94, "unemployment_rate": 3.2, "density_per_sq_km": 4381, "lat": 12.9716, "lon": 77.5946 },
+  { "district": "Bengaluru Rural", "population": 990923, "literacy_rate": 77.93, "urbanization_pct": 24.53, "unemployment_rate": 4.1, "density_per_sq_km": 422, "lat": 13.1986, "lon": 77.7066 },
+  { "district": "Mysuru", "population": 3001127, "literacy_rate": 72.79, "urbanization_pct": 41.18, "unemployment_rate": 4.8, "density_per_sq_km": 476, "lat": 12.2958, "lon": 76.6394 },
+  { "district": "Mangaluru", "population": 1736742, "literacy_rate": 88.62, "urbanization_pct": 37.37, "unemployment_rate": 3.9, "density_per_sq_km": 357, "lat": 12.8745, "lon": 74.8423 },
+  { "district": "Hubli-Dharwad", "population": 943857, "literacy_rate": 81.35, "urbanization_pct": 52.26, "unemployment_rate": 5.2, "density_per_sq_km": 1120, "lat": 15.3647, "lon": 75.124 },
+  { "district": "Belagavi", "population": 4779661, "literacy_rate": 73.48, "urbanization_pct": 23.57, "unemployment_rate": 5.8, "density_per_sq_km": 363, "lat": 15.8497, "lon": 74.4977 },
+  { "district": "Kalaburagi", "population": 2564892, "literacy_rate": 64.85, "urbanization_pct": 22.44, "unemployment_rate": 7.3, "density_per_sq_km": 244, "lat": 17.329, "lon": 76.8343 },
+  { "district": "Shivamogga", "population": 1756513, "literacy_rate": 80.45, "urbanization_pct": 26.21, "unemployment_rate": 4.6, "density_per_sq_km": 209, "lat": 13.9299, "lon": 75.5681 },
+  { "district": "Tumakuru", "population": 2681449, "literacy_rate": 75.14, "urbanization_pct": 22.96, "unemployment_rate": 5.1, "density_per_sq_km": 257, "lat": 13.3379, "lon": 77.117 },
+  { "district": "Davangere", "population": 1946905, "literacy_rate": 75.74, "urbanization_pct": 30.25, "unemployment_rate": 5.5, "density_per_sq_km": 321, "lat": 14.4644, "lon": 75.9218 }
+]

@@ -85,13 +85,17 @@ Every handler emits a `reasoning[]` array explaining **why** this answer was pro
 - **Structured Data (Catalyst Data Store):**
   - `FIR_Records` — 80 FIRs with `investigation_status` and `modus_operandi`
   - `Suspects` — 40 profiles with risk scores
-  - `Victims` — 98 victim records (NEW)
-  - `FIR_Suspect_Mapping` — 146 co-accused links
-  - `FIR_Victim_Mapping` — 98 victim links (NEW)
+  - `Victims` — ~98 victim records (NEW)
+  - `FIR_Suspect_Mapping` — ~146 co-accused links
+  - `FIR_Victim_Mapping` — ~98 victim links (NEW)
   - `Hotspot_Answers` — District/category aggregates
   - `Monthly_Hotspots` — Per-month breakdown for trend analysis (NEW)
+  - `Spike_Alerts` — District/category exceeding 1.5× state average (NEW)
   - `Suspect_Clusters` — Precomputed crime ring data
   - `Conversation_Sessions` — Session state for context-aware chat (NEW)
+- **Batch-Generated Artifacts (JSON files):**
+  - `graph_data.json` — Prebuilt force-graph `{ nodes, links }` for frontend visualization
+  - `spike_alerts.json` — Same as `Spike_Alerts` table, for offline access
 - **Unstructured Data (Catalyst NoSQL):** Raw FIR text, modus operandi descriptions.
 - **Knowledge Base:** QuickML KB synced with NoSQL for RAG.
 - **Files:** Catalyst Stratus for PDF exports and images.

@@ -1,7 +1,7 @@
 [
   {
     "fir_id": "FIR-2025-BEN-0001",
-    "suspect_id": "S001",
+    "suspect_id": "S002",
     "role": "Primary"
   },
   {
@@ -16,141 +16,136 @@
   },
   {
     "fir_id": "FIR-2025-BEN-0002",
-    "suspect_id": "S004",
-    "role": "Accomplice"
-  },
-  {
-    "fir_id": "FIR-2025-BEN-0003",
-    "suspect_id": "S004",
-    "role": "Primary"
-  },
-  {
-    "fir_id": "FIR-2025-BEN-0003",
     "suspect_id": "S002",
     "role": "Accomplice"
   },
   {
-    "fir_id": "FIR-2025-BEN-0003",
-    "suspect_id": "S001",
-    "role": "Accomplice"
-  },
-  {
-    "fir_id": "FIR-2024-BEN-0004",
-    "suspect_id": "S001",
+    "fir_id": "FIR-2024-BEN-0003",
+    "suspect_id": "S004",
     "role": "Primary"
   },
   {
-    "fir_id": "FIR-2024-BEN-0004",
-    "suspect_id": "S002",
+    "fir_id": "FIR-2024-BEN-0003",
+    "suspect_id": "S001",
     "role": "Accomplice"
   },
   {
     "fir_id": "FIR-2024-BEN-0004",
     "suspect_id": "S003",
-    "role": "Accomplice"
-  },
-  {
-    "fir_id": "FIR-2024-BEN-0005",
-    "suspect_id": "S001",
     "role": "Primary"
   },
   {
-    "fir_id": "FIR-2024-BEN-0005",
-    "suspect_id": "S004",
-    "role": "Accomplice"
-  },
-  {
-    "fir_id": "FIR-2024-BEN-0006",
-    "suspect_id": "S001",
-    "role": "Primary"
-  },
-  {
-    "fir_id": "FIR-2024-BEN-0006",
+    "fir_id": "FIR-2024-BEN-0004",
     "suspect_id": "S002",
     "role": "Accomplice"
   },
   {
-    "fir_id": "FIR-2025-KAL-0007",
-    "suspect_id": "S009",
+    "fir_id": "FIR-2024-BEN-0004",
+    "suspect_id": "S004",
+    "role": "Accomplice"
+  },
+  {
+    "fir_id": "FIR-2025-BEN-0005",
+    "suspect_id": "S003",
     "role": "Primary"
   },
   {
-    "fir_id": "FIR-2025-KAL-0007",
+    "fir_id": "FIR-2025-BEN-0005",
+    "suspect_id": "S002",
+    "role": "Accomplice"
+  },
+  {
+    "fir_id": "FIR-2024-BEN-0006",
+    "suspect_id": "S002",
+    "role": "Primary"
+  },
+  {
+    "fir_id": "FIR-2024-BEN-0006",
+    "suspect_id": "S003",
+    "role": "Accomplice"
+  },
+  {
+    "fir_id": "FIR-2024-BEL-0007",
+    "suspect_id": "S005",
+    "role": "Primary"
+  },
+  {
+    "fir_id": "FIR-2024-BEL-0007",
     "suspect_id": "S008",
     "role": "Accomplice"
   },
   {
-    "fir_id": "FIR-2025-KAL-0007",
-    "suspect_id": "S007",
-    "role": "Accomplice"
-  },
-  {
     "fir_id": "FIR-2024-BEN-0008",
-    "suspect_id": "S007",
+    "suspect_id": "S009",
     "role": "Primary"
   },
   {
     "fir_id": "FIR-2024-BEN-0008",
-    "suspect_id": "S006",
-    "role": "Accomplice"
-  },
-  {
-    "fir_id": "FIR-2024-BEN-0008",
-    "suspect_id": "S009",
-    "role": "Accomplice"
-  },
-  {
-    "fir_id": "FIR-2024-KAL-0009",
     "suspect_id": "S008",
-    "role": "Primary"
-  },
-  {
-    "fir_id": "FIR-2024-KAL-0009",
-    "suspect_id": "S005",
     "role": "Accomplice"
   },
   {
-    "fir_id": "FIR-2024-MAN-0010",
-    "suspect_id": "S009",
-    "role": "Primary"
-  },
-  {
-    "fir_id": "FIR-2024-MAN-0010",
-    "suspect_id": "S006",
-    "role": "Accomplice"
-  },
-  {
-    "fir_id": "FIR-2024-MAN-0010",
-    "suspect_id": "S005",
-    "role": "Accomplice"
-  },
-  {
-    "fir_id": "FIR-2025-TUM-0011",
-    "suspect_id": "S009",
-    "role": "Primary"
-  },
-  {
-    "fir_id": "FIR-2025-TUM-0011",
+    "fir_id": "FIR-2024-BEN-0008",
     "suspect_id": "S007",
     "role": "Accomplice"
   },
   {
-    "fir_id": "FIR-2024-BEN-0012",
+    "fir_id": "FIR-2025-BEL-0009",
+    "suspect_id": "S006",
+    "role": "Primary"
+  },
+  {
+    "fir_id": "FIR-2025-BEL-0009",
+    "suspect_id": "S007",
+    "role": "Accomplice"
+  },
+  {
+    "fir_id": "FIR-2025-BEL-0009",
+    "suspect_id": "S009",
+    "role": "Accomplice"
+  },
+  {
+    "fir_id": "FIR-2025-DAV-0010",
+    "suspect_id": "S009",
+    "role": "Primary"
+  },
+  {
+    "fir_id": "FIR-2025-DAV-0010",
+    "suspect_id": "S007",
+    "role": "Accomplice"
+  },
+  {
+    "fir_id": "FIR-2024-MAN-0011",
+    "suspect_id": "S007",
+    "role": "Primary"
+  },
+  {
+    "fir_id": "FIR-2024-MAN-0011",
+    "suspect_id": "S006",
+    "role": "Accomplice"
+  },
+  {
+    "fir_id": "FIR-2025-BEN-0012",
     "suspect_id": "S010",
     "role": "Primary"
   },
   {
-    "fir_id": "FIR-2024-BEN-0012",
+    "fir_id": "FIR-2025-BEN-0012",
     "suspect_id": "S011",
     "role": "Accomplice"
   },
   {
-    "fir_id": "FIR-2025-BEN-0013",
+    "fir_id": "FIR-2024-BEN-0013",
     "suspect_id": "S010",
     "role": "Primary"
   },
   {
-    "fir_id": "FIR-2025-BEN-0013",
+    "fir_id": "FIR-2024-BEN-0013",
+    "suspect_id": "S012",
+    "role": "Accomplice"
+  },
+  {
+    "fir_id": "FIR-2024-BEN-0013",
     "suspect_id": "S011",
     "role": "Accomplice"
   },
@@ -170,543 +165,548 @@
     "role": "Accomplice"
   },
   {
-    "fir_id": "FIR-2025-BEN-0015",
-    "suspect_id": "S010",
+    "fir_id": "FIR-2024-BEN-0015",
+    "suspect_id": "S011",
     "role": "Primary"
   },
   {
-    "fir_id": "FIR-2025-BEN-0015",
-    "suspect_id": "S011",
+    "fir_id": "FIR-2024-BEN-0015",
+    "suspect_id": "S010",
     "role": "Accomplice"
   },
   {
-    "fir_id": "FIR-2025-BEN-0015",
+    "fir_id": "FIR-2024-BEN-0015",
     "suspect_id": "S012",
     "role": "Accomplice"
   },
   {
-    "fir_id": "FIR-2025-BEN-0016",
+    "fir_id": "FIR-2024-BEN-0016",
     "suspect_id": "S010",
     "role": "Primary"
   },
   {
-    "fir_id": "FIR-2025-BEN-0016",
-    "suspect_id": "S012",
-    "role": "Accomplice"
-  },
-  {
-    "fir_id": "FIR-2025-BEN-0016",
+    "fir_id": "FIR-2024-BEN-0016",
     "suspect_id": "S011",
     "role": "Accomplice"
   },
   {
-    "fir_id": "FIR-2025-BEN-0017",
+    "fir_id": "FIR-2024-BEN-0016",
+    "suspect_id": "S012",
+    "role": "Accomplice"
+  },
+  {
+    "fir_id": "FIR-2025-HUB-0017",
     "suspect_id": "S013",
     "role": "Primary"
   },
   {
-    "fir_id": "FIR-2025-BEN-0017",
+    "fir_id": "FIR-2025-HUB-0017",
+    "suspect_id": "S014",
+    "role": "Accomplice"
+  },
+  {
+    "fir_id": "FIR-2025-HUB-0017",
+    "suspect_id": "S015",
+    "role": "Accomplice"
+  },
+  {
+    "fir_id": "FIR-2025-TUM-0018",
+    "suspect_id": "S016",
+    "role": "Primary"
+  },
+  {
+    "fir_id": "FIR-2025-TUM-0018",
+    "suspect_id": "S015",
+    "role": "Accomplice"
+  },
+  {
+    "fir_id": "FIR-2025-TUM-0018",
+    "suspect_id": "S014",
+    "role": "Accomplice"
+  },
+  {
+    "fir_id": "FIR-2024-MYS-0019",
+    "suspect_id": "S013",
+    "role": "Primary"
+  },
+  {
+    "fir_id": "FIR-2024-MYS-0019",
+    "suspect_id": "S014",
+    "role": "Accomplice"
+  },
+  {
+    "fir_id": "FIR-2024-MYS-0019",
     "suspect_id": "S016",
     "role": "Accomplice"
   },
   {
-    "fir_id": "FIR-2025-BEN-0017",
-    "suspect_id": "S015",
-    "role": "Accomplice"
-  },
-  {
-    "fir_id": "FIR-2024-DAV-0018",
+    "fir_id": "FIR-2025-MAN-0020",
     "suspect_id": "S013",
     "role": "Primary"
   },
   {
-    "fir_id": "FIR-2024-DAV-0018",
-    "suspect_id": "S015",
-    "role": "Accomplice"
-  },
-  {
-    "fir_id": "FIR-2024-DAV-0018",
+    "fir_id": "FIR-2025-MAN-0020",
     "suspect_id": "S014",
     "role": "Accomplice"
   },
   {
-    "fir_id": "FIR-2025-KAL-0019",
-    "suspect_id": "S015",
-    "role": "Primary"
-  },
-  {
-    "fir_id": "FIR-2025-KAL-0019",
-    "suspect_id": "S014",
-    "role": "Accomplice"
-  },
-  {
-    "fir_id": "FIR-2025-KAL-0019",
+    "fir_id": "FIR-2025-MAN-0020",
     "suspect_id": "S016",
-    "role": "Accomplice"
-  },
-  {
-    "fir_id": "FIR-2025-SHI-0020",
-    "suspect_id": "S013",
-    "role": "Primary"
-  },
-  {
-    "fir_id": "FIR-2025-SHI-0020",
-    "suspect_id": "S014",
-    "role": "Accomplice"
-  },
-  {
-    "fir_id": "FIR-2025-SHI-0020",
-    "suspect_id": "S015",
     "role": "Accomplice"
   },
   {
     "fir_id": "FIR-2025-BEN-0021",
-    "suspect_id": "S021",
-    "role": "Primary"
-  },
-  {
-    "fir_id": "FIR-2025-MAN-0022",
-    "suspect_id": "S032",
-    "role": "Primary"
-  },
-  {
-    "fir_id": "FIR-2025-MAN-0022",
-    "suspect_id": "S040",
-    "role": "Witness"
-  },
-  {
-    "fir_id": "FIR-2025-BEN-0023",
-    "suspect_id": "S028",
-    "role": "Primary"
-  },
-  {
-    "fir_id": "FIR-2025-BEN-0023",
-    "suspect_id": "S040",
-    "role": "Accomplice"
-  },
-  {
-    "fir_id": "FIR-2024-SHI-0024",
-    "suspect_id": "S019",
-    "role": "Primary"
-  },
-  {
-    "fir_id": "FIR-2024-MAN-0025",
-    "suspect_id": "S028",
-    "role": "Primary"
-  },
-  {
-    "fir_id": "FIR-2024-MAN-0025",
-    "suspect_id": "S017",
-    "role": "Witness"
-  },
-  {
-    "fir_id": "FIR-2025-MYS-0026",
-    "suspect_id": "S032",
-    "role": "Primary"
-  },
-  {
-    "fir_id": "FIR-2025-MYS-0026",
-    "suspect_id": "S026",
-    "role": "Accomplice"
-  },
-  {
-    "fir_id": "FIR-2025-MAN-0027",
-    "suspect_id": "S024",
-    "role": "Primary"
-  },
-  {
-    "fir_id": "FIR-2024-BEL-0028",
-    "suspect_id": "S028",
-    "role": "Primary"
-  },
-  {
-    "fir_id": "FIR-2024-MAN-0029",
-    "suspect_id": "S032",
-    "role": "Primary"
-  },
-  {
-    "fir_id": "FIR-2024-MAN-0029",
-    "suspect_id": "S030",
-    "role": "Witness"
-  },
-  {
-    "fir_id": "FIR-2025-MYS-0030",
-    "suspect_id": "S018",
-    "role": "Primary"
-  },
-  {
-    "fir_id": "FIR-2025-MYS-0030",
-    "suspect_id": "S026",
-    "role": "Accomplice"
-  },
-  {
-    "fir_id": "FIR-2024-DAV-0031",
-    "suspect_id": "S022",
-    "role": "Primary"
-  },
-  {
-    "fir_id": "FIR-2024-KAL-0032",
-    "suspect_id": "S040",
-    "role": "Primary"
-  },
-  {
-    "fir_id": "FIR-2024-MYS-0033",
-    "suspect_id": "S034",
-    "role": "Primary"
-  },
-  {
-    "fir_id": "FIR-2024-MYS-0033",
-    "suspect_id": "S017",
-    "role": "Witness"
-  },
-  {
-    "fir_id": "FIR-2024-HUB-0034",
-    "suspect_id": "S024",
-    "role": "Primary"
-  },
-  {
-    "fir_id": "FIR-2024-TUM-0035",
-    "suspect_id": "S032",
-    "role": "Primary"
-  },
-  {
-    "fir_id": "FIR-2024-TUM-0036",
-    "suspect_id": "S031",
-    "role": "Primary"
-  },
-  {
-    "fir_id": "FIR-2024-TUM-0036",
-    "suspect_id": "S023",
-    "role": "Witness"
-  },
-  {
-    "fir_id": "FIR-2025-DAV-0037",
     "suspect_id": "S017",
     "role": "Primary"
   },
   {
-    "fir_id": "FIR-2025-DAV-0037",
-    "suspect_id": "S035",
-    "role": "Accomplice"
+    "fir_id": "FIR-2024-BEN-0022",
+    "suspect_id": "S017",
+    "role": "Primary"
   },
   {
-    "fir_id": "FIR-2024-MAN-0038",
+    "fir_id": "FIR-2025-HUB-0023",
     "suspect_id": "S030",
     "role": "Primary"
   },
   {
-    "fir_id": "FIR-2024-MAN-0039",
-    "suspect_id": "S017",
+    "fir_id": "FIR-2025-KAL-0024",
+    "suspect_id": "S026",
     "role": "Primary"
   },
   {
-    "fir_id": "FIR-2024-MAN-0039",
+    "fir_id": "FIR-2024-BEN-0025",
+    "suspect_id": "S032",
+    "role": "Primary"
+  },
+  {
+    "fir_id": "FIR-2024-BEN-0025",
     "suspect_id": "S033",
     "role": "Accomplice"
   },
   {
-    "fir_id": "FIR-2025-BEL-0040",
-    "suspect_id": "S029",
-    "role": "Primary"
-  },
-  {
-    "fir_id": "FIR-2025-KAL-0041",
-    "suspect_id": "S028",
-    "role": "Primary"
-  },
-  {
-    "fir_id": "FIR-2025-MAN-0042",
-    "suspect_id": "S027",
-    "role": "Primary"
-  },
-  {
-    "fir_id": "FIR-2024-MYS-0043",
-    "suspect_id": "S020",
-    "role": "Primary"
-  },
-  {
-    "fir_id": "FIR-2024-SHI-0044",
-    "suspect_id": "S021",
-    "role": "Primary"
-  },
-  {
-    "fir_id": "FIR-2024-KAL-0045",
-    "suspect_id": "S019",
-    "role": "Primary"
-  },
-  {
-    "fir_id": "FIR-2024-KAL-0045",
-    "suspect_id": "S036",
-    "role": "Witness"
-  },
-  {
-    "fir_id": "FIR-2025-HUB-0046",
-    "suspect_id": "S019",
-    "role": "Primary"
-  },
-  {
-    "fir_id": "FIR-2025-MYS-0047",
-    "suspect_id": "S029",
-    "role": "Primary"
-  },
-  {
-    "fir_id": "FIR-2024-HUB-0048",
-    "suspect_id": "S024",
-    "role": "Primary"
-  },
-  {
-    "fir_id": "FIR-2025-MYS-0049",
-    "suspect_id": "S036",
-    "role": "Primary"
-  },
-  {
-    "fir_id": "FIR-2025-MYS-0049",
-    "suspect_id": "S023",
-    "role": "Accomplice"
-  },
-  {
-    "fir_id": "FIR-2025-DAV-0050",
-    "suspect_id": "S040",
-    "role": "Primary"
-  },
-  {
-    "fir_id": "FIR-2025-TUM-0051",
-    "suspect_id": "S037",
-    "role": "Primary"
-  },
-  {
-    "fir_id": "FIR-2025-TUM-0051",
-    "suspect_id": "S020",
-    "role": "Witness"
-  },
-  {
-    "fir_id": "FIR-2025-MYS-0052",
-    "suspect_id": "S028",
-    "role": "Primary"
-  },
-  {
-    "fir_id": "FIR-2025-MAN-0053",
-    "suspect_id": "S020",
-    "role": "Primary"
-  },
-  {
-    "fir_id": "FIR-2025-MAN-0053",
-    "suspect_id": "S019",
-    "role": "Accomplice"
-  },
-  {
-    "fir_id": "FIR-2024-BEL-0054",
-    "suspect_id": "S030",
-    "role": "Primary"
-  },
-  {
-    "fir_id": "FIR-2024-BEL-0054",
-    "suspect_id": "S017",
-    "role": "Accomplice"
-  },
-  {
-    "fir_id": "FIR-2025-KAL-0055",
-    "suspect_id": "S036",
-    "role": "Primary"
-  },
-  {
-    "fir_id": "FIR-2025-KAL-0055",
-    "suspect_id": "S026",
-    "role": "Accomplice"
-  },
-  {
-    "fir_id": "FIR-2024-BEN-0056",
-    "suspect_id": "S037",
-    "role": "Primary"
-  },
-  {
-    "fir_id": "FIR-2024-DAV-0057",
-    "suspect_id": "S025",
-    "role": "Primary"
-  },
-  {
-    "fir_id": "FIR-2024-DAV-0057",
-    "suspect_id": "S032",
-    "role": "Witness"
-  },
-  {
-    "fir_id": "FIR-2025-DAV-0058",
-    "suspect_id": "S018",
-    "role": "Primary"
-  },
-  {
-    "fir_id": "FIR-2025-DAV-0058",
-    "suspect_id": "S024",
-    "role": "Witness"
-  },
-  {
-    "fir_id": "FIR-2025-KAL-0059",
-    "suspect_id": "S023",
-    "role": "Primary"
-  },
-  {
-    "fir_id": "FIR-2025-MYS-0060",
-    "suspect_id": "S040",
-    "role": "Primary"
-  },
-  {
-    "fir_id": "FIR-2025-MYS-0060",
-    "suspect_id": "S032",
-    "role": "Accomplice"
-  },
-  {
-    "fir_id": "FIR-2024-HUB-0061",
-    "suspect_id": "S023",
-    "role": "Primary"
-  },
-  {
-    "fir_id": "FIR-2024-HUB-0061",
-    "suspect_id": "S031",
-    "role": "Accomplice"
-  },
-  {
-    "fir_id": "FIR-2024-KAL-0062",
-    "suspect_id": "S024",
-    "role": "Primary"
-  },
-  {
-    "fir_id": "FIR-2024-KAL-0062",
-    "suspect_id": "S030",
-    "role": "Accomplice"
-  },
-  {
-    "fir_id": "FIR-2024-MAN-0063",
-    "suspect_id": "S030",
-    "role": "Primary"
-  },
-  {
-    "fir_id": "FIR-2024-MAN-0063",
-    "suspect_id": "S037",
-    "role": "Witness"
-  },
-  {
-    "fir_id": "FIR-2025-TUM-0064",
-    "suspect_id": "S021",
-    "role": "Primary"
-  },
-  {
-    "fir_id": "FIR-2025-TUM-0064",
-    "suspect_id": "S020",
-    "role": "Accomplice"
-  },
-  {
-    "fir_id": "FIR-2024-BEL-0065",
-    "suspect_id": "S018",
-    "role": "Primary"
-  },
-  {
-    "fir_id": "FIR-2024-MYS-0066",
-    "suspect_id": "S027",
-    "role": "Primary"
-  },
-  {
-    "fir_id": "FIR-2024-MYS-0066",
-    "suspect_id": "S020",
-    "role": "Accomplice"
-  },
-  {
-    "fir_id": "FIR-2024-MAN-0067",
+    "fir_id": "FIR-2025-DAV-0026",
     "suspect_id": "S017",
     "role": "Primary"
   },
   {
-    "fir_id": "FIR-2025-HUB-0068",
-    "suspect_id": "S024",
+    "fir_id": "FIR-2025-DAV-0026",
+    "suspect_id": "S036",
+    "role": "Accomplice"
+  },
+  {
+    "fir_id": "FIR-2025-BEN-0027",
+    "suspect_id": "S032",
     "role": "Primary"
   },
   {
-    "fir_id": "FIR-2025-HUB-0068",
+    "fir_id": "FIR-2025-BEN-0028",
+    "suspect_id": "S019",
+    "role": "Primary"
+  },
+  {
+    "fir_id": "FIR-2024-BEL-0029",
+    "suspect_id": "S032",
+    "role": "Primary"
+  },
+  {
+    "fir_id": "FIR-2024-BEL-0029",
+    "suspect_id": "S017",
+    "role": "Accomplice"
+  },
+  {
+    "fir_id": "FIR-2024-MYS-0030",
     "suspect_id": "S022",
-    "role": "Witness"
-  },
-  {
-    "fir_id": "FIR-2024-KAL-0069",
-    "suspect_id": "S017",
     "role": "Primary"
   },
   {
-    "fir_id": "FIR-2024-BEN-0070",
-    "suspect_id": "S032",
-    "role": "Primary"
-  },
-  {
-    "fir_id": "FIR-2024-BEN-0070",
-    "suspect_id": "S021",
-    "role": "Accomplice"
-  },
-  {
-    "fir_id": "FIR-2025-BEL-0071",
-    "suspect_id": "S017",
-    "role": "Primary"
-  },
-  {
-    "fir_id": "FIR-2024-MYS-0072",
+    "fir_id": "FIR-2024-MYS-0030",
     "suspect_id": "S020",
-    "role": "Primary"
-  },
-  {
-    "fir_id": "FIR-2025-BEL-0073",
-    "suspect_id": "S017",
-    "role": "Primary"
-  },
-  {
-    "fir_id": "FIR-2024-BEN-0074",
-    "suspect_id": "S040",
-    "role": "Primary"
-  },
-  {
-    "fir_id": "FIR-2024-BEN-0074",
-    "suspect_id": "S024",
     "role": "Witness"
   },
   {
-    "fir_id": "FIR-2025-BEN-0075",
-    "suspect_id": "S032",
+    "fir_id": "FIR-2024-DAV-0031",
+    "suspect_id": "S029",
     "role": "Primary"
   },
   {
-    "fir_id": "FIR-2025-BEN-0075",
-    "suspect_id": "S030",
-    "role": "Accomplice"
+    "fir_id": "FIR-2024-DAV-0031",
+    "suspect_id": "S031",
+    "role": "Witness"
   },
   {
-    "fir_id": "FIR-2024-HUB-0076",
-    "suspect_id": "S026",
-    "role": "Primary"
-  },
-  {
-    "fir_id": "FIR-2025-TUM-0077",
+    "fir_id": "FIR-2025-KAL-0032",
     "suspect_id": "S017",
     "role": "Primary"
   },
   {
-    "fir_id": "FIR-2025-TUM-0077",
+    "fir_id": "FIR-2025-KAL-0032",
     "suspect_id": "S018",
     "role": "Accomplice"
   },
   {
-    "fir_id": "FIR-2024-MYS-0078",
-    "suspect_id": "S023",
+    "fir_id": "FIR-2025-MAN-0033",
+    "suspect_id": "S020",
     "role": "Primary"
   },
   {
-    "fir_id": "FIR-2024-SHI-0079",
+    "fir_id": "FIR-2025-MAN-0033",
+    "suspect_id": "S017",
+    "role": "Accomplice"
+  },
+  {
+    "fir_id": "FIR-2024-DAV-0034",
+    "suspect_id": "S036",
+    "role": "Primary"
+  },
+  {
+    "fir_id": "FIR-2024-DAV-0034",
+    "suspect_id": "S018",
+    "role": "Accomplice"
+  },
+  {
+    "fir_id": "FIR-2025-SHI-0035",
     "suspect_id": "S028",
     "role": "Primary"
   },
   {
-    "fir_id": "FIR-2024-SHI-0079",
+    "fir_id": "FIR-2025-SHI-0035",
     "suspect_id": "S038",
     "role": "Witness"
   },
   {
-    "fir_id": "FIR-2025-KAL-0080",
+    "fir_id": "FIR-2025-MAN-0036",
+    "suspect_id": "S019",
+    "role": "Primary"
+  },
+  {
+    "fir_id": "FIR-2025-MAN-0036",
+    "suspect_id": "S031",
+    "role": "Accomplice"
+  },
+  {
+    "fir_id": "FIR-2024-MYS-0037",
+    "suspect_id": "S027",
+    "role": "Primary"
+  },
+  {
+    "fir_id": "FIR-2025-SHI-0038",
+    "suspect_id": "S040",
+    "role": "Primary"
+  },
+  {
+    "fir_id": "FIR-2025-SHI-0038",
+    "suspect_id": "S037",
+    "role": "Accomplice"
+  },
+  {
+    "fir_id": "FIR-2025-BEL-0039",
+    "suspect_id": "S031",
+    "role": "Primary"
+  },
+  {
+    "fir_id": "FIR-2025-BEL-0039",
+    "suspect_id": "S021",
+    "role": "Accomplice"
+  },
+  {
+    "fir_id": "FIR-2025-MAN-0040",
+    "suspect_id": "S019",
+    "role": "Primary"
+  },
+  {
+    "fir_id": "FIR-2024-MYS-0041",
+    "suspect_id": "S038",
+    "role": "Primary"
+  },
+  {
+    "fir_id": "FIR-2024-MYS-0041",
+    "suspect_id": "S040",
+    "role": "Accomplice"
+  },
+  {
+    "fir_id": "FIR-2025-TUM-0042",
+    "suspect_id": "S019",
+    "role": "Primary"
+  },
+  {
+    "fir_id": "FIR-2025-MAN-0043",
+    "suspect_id": "S030",
+    "role": "Primary"
+  },
+  {
+    "fir_id": "FIR-2024-KAL-0044",
+    "suspect_id": "S034",
+    "role": "Primary"
+  },
+  {
+    "fir_id": "FIR-2024-KAL-0044",
+    "suspect_id": "S017",
+    "role": "Witness"
+  },
+  {
+    "fir_id": "FIR-2025-MAN-0045",
+    "suspect_id": "S017",
+    "role": "Primary"
+  },
+  {
+    "fir_id": "FIR-2024-DAV-0046",
+    "suspect_id": "S019",
+    "role": "Primary"
+  },
+  {
+    "fir_id": "FIR-2024-BEN-0047",
+    "suspect_id": "S024",
+    "role": "Primary"
+  },
+  {
+    "fir_id": "FIR-2024-SHI-0048",
+    "suspect_id": "S037",
+    "role": "Primary"
+  },
+  {
+    "fir_id": "FIR-2024-SHI-0048",
+    "suspect_id": "S028",
+    "role": "Accomplice"
+  },
+  {
+    "fir_id": "FIR-2025-DAV-0049",
+    "suspect_id": "S024",
+    "role": "Primary"
+  },
+  {
+    "fir_id": "FIR-2025-DAV-0049",
+    "suspect_id": "S019",
+    "role": "Accomplice"
+  },
+  {
+    "fir_id": "FIR-2024-HUB-0050",
     "suspect_id": "S026",
     "role": "Primary"
+  },
+  {
+    "fir_id": "FIR-2025-KAL-0051",
+    "suspect_id": "S030",
+    "role": "Primary"
+  },
+  {
+    "fir_id": "FIR-2025-SHI-0052",
+    "suspect_id": "S021",
+    "role": "Primary"
+  },
+  {
+    "fir_id": "FIR-2025-BEL-0053",
+    "suspect_id": "S036",
+    "role": "Primary"
+  },
+  {
+    "fir_id": "FIR-2025-BEL-0053",
+    "suspect_id": "S035",
+    "role": "Accomplice"
+  },
+  {
+    "fir_id": "FIR-2024-BEL-0054",
+    "suspect_id": "S022",
+    "role": "Primary"
+  },
+  {
+    "fir_id": "FIR-2025-TUM-0055",
+    "suspect_id": "S036",
+    "role": "Primary"
+  },
+  {
+    "fir_id": "FIR-2025-TUM-0055",
+    "suspect_id": "S024",
+    "role": "Accomplice"
+  },
+  {
+    "fir_id": "FIR-2024-SHI-0056",
+    "suspect_id": "S022",
+    "role": "Primary"
+  },
+  {
+    "fir_id": "FIR-2024-SHI-0056",
+    "suspect_id": "S026",
+    "role": "Accomplice"
+  },
+  {
+    "fir_id": "FIR-2025-BEN-0057",
+    "suspect_id": "S040",
+    "role": "Primary"
+  },
+  {
+    "fir_id": "FIR-2025-BEN-0057",
+    "suspect_id": "S033",
+    "role": "Witness"
+  },
+  {
+    "fir_id": "FIR-2025-MAN-0058",
+    "suspect_id": "S023",
+    "role": "Primary"
+  },
+  {
+    "fir_id": "FIR-2025-TUM-0059",
+    "suspect_id": "S039",
+    "role": "Primary"
+  },
+  {
+    "fir_id": "FIR-2024-TUM-0060",
+    "suspect_id": "S021",
+    "role": "Primary"
+  },
+  {
+    "fir_id": "FIR-2025-BEL-0061",
+    "suspect_id": "S032",
+    "role": "Primary"
+  },
+  {
+    "fir_id": "FIR-2025-BEN-0062",
+    "suspect_id": "S040",
+    "role": "Primary"
+  },
+  {
+    "fir_id": "FIR-2025-BEN-0062",
+    "suspect_id": "S036",
+    "role": "Witness"
+  },
+  {
+    "fir_id": "FIR-2025-BEL-0063",
+    "suspect_id": "S027",
+    "role": "Primary"
+  },
+  {
+    "fir_id": "FIR-2024-HUB-0064",
+    "suspect_id": "S037",
+    "role": "Primary"
+  },
+  {
+    "fir_id": "FIR-2024-HUB-0064",
+    "suspect_id": "S018",
+    "role": "Accomplice"
+  },
+  {
+    "fir_id": "FIR-2025-DAV-0065",
+    "suspect_id": "S038",
+    "role": "Primary"
+  },
+  {
+    "fir_id": "FIR-2024-TUM-0066",
+    "suspect_id": "S021",
+    "role": "Primary"
+  },
+  {
+    "fir_id": "FIR-2024-TUM-0066",
+    "suspect_id": "S036",
+    "role": "Accomplice"
+  },
+  {
+    "fir_id": "FIR-2025-HUB-0067",
+    "suspect_id": "S024",
+    "role": "Primary"
+  },
+  {
+    "fir_id": "FIR-2025-BEN-0068",
+    "suspect_id": "S040",
+    "role": "Primary"
+  },
+  {
+    "fir_id": "FIR-2025-BEN-0068",
+    "suspect_id": "S024",
+    "role": "Witness"
+  },
+  {
+    "fir_id": "FIR-2025-TUM-0069",
+    "suspect_id": "S028",
+    "role": "Primary"
+  },
+  {
+    "fir_id": "FIR-2025-BEN-0070",
+    "suspect_id": "S023",
+    "role": "Primary"
+  },
+  {
+    "fir_id": "FIR-2025-KAL-0071",
+    "suspect_id": "S022",
+    "role": "Primary"
+  },
+  {
+    "fir_id": "FIR-2024-TUM-0072",
+    "suspect_id": "S022",
+    "role": "Primary"
+  },
+  {
+    "fir_id": "FIR-2024-TUM-0072",
+    "suspect_id": "S032",
+    "role": "Accomplice"
+  },
+  {
+    "fir_id": "FIR-2025-KAL-0073",
+    "suspect_id": "S022",
+    "role": "Primary"
+  },
+  {
+    "fir_id": "FIR-2025-KAL-0073",
+    "suspect_id": "S020",
+    "role": "Accomplice"
+  },
+  {
+    "fir_id": "FIR-2024-MYS-0074",
+    "suspect_id": "S038",
+    "role": "Primary"
+  },
+  {
+    "fir_id": "FIR-2024-HUB-0075",
+    "suspect_id": "S032",
+    "role": "Primary"
+  },
+  {
+    "fir_id": "FIR-2024-HUB-0075",
+    "suspect_id": "S022",
+    "role": "Witness"
+  },
+  {
+    "fir_id": "FIR-2024-BEN-0076",
+    "suspect_id": "S035",
+    "role": "Primary"
+  },
+  {
+    "fir_id": "FIR-2024-DAV-0077",
+    "suspect_id": "S017",
+    "role": "Primary"
+  },
+  {
+    "fir_id": "FIR-2024-DAV-0077",
+    "suspect_id": "S031",
+    "role": "Witness"
+  },
+  {
+    "fir_id": "FIR-2024-TUM-0078",
+    "suspect_id": "S035",
+    "role": "Primary"
+  },
+  {
+    "fir_id": "FIR-2024-TUM-0078",
+    "suspect_id": "S032",
+    "role": "Witness"
+  },
+  {
+    "fir_id": "FIR-2024-BEL-0079",
+    "suspect_id": "S017",
+    "role": "Primary"
+  },
+  {
+    "fir_id": "FIR-2024-BEL-0079",
+    "suspect_id": "S037",
+    "role": "Accomplice"
+  },
+  {
+    "fir_id": "FIR-2024-KAL-0080",
+    "suspect_id": "S028",
+    "role": "Primary"
+  },
+  {
+    "fir_id": "FIR-2024-KAL-0080",
+    "suspect_id": "S036",
+    "role": "Witness"
   }
 ]

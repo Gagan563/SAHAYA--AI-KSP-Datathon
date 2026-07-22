@@ -57,6 +57,21 @@ const INVESTIGATION_STATUSES = [
   "Closed",
 ];
 
+const DAYS_OF_WEEK = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"];
+
+// Crime-type-specific time distributions (weighted hour ranges for realism)
+// Each entry: [startHour, endHour, weight] — higher weight = more likely
+const TIME_DISTRIBUTIONS = {
+  Theft:      [[6, 10, 2], [10, 14, 3], [14, 18, 4], [18, 22, 5], [22, 6, 1]],
+  Robbery:    [[18, 22, 5], [22, 2, 4], [2, 6, 3], [6, 18, 1]],
+  Assault:    [[18, 23, 4], [23, 4, 3], [10, 18, 2], [4, 10, 1]],
+  Cybercrime: [[9, 17, 5], [17, 23, 3], [0, 9, 1]],
+  Drug:       [[20, 2, 5], [2, 6, 3], [14, 20, 2], [6, 14, 1]],
+  Murder:     [[20, 4, 4], [4, 8, 2], [8, 20, 1]],
+  Fraud:      [[9, 13, 4], [13, 17, 5], [17, 21, 2], [0, 9, 1]],
+  Missing:    [[6, 12, 3], [12, 18, 3], [18, 23, 4], [23, 6, 2]],
+};
+
 const FIRST_NAMES_MALE = [
   "Ravi", "Suresh", "Manoj", "Kiran", "Prakash", "Naveen", "Anil", "Venkatesh",
   "Siddharth", "Ganesh", "Harish", "Deepak", "Ramesh", "Mahesh", "Rajesh",
@@ -220,6 +235,35 @@ function randDate(startYear = 2024, endYear = 2025) {
   const start = new Date(startYear, 0, 1);
   const end = new Date(endYear, 11, 31);
   return new Date(start.getTime() + Math.random() * (end.getTime() - start.getTime()));
+}
+
+/**
+ * Generate a realistic time-of-incident based on crime category.
+ * Uses weighted hour ranges so the time heatmap shows real patterns.
+ */
+function generateTimeOfDay(category) {
+  const dist = TIME_DISTRIBUTIONS[category] || [[0, 24, 1]];
+  // Weighted random selection of hour range
+  const totalWeight = dist.reduce((s, d) => s + d[2], 0);
+  let r = Math.random() * totalWeight;
+  let range = dist[0];
+  for (const d of dist) {
+    r -= d[2];
+    if (r <= 0) { range = d; break; }
+  }
+  const [startH, endH] = range;
+  let hour;
+  if (startH < endH) {
+    hour = randInt(startH, endH - 1);
+  } else {
+    // Wraps around midnight
+    hour = randInt(0, 1) ? randInt(startH, 23) : randInt(0, endH - 1);
+  }
+  const minute = randInt(0, 59);
+  return {
+    time_of_incident: `${String(hour).padStart(2, '0')}:${String(minute).padStart(2, '0')}`,
+    hour_of_day: hour,
+  };
 }
 
 function formatDate(d) {
@@ -387,9 +431,13 @@ function generateFIRs(count, suspects) {
         ? ring.sharedMO
         : pick(MODUS_OPERANDI[ring.category]);
 
+      const timeData = generateTimeOfDay(ring.category);
       firs.push({
         fir_id: firId,
         date_filed: formatDate(date),
+        day_of_week: DAYS_OF_WEEK[date.getDay() === 0 ? 6 : date.getDay() - 1],
+        time_of_incident: timeData.time_of_incident,
+        hour_of_day: timeData.hour_of_day,
         district: district.name,
         station: station,
         description: description,
@@ -428,9 +476,13 @@ function generateFIRs(count, suspects) {
     const description = fillTemplate(pick(descTemplates), district.name);
     const mo = pick(MODUS_OPERANDI[category]);
 
+    const timeData = generateTimeOfDay(category);
     firs.push({
       fir_id: firId,
       date_filed: formatDate(date),
+      day_of_week: DAYS_OF_WEEK[date.getDay() === 0 ? 6 : date.getDay() - 1],
+      time_of_incident: timeData.time_of_incident,
+      hour_of_day: timeData.hour_of_day,
       district: district.name,
       station: station,
       description: description,

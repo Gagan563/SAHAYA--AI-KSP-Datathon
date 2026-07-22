@@ -2,578 +2,578 @@
   "nodes": [
     {
       "id": "S001",
-      "name": "Siddharth Kumar",
+      "name": "Ravi Hegde",
       "risk": "Medium",
-      "district": "Kalaburagi",
+      "district": "Davangere",
       "group": 1
     },
     {
       "id": "S002",
-      "name": "Shivaraj Madiwalar",
+      "name": "Asha Madiwalar",
       "risk": "Medium",
-      "district": "Tumakuru",
+      "district": "Bengaluru Urban",
       "group": 1
     },
     {
       "id": "S003",
-      "name": "Kiran Gowda",
+      "name": "Asha Reddy",
       "risk": "Medium",
-      "district": "Mangaluru",
+      "district": "Belagavi",
       "group": 1
     },
     {
       "id": "S004",
-      "name": "Ganesh Reddy",
+      "name": "Asha Sharma",
       "risk": "Medium",
-      "district": "Mysuru",
+      "district": "Davangere",
       "group": 1
     },
     {
       "id": "S005",
-      "name": "Kiran Patil",
+      "name": "Mahesh Rao",
+      "risk": "High",
+      "district": "Davangere",
+      "group": 2
+    },
+    {
+      "id": "S006",
+      "name": "Venkatesh Patil",
+      "risk": "High",
+      "district": "Mangaluru",
+      "group": 2
+    },
+    {
+      "id": "S007",
+      "name": "Priya Gowda",
+      "risk": "High",
+      "district": "Bengaluru Urban",
+      "group": 2
+    },
+    {
+      "id": "S008",
+      "name": "Ganesh Patil",
+      "risk": "High",
+      "district": "Davangere",
+      "group": 2
+    },
+    {
+      "id": "S009",
+      "name": "Prakash Hosamani",
       "risk": "High",
       "district": "Belagavi",
       "group": 2
     },
     {
-      "id": "S006",
-      "name": "Rajesh Madiwalar",
-      "risk": "High",
-      "district": "Bengaluru Urban",
-      "group": 2
-    },
-    {
-      "id": "S007",
-      "name": "Naveen Gowda",
-      "risk": "High",
-      "district": "Hubli-Dharwad",
-      "group": 2
-    },
-    {
-      "id": "S008",
-      "name": "Naveen Hegde",
+      "id": "S010",
+      "name": "Harish Hiremath",
       "risk": "High",
       "district": "Mysuru",
-      "group": 2
-    },
-    {
-      "id": "S009",
-      "name": "Siddharth Kumar",
-      "risk": "High",
-      "district": "Bengaluru Rural",
-      "group": 2
-    },
-    {
-      "id": "S010",
-      "name": "Kiran Angadi",
-      "risk": "High",
-      "district": "Shivamogga",
       "group": 3
     },
     {
       "id": "S011",
-      "name": "Asha Joshi",
+      "name": "Prakash Nayak",
       "risk": "Medium",
-      "district": "Tumakuru",
+      "district": "Shivamogga",
       "group": 3
     },
     {
       "id": "S012",
-      "name": "Rekha Rao",
+      "name": "Kiran Swamy",
       "risk": "Medium",
-      "district": "Bengaluru Urban",
+      "district": "Hubli-Dharwad",
       "group": 3
     },
     {
       "id": "S013",
-      "name": "Siddharth Kulkarni",
+      "name": "Basavaraj Kulkarni",
       "risk": "Medium",
-      "district": "Kalaburagi",
+      "district": "Bengaluru Urban",
       "group": 4
     },
     {
       "id": "S014",
-      "name": "Rajesh Angadi",
+      "name": "Anil Kumar",
       "risk": "Medium",
-      "district": "Davangere",
+      "district": "Shivamogga",
       "group": 4
     },
     {
       "id": "S015",
-      "name": "Suma Madiwalar",
+      "name": "Ravi Rao",
       "risk": "Medium",
       "district": "Bengaluru Urban",
       "group": 4
     },
     {
       "id": "S016",
-      "name": "Ganesh Madiwalar",
+      "name": "Shivaraj Rao",
       "risk": "Medium",
-      "district": "Hubli-Dharwad",
+      "district": "Shivamogga",
       "group": 4
     },
     {
       "id": "S017",
-      "name": "Meena Hiremath",
-      "risk": "Medium",
-      "district": "Shivamogga",
+      "name": "Prakash Hegde",
+      "risk": "High",
+      "district": "Davangere",
       "group": 5
     },
     {
       "id": "S018",
-      "name": "Asha Kumar",
-      "risk": "Low",
-      "district": "Mysuru",
+      "name": "Ramesh Kumar",
+      "risk": "Medium",
+      "district": "Belagavi",
       "group": 5
     },
     {
       "id": "S019",
-      "name": "Suresh Reddy",
+      "name": "Ganesh Hegde",
       "risk": "Low",
-      "district": "Mangaluru",
+      "district": "Davangere",
       "group": 5
     },
     {
       "id": "S020",
-      "name": "Suresh Shetty",
+      "name": "Siddharth Nayak",
       "risk": "Low",
       "district": "Mysuru",
       "group": 5
     },
     {
       "id": "S021",
-      "name": "Mahesh Madiwalar",
+      "name": "Anil Desai",
       "risk": "Low",
       "district": "Mysuru",
       "group": 5
     },
     {
       "id": "S022",
-      "name": "Anil Madiwalar",
-      "risk": "Medium",
-      "district": "Mysuru",
+      "name": "Kavya Hegde",
+      "risk": "High",
+      "district": "Mangaluru",
       "group": 5
     },
     {
       "id": "S023",
-      "name": "Shivaraj Angadi",
+      "name": "Rajesh Gowda",
       "risk": "Medium",
-      "district": "Mysuru",
-      "group": 5
+      "district": "Kalaburagi",
+      "group": 0
     },
     {
       "id": "S024",
-      "name": "Chandrashekar Kulkarni",
-      "risk": "High",
-      "district": "Mysuru",
+      "name": "Kavya Bhat",
+      "risk": "Medium",
+      "district": "Mangaluru",
       "group": 5
     },
     {
       "id": "S025",
-      "name": "Lakshmi Kulkarni",
-      "risk": "Low",
-      "district": "Davangere",
-      "group": 5
-    },
-    {
-      "id": "S026",
-      "name": "Lakshmi Madiwalar",
-      "risk": "Low",
-      "district": "Davangere",
-      "group": 5
-    },
-    {
-      "id": "S027",
-      "name": "Ramesh Bhat",
-      "risk": "Low",
-      "district": "Bengaluru Urban",
-      "group": 5
-    },
-    {
-      "id": "S028",
-      "name": "Manoj Desai",
-      "risk": "High",
-      "district": "Bengaluru Rural",
-      "group": 5
-    },
-    {
-      "id": "S029",
-      "name": "Ramesh Naik",
+      "name": "Shobha Joshi",
       "risk": "Low",
       "district": "Belagavi",
       "group": 0
     },
     {
-      "id": "S030",
-      "name": "Kiran Reddy",
-      "risk": "Low",
-      "district": "Davangere",
+      "id": "S026",
+      "name": "Manoj Gowda",
+      "risk": "High",
+      "district": "Mysuru",
       "group": 5
     },
     {
-      "id": "S031",
-      "name": "Venkatesh Nayak",
+      "id": "S027",
+      "name": "Siddharth Madiwalar",
+      "risk": "Medium",
+      "district": "Davangere",
+      "group": 0
+    },
+    {
+      "id": "S028",
+      "name": "Suma Murthy",
+      "risk": "Medium",
+      "district": "Belagavi",
+      "group": 5
+    },
+    {
+      "id": "S029",
+      "name": "Suresh Joshi",
       "risk": "Low",
-      "district": "Bengaluru Urban",
+      "district": "Hubli-Dharwad",
+      "group": 5
+    },
+    {
+      "id": "S030",
+      "name": "Shobha Kulkarni",
+      "risk": "Low",
+      "district": "Shivamogga",
+      "group": 0
+    },
+    {
+      "id": "S031",
+      "name": "Naveen Reddy",
+      "risk": "Low",
+      "district": "Davangere",
       "group": 5
     },
     {
       "id": "S032",
-      "name": "Shivaraj Desai",
+      "name": "Kavya Gowda",
       "risk": "Low",
-      "district": "Davangere",
+      "district": "Mysuru",
       "group": 5
     },
     {
       "id": "S033",
-      "name": "Rekha Shetty",
+      "name": "Harish Bhat",
       "risk": "Low",
-      "district": "Tumakuru",
+      "district": "Mangaluru",
       "group": 5
     },
     {
       "id": "S034",
-      "name": "Anil Joshi",
+      "name": "Anand Kulkarni",
       "risk": "Low",
       "district": "Shivamogga",
       "group": 5
     },
     {
       "id": "S035",
-      "name": "Manjunath Sharma",
+      "name": "Naveen Kulkarni",
       "risk": "Low",
-      "district": "Hubli-Dharwad",
-      "group": 5
-    },
-    {
-      "id": "S036",
-      "name": "Prakash Hosamani",
-      "risk": "Medium",
       "district": "Belagavi",
       "group": 5
     },
     {
-      "id": "S037",
-      "name": "Anil Desai",
-      "risk": "Medium",
+      "id": "S036",
+      "name": "Manoj Rao",
+      "risk": "High",
       "district": "Bengaluru Rural",
       "group": 5
     },
     {
-      "id": "S038",
-      "name": "Ganesh Murthy",
+      "id": "S037",
+      "name": "Harish Desai",
       "risk": "Low",
-      "district": "Davangere",
+      "district": "Tumakuru",
+      "group": 5
+    },
+    {
+      "id": "S038",
+      "name": "Ganesh Bhat",
+      "risk": "Low",
+      "district": "Shivamogga",
       "group": 5
     },
     {
       "id": "S039",
-      "name": "Naveen Murthy",
+      "name": "Kiran Naik",
       "risk": "Low",
-      "district": "Mysuru",
+      "district": "Bengaluru Urban",
       "group": 0
     },
     {
       "id": "S040",
-      "name": "Suresh Sharma",
+      "name": "Basavaraj Patil",
       "risk": "Medium",
-      "district": "Mysuru",
+      "district": "Belagavi",
       "group": 5
     }
   ],
   "links": [
     {
-      "source": "S001",
+      "source": "S002",
       "target": "S003",
       "fir_id": "FIR-2025-BEN-0001",
       "label": "Co-accused"
     },
     {
       "source": "S001",
-      "target": "S004",
+      "target": "S002",
       "fir_id": "FIR-2025-BEN-0002",
       "label": "Co-accused"
     },
     {
       "source": "S004",
-      "target": "S002",
-      "fir_id": "FIR-2025-BEN-0003",
-      "label": "Co-accused"
-    },
-    {
-      "source": "S002",
       "target": "S001",
-      "fir_id": "FIR-2025-BEN-0003",
+      "fir_id": "FIR-2024-BEN-0003",
+      "label": "Co-accused"
+    },
+    {
+      "source": "S003",
+      "target": "S004",
+      "fir_id": "FIR-2024-BEN-0004",
       "label": "Co-accused"
     },
     {
       "source": "S002",
-      "target": "S003",
+      "target": "S004",
       "fir_id": "FIR-2024-BEN-0004",
+      "label": "Co-accused"
+    },
+    {
+      "source": "S005",
+      "target": "S008",
+      "fir_id": "FIR-2024-BEL-0007",
       "label": "Co-accused"
     },
     {
       "source": "S009",
       "target": "S008",
-      "fir_id": "FIR-2025-KAL-0007",
+      "fir_id": "FIR-2024-BEN-0008",
       "label": "Co-accused"
     },
     {
       "source": "S009",
       "target": "S007",
-      "fir_id": "FIR-2025-KAL-0007",
+      "fir_id": "FIR-2024-BEN-0008",
       "label": "Co-accused"
     },
     {
       "source": "S008",
       "target": "S007",
-      "fir_id": "FIR-2025-KAL-0007",
+      "fir_id": "FIR-2024-BEN-0008",
       "label": "Co-accused"
     },
     {
-      "source": "S007",
-      "target": "S006",
-      "fir_id": "FIR-2024-BEN-0008",
+      "source": "S006",
+      "target": "S007",
+      "fir_id": "FIR-2025-BEL-0009",
       "label": "Co-accused"
     },
     {
       "source": "S006",
       "target": "S009",
-      "fir_id": "FIR-2024-BEN-0008",
-      "label": "Co-accused"
-    },
-    {
-      "source": "S008",
-      "target": "S005",
-      "fir_id": "FIR-2024-KAL-0009",
-      "label": "Co-accused"
-    },
-    {
-      "source": "S009",
-      "target": "S005",
-      "fir_id": "FIR-2024-MAN-0010",
-      "label": "Co-accused"
-    },
-    {
-      "source": "S006",
-      "target": "S005",
-      "fir_id": "FIR-2024-MAN-0010",
+      "fir_id": "FIR-2025-BEL-0009",
       "label": "Co-accused"
     },
     {
       "source": "S010",
       "target": "S011",
-      "fir_id": "FIR-2024-BEN-0012",
+      "fir_id": "FIR-2025-BEN-0012",
       "label": "Co-accused"
     },
     {
       "source": "S010",
       "target": "S012",
-      "fir_id": "FIR-2025-BEN-0014",
+      "fir_id": "FIR-2024-BEN-0013",
       "label": "Co-accused"
     },
     {
-      "source": "S011",
-      "target": "S012",
-      "fir_id": "FIR-2025-BEN-0014",
+      "source": "S012",
+      "target": "S011",
+      "fir_id": "FIR-2024-BEN-0013",
       "label": "Co-accused"
     },
     {
       "source": "S013",
-      "target": "S016",
-      "fir_id": "FIR-2025-BEN-0017",
+      "target": "S014",
+      "fir_id": "FIR-2025-HUB-0017",
       "label": "Co-accused"
     },
     {
       "source": "S013",
       "target": "S015",
-      "fir_id": "FIR-2025-BEN-0017",
+      "fir_id": "FIR-2025-HUB-0017",
+      "label": "Co-accused"
+    },
+    {
+      "source": "S014",
+      "target": "S015",
+      "fir_id": "FIR-2025-HUB-0017",
       "label": "Co-accused"
     },
     {
       "source": "S016",
       "target": "S015",
-      "fir_id": "FIR-2025-BEN-0017",
+      "fir_id": "FIR-2025-TUM-0018",
+      "label": "Co-accused"
+    },
+    {
+      "source": "S016",
+      "target": "S014",
+      "fir_id": "FIR-2025-TUM-0018",
       "label": "Co-accused"
     },
     {
       "source": "S013",
-      "target": "S014",
-      "fir_id": "FIR-2024-DAV-0018",
-      "label": "Co-accused"
-    },
-    {
-      "source": "S015",
-      "target": "S014",
-      "fir_id": "FIR-2024-DAV-0018",
-      "label": "Co-accused"
-    },
-    {
-      "source": "S014",
       "target": "S016",
-      "fir_id": "FIR-2025-KAL-0019",
+      "fir_id": "FIR-2024-MYS-0019",
       "label": "Co-accused"
     },
     {
       "source": "S032",
-      "target": "S040",
-      "fir_id": "FIR-2025-MAN-0022",
-      "label": "Co-accused"
-    },
-    {
-      "source": "S028",
-      "target": "S040",
-      "fir_id": "FIR-2025-BEN-0023",
-      "label": "Co-accused"
-    },
-    {
-      "source": "S028",
-      "target": "S017",
-      "fir_id": "FIR-2024-MAN-0025",
-      "label": "Co-accused"
-    },
-    {
-      "source": "S032",
-      "target": "S026",
-      "fir_id": "FIR-2025-MYS-0026",
-      "label": "Co-accused"
-    },
-    {
-      "source": "S032",
-      "target": "S030",
-      "fir_id": "FIR-2024-MAN-0029",
-      "label": "Co-accused"
-    },
-    {
-      "source": "S018",
-      "target": "S026",
-      "fir_id": "FIR-2025-MYS-0030",
-      "label": "Co-accused"
-    },
-    {
-      "source": "S034",
-      "target": "S017",
-      "fir_id": "FIR-2024-MYS-0033",
-      "label": "Co-accused"
-    },
-    {
-      "source": "S031",
-      "target": "S023",
-      "fir_id": "FIR-2024-TUM-0036",
-      "label": "Co-accused"
-    },
-    {
-      "source": "S017",
-      "target": "S035",
-      "fir_id": "FIR-2025-DAV-0037",
-      "label": "Co-accused"
-    },
-    {
-      "source": "S017",
       "target": "S033",
-      "fir_id": "FIR-2024-MAN-0039",
+      "fir_id": "FIR-2024-BEN-0025",
       "label": "Co-accused"
     },
     {
-      "source": "S019",
+      "source": "S017",
       "target": "S036",
-      "fir_id": "FIR-2024-KAL-0045",
-      "label": "Co-accused"
-    },
-    {
-      "source": "S036",
-      "target": "S023",
-      "fir_id": "FIR-2025-MYS-0049",
-      "label": "Co-accused"
-    },
-    {
-      "source": "S037",
-      "target": "S020",
-      "fir_id": "FIR-2025-TUM-0051",
-      "label": "Co-accused"
-    },
-    {
-      "source": "S020",
-      "target": "S019",
-      "fir_id": "FIR-2025-MAN-0053",
-      "label": "Co-accused"
-    },
-    {
-      "source": "S030",
-      "target": "S017",
-      "fir_id": "FIR-2024-BEL-0054",
-      "label": "Co-accused"
-    },
-    {
-      "source": "S036",
-      "target": "S026",
-      "fir_id": "FIR-2025-KAL-0055",
-      "label": "Co-accused"
-    },
-    {
-      "source": "S025",
-      "target": "S032",
-      "fir_id": "FIR-2024-DAV-0057",
-      "label": "Co-accused"
-    },
-    {
-      "source": "S018",
-      "target": "S024",
-      "fir_id": "FIR-2025-DAV-0058",
-      "label": "Co-accused"
-    },
-    {
-      "source": "S024",
-      "target": "S030",
-      "fir_id": "FIR-2024-KAL-0062",
-      "label": "Co-accused"
-    },
-    {
-      "source": "S030",
-      "target": "S037",
-      "fir_id": "FIR-2024-MAN-0063",
-      "label": "Co-accused"
-    },
-    {
-      "source": "S021",
-      "target": "S020",
-      "fir_id": "FIR-2025-TUM-0064",
-      "label": "Co-accused"
-    },
-    {
-      "source": "S027",
-      "target": "S020",
-      "fir_id": "FIR-2024-MYS-0066",
-      "label": "Co-accused"
-    },
-    {
-      "source": "S024",
-      "target": "S022",
-      "fir_id": "FIR-2025-HUB-0068",
+      "fir_id": "FIR-2025-DAV-0026",
       "label": "Co-accused"
     },
     {
       "source": "S032",
-      "target": "S021",
-      "fir_id": "FIR-2024-BEN-0070",
+      "target": "S017",
+      "fir_id": "FIR-2024-BEL-0029",
       "label": "Co-accused"
     },
     {
-      "source": "S040",
-      "target": "S024",
-      "fir_id": "FIR-2024-BEN-0074",
+      "source": "S022",
+      "target": "S020",
+      "fir_id": "FIR-2024-MYS-0030",
+      "label": "Co-accused"
+    },
+    {
+      "source": "S029",
+      "target": "S031",
+      "fir_id": "FIR-2024-DAV-0031",
       "label": "Co-accused"
     },
     {
       "source": "S017",
       "target": "S018",
-      "fir_id": "FIR-2025-TUM-0077",
+      "fir_id": "FIR-2025-KAL-0032",
+      "label": "Co-accused"
+    },
+    {
+      "source": "S020",
+      "target": "S017",
+      "fir_id": "FIR-2025-MAN-0033",
+      "label": "Co-accused"
+    },
+    {
+      "source": "S036",
+      "target": "S018",
+      "fir_id": "FIR-2024-DAV-0034",
       "label": "Co-accused"
     },
     {
       "source": "S028",
       "target": "S038",
-      "fir_id": "FIR-2024-SHI-0079",
+      "fir_id": "FIR-2025-SHI-0035",
+      "label": "Co-accused"
+    },
+    {
+      "source": "S019",
+      "target": "S031",
+      "fir_id": "FIR-2025-MAN-0036",
+      "label": "Co-accused"
+    },
+    {
+      "source": "S040",
+      "target": "S037",
+      "fir_id": "FIR-2025-SHI-0038",
+      "label": "Co-accused"
+    },
+    {
+      "source": "S031",
+      "target": "S021",
+      "fir_id": "FIR-2025-BEL-0039",
+      "label": "Co-accused"
+    },
+    {
+      "source": "S038",
+      "target": "S040",
+      "fir_id": "FIR-2024-MYS-0041",
+      "label": "Co-accused"
+    },
+    {
+      "source": "S034",
+      "target": "S017",
+      "fir_id": "FIR-2024-KAL-0044",
+      "label": "Co-accused"
+    },
+    {
+      "source": "S037",
+      "target": "S028",
+      "fir_id": "FIR-2024-SHI-0048",
+      "label": "Co-accused"
+    },
+    {
+      "source": "S024",
+      "target": "S019",
+      "fir_id": "FIR-2025-DAV-0049",
+      "label": "Co-accused"
+    },
+    {
+      "source": "S036",
+      "target": "S035",
+      "fir_id": "FIR-2025-BEL-0053",
+      "label": "Co-accused"
+    },
+    {
+      "source": "S036",
+      "target": "S024",
+      "fir_id": "FIR-2025-TUM-0055",
+      "label": "Co-accused"
+    },
+    {
+      "source": "S022",
+      "target": "S026",
+      "fir_id": "FIR-2024-SHI-0056",
+      "label": "Co-accused"
+    },
+    {
+      "source": "S040",
+      "target": "S033",
+      "fir_id": "FIR-2025-BEN-0057",
+      "label": "Co-accused"
+    },
+    {
+      "source": "S040",
+      "target": "S036",
+      "fir_id": "FIR-2025-BEN-0062",
+      "label": "Co-accused"
+    },
+    {
+      "source": "S037",
+      "target": "S018",
+      "fir_id": "FIR-2024-HUB-0064",
+      "label": "Co-accused"
+    },
+    {
+      "source": "S021",
+      "target": "S036",
+      "fir_id": "FIR-2024-TUM-0066",
+      "label": "Co-accused"
+    },
+    {
+      "source": "S040",
+      "target": "S024",
+      "fir_id": "FIR-2025-BEN-0068",
+      "label": "Co-accused"
+    },
+    {
+      "source": "S022",
+      "target": "S032",
+      "fir_id": "FIR-2024-TUM-0072",
+      "label": "Co-accused"
+    },
+    {
+      "source": "S017",
+      "target": "S031",
+      "fir_id": "FIR-2024-DAV-0077",
+      "label": "Co-accused"
+    },
+    {
+      "source": "S035",
+      "target": "S032",
+      "fir_id": "FIR-2024-TUM-0078",
+      "label": "Co-accused"
+    },
+    {
+      "source": "S017",
+      "target": "S037",
+      "fir_id": "FIR-2024-BEL-0079",
+      "label": "Co-accused"
+    },
+    {
+      "source": "S028",
+      "target": "S036",
+      "fir_id": "FIR-2024-KAL-0080",
       "label": "Co-accused"
     }
   ]
