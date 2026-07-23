@@ -6,30 +6,24 @@
  *   - Reasoning chain explaining WHY this answer was produced
  *   - Spike/trend detection with explanations
  *   - Monthly breakdown support for time-based trend analytics
- * Currently uses mock data. Wire to Catalyst SDK when project is linked.
+ *
+ * Uses unified data-loader: Catalyst SDK when deployed, local JSON in dev.
  */
 
-const fs = require("fs");
-const path = require("path");
+const dataLoader = require("./data-loader");
 
+// These will be populated per-request via loadData()
 let hotspotData = [];
 let suspectData = [];
 let monthlyData = [];
-try {
-  hotspotData = JSON.parse(
-    fs.readFileSync(path.join(__dirname, "../../data/samples/hotspot_answers.json"), "utf-8")
-  );
-  suspectData = JSON.parse(
-    fs.readFileSync(path.join(__dirname, "../../data/samples/suspects.json"), "utf-8")
-  );
-  // Try loading monthly breakdown if it exists
-  try {
-    monthlyData = JSON.parse(
-      fs.readFileSync(path.join(__dirname, "../../data/samples/monthly_hotspots.json"), "utf-8")
-    );
-  } catch (_) { /* monthly data is optional */ }
-} catch (e) {
-  console.warn("[SAHAYA] Mock data not found, using empty arrays");
+
+/**
+ * Load data for this request (Catalyst SDK or local JSON).
+ */
+async function loadData(req) {
+  hotspotData = await dataLoader.getHotspots(req);
+  suspectData = await dataLoader.getSuspects(req);
+  monthlyData = await dataLoader.getMonthlyHotspots(req);
 }
 
 const DISTRICTS = [
@@ -102,7 +96,8 @@ function buildReasoning(action, data, extras = {}) {
 /**
  * Handle factual queries by looking up precomputed data.
  */
-async function handleFactQuery(message, intent) {
+async function handleFactQuery(req, message, intent) {
+  await loadData(req);
   const msgLower = message.toLowerCase();
   const now = new Date().toISOString();
 

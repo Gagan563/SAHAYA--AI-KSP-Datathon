@@ -1,0 +1,7 @@
+{
+  "deployment": {
+    "name": "chat-api",
+    "stack": "node20",
+    "type": "advancedio"
+  }
+}

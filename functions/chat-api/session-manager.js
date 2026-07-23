@@ -5,31 +5,30 @@
  * Stores last N turns with resolved entities (suspect ID, district, FIR ID, category)
  * so follow-up queries like "show me his other cases" work correctly.
  *
- * Uses in-memory store for demo. In production, use Catalyst Cache or a
- * Conversation_Sessions Data Store table.
+ * Uses Catalyst Cache when running in Catalyst, with an in-memory fallback for
+ * local development and offline demos.
  */
 
 const MAX_TURNS = 10;
 const SESSION_TTL_MS = 30 * 60 * 1000; // 30 minutes
+const SESSION_TTL_HOURS = 1;
 
-// In-memory session store (replace with Catalyst Cache in production)
+// In-memory session store for local development and Cache fallback.
 const sessions = new Map();
 
-/**
- * Get or create a session.
- */
-function getSession(sessionId) {
-  if (!sessionId) {
-    sessionId = `sess_${Date.now()}_${Math.random().toString(36).substring(2, 8)}`;
-  }
+function getCatalystCacheSegment(req) {
+  if (!req) return null;
 
-  if (sessions.has(sessionId)) {
-    const session = sessions.get(sessionId);
-    session.lastAccess = Date.now();
-    return session;
+  try {
+    const catalyst = require("zcatalyst-sdk-node");
+    return catalyst.initialize(req).cache().segment();
+  } catch (e) {
+    return null;
   }
+}
 
-  const session = {
+function createSession(sessionId) {
+  return {
     id: sessionId,
     turns: [],
     entities: {
@@ -42,15 +41,74 @@ function getSession(sessionId) {
     },
     lastAccess: Date.now(),
   };
+}
 
+function cacheKey(sessionId) {
+  return `sahaya_session_${sessionId}`;
+}
+
+async function loadSessionFromCache(req, sessionId) {
+  const segment = getCatalystCacheSegment(req);
+  if (!segment || !sessionId) return null;
+
+  try {
+    const raw = await segment.getValue(cacheKey(sessionId));
+    if (!raw) return null;
+
+    const session = JSON.parse(raw);
+    session.lastAccess = Date.now();
+    sessions.set(sessionId, session);
+    return session;
+  } catch (e) {
+    return null;
+  }
+}
+
+async function saveSessionToCache(req, session) {
+  const segment = getCatalystCacheSegment(req);
+  if (!segment) return false;
+
+  const value = JSON.stringify(session);
+  try {
+    await segment.put(cacheKey(session.id), value, SESSION_TTL_HOURS);
+    return true;
+  } catch (putError) {
+    try {
+      await segment.update(cacheKey(session.id), value, SESSION_TTL_HOURS);
+      return true;
+    } catch (updateError) {
+      return false;
+    }
+  }
+}
+
+/**
+ * Get or create a session.
+ */
+async function getSession(req, sessionId) {
+  if (!sessionId) {
+    sessionId = `sess_${Date.now()}_${Math.random().toString(36).substring(2, 8)}`;
+  }
+
+  const cachedSession = await loadSessionFromCache(req, sessionId);
+  if (cachedSession) return cachedSession;
+
+  if (sessions.has(sessionId)) {
+    const session = sessions.get(sessionId);
+    session.lastAccess = Date.now();
+    return session;
+  }
+
+  const session = createSession(sessionId);
   sessions.set(sessionId, session);
+  await saveSessionToCache(req, session);
   return session;
 }
 
 /**
  * Add a turn to the session and extract/update resolved entities.
  */
-function addTurn(session, query, response, extractedEntities = {}) {
+async function addTurn(req, session, query, response, extractedEntities = {}) {
   session.turns.push({
     query,
     responseType: response.type,
@@ -71,6 +129,8 @@ function addTurn(session, query, response, extractedEntities = {}) {
   });
 
   session.lastAccess = Date.now();
+  sessions.set(session.id, session);
+  await saveSessionToCache(req, session);
 }
 
 /**

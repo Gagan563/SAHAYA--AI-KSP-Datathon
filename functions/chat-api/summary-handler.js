@@ -5,22 +5,18 @@
  *   - Given an FIR ID, generates a short case summary from Case_Narratives
  *   - Finds top 3 most similar past cases using text similarity
  *   - Returns FIR IDs, titles, and similarity scores
+ *
+ * Uses unified data-loader: Catalyst SDK when deployed, local JSON in dev.
  */
 
-const fs = require("fs");
-const path = require("path");
+const dataLoader = require("./data-loader");
 
 let narratives = [];
 let firRecords = [];
-try {
-  narratives = JSON.parse(
-    fs.readFileSync(path.join(__dirname, "../../data/samples/case_narratives.json"), "utf-8")
-  );
-  firRecords = JSON.parse(
-    fs.readFileSync(path.join(__dirname, "../../data/samples/fir_records.json"), "utf-8")
-  );
-} catch (e) {
-  console.warn("[SAHAYA] Summary handler: mock data not found");
+
+async function loadData(req) {
+  narratives = await dataLoader.getNarratives(req);
+  firRecords = await dataLoader.getFIRRecords(req);
 }
 
 /**
@@ -109,7 +105,8 @@ function findSimilarCases(targetNarrative, topK = 3) {
 /**
  * Handle summary/similar-case queries.
  */
-async function handleSummaryQuery(message, intent, sessionEntities = {}) {
+async function handleSummaryQuery(req, message, intent, sessionEntities = {}) {
+  await loadData(req);
   const now = new Date().toISOString();
   const msgLower = message.toLowerCase();
 

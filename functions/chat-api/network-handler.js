@@ -5,31 +5,22 @@
  * Now includes:
  *   - Reasoning chain explaining graph connections
  *   - Session entity extraction for context-aware follow-ups
- * Currently uses mock data. Wire to Catalyst SDK when project is linked.
+ *
+ * Uses unified data-loader: Catalyst SDK when deployed, local JSON in dev.
  */
 
-const fs = require("fs");
-const path = require("path");
+const dataLoader = require("./data-loader");
 
 let graphData = { nodes: [], links: [] };
 let suspects = [];
 let mappings = [];
 let firRecords = [];
-try {
-  graphData = JSON.parse(
-    fs.readFileSync(path.join(__dirname, "../../data/samples/graph_data.json"), "utf-8")
-  );
-  suspects = JSON.parse(
-    fs.readFileSync(path.join(__dirname, "../../data/samples/suspects.json"), "utf-8")
-  );
-  mappings = JSON.parse(
-    fs.readFileSync(path.join(__dirname, "../../data/samples/fir_suspect_mapping.json"), "utf-8")
-  );
-  firRecords = JSON.parse(
-    fs.readFileSync(path.join(__dirname, "../../data/samples/fir_records.json"), "utf-8")
-  );
-} catch (e) {
-  console.warn("[SAHAYA] Graph mock data not found");
+
+async function loadData(req) {
+  graphData = dataLoader.getGraphData();
+  suspects = await dataLoader.getSuspects(req);
+  mappings = await dataLoader.getMappings(req);
+  firRecords = await dataLoader.getFIRRecords(req);
 }
 
 /**
@@ -74,7 +65,8 @@ function buildNetworkReasoning(suspectId, suspectLinks, connectedNodes) {
 /**
  * Handle network/graph queries.
  */
-async function handleNetworkQuery(message, intent) {
+async function handleNetworkQuery(req, message, intent) {
+  await loadData(req);
   const msgLower = message.toLowerCase();
   const now = new Date().toISOString();
 

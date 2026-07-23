@@ -7,10 +7,11 @@
  *   - Repeat MO pattern detection
  *   - Network cluster membership
  *   - Case summaries from narratives
+ *
+ * Uses unified data-loader: Catalyst SDK when deployed, local JSON in dev.
  */
 
-const fs = require("fs");
-const path = require("path");
+const dataLoader = require("./data-loader");
 
 let suspects = [];
 let mappings = [];
@@ -18,14 +19,12 @@ let firRecords = [];
 let narratives = [];
 let graphData = { nodes: [], links: [] };
 
-try {
-  suspects = JSON.parse(fs.readFileSync(path.join(__dirname, "../../data/samples/suspects.json"), "utf-8"));
-  mappings = JSON.parse(fs.readFileSync(path.join(__dirname, "../../data/samples/fir_suspect_mapping.json"), "utf-8"));
-  firRecords = JSON.parse(fs.readFileSync(path.join(__dirname, "../../data/samples/fir_records.json"), "utf-8"));
-  narratives = JSON.parse(fs.readFileSync(path.join(__dirname, "../../data/samples/case_narratives.json"), "utf-8"));
-  graphData = JSON.parse(fs.readFileSync(path.join(__dirname, "../../data/samples/graph_data.json"), "utf-8"));
-} catch (e) {
-  console.warn("[SAHAYA] Profile handler: some mock data not found");
+async function loadData(req) {
+  suspects = await dataLoader.getSuspects(req);
+  mappings = await dataLoader.getMappings(req);
+  firRecords = await dataLoader.getFIRRecords(req);
+  narratives = await dataLoader.getNarratives(req);
+  graphData = dataLoader.getGraphData();
 }
 
 /**
@@ -149,7 +148,8 @@ function explainRisk(suspect, firDetails, repeatMOs, clusterInfo) {
 /**
  * Handle suspect profile queries.
  */
-async function handleProfileQuery(message, intent, sessionEntities = {}) {
+async function handleProfileQuery(req, message, intent, sessionEntities = {}) {
+  await loadData(req);
   const now = new Date().toISOString();
 
   // Try to find suspect from message or session context

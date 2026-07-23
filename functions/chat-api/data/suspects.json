@@ -1,0 +1,402 @@
+[
+  {
+    "suspect_id": "S001",
+    "name": "Ramesh Kumar",
+    "aliases": "",
+    "age": 20,
+    "gender": "Male",
+    "district": "Kalaburagi",
+    "known_address": "377, 1st Cross, Malleshwaram Circle, Kalaburagi",
+    "risk_score": "Medium"
+  },
+  {
+    "suspect_id": "S002",
+    "name": "Priya Hiremath",
+    "aliases": "Tiger",
+    "age": 37,
+    "gender": "Female",
+    "district": "Kalaburagi",
+    "known_address": "104, 3rd Stage, Hosur Road, Kalaburagi",
+    "risk_score": "Medium"
+  },
+  {
+    "suspect_id": "S003",
+    "name": "Anand Murthy",
+    "aliases": "Lucky, Raja",
+    "age": 39,
+    "gender": "Male",
+    "district": "Bengaluru Urban",
+    "known_address": "296, 2nd Main, Brigade Road, Bengaluru Urban",
+    "risk_score": "Medium"
+  },
+  {
+    "suspect_id": "S004",
+    "name": "Harish Swamy",
+    "aliases": "",
+    "age": 23,
+    "gender": "Male",
+    "district": "Belagavi",
+    "known_address": "155, 2nd Main, Mysuru Road toll plaza, Belagavi",
+    "risk_score": "Medium"
+  },
+  {
+    "suspect_id": "S005",
+    "name": "Rajesh Patil",
+    "aliases": "Spider",
+    "age": 50,
+    "gender": "Male",
+    "district": "Hubli-Dharwad",
+    "known_address": "236, 4th Phase, Electronic City Phase 1, Hubli-Dharwad",
+    "risk_score": "High"
+  },
+  {
+    "suspect_id": "S006",
+    "name": "Anil Hiremath",
+    "aliases": "Spider, Hawk",
+    "age": 25,
+    "gender": "Male",
+    "district": "Mysuru",
+    "known_address": "36, 1st Cross, Rajajinagar, Mysuru",
+    "risk_score": "High"
+  },
+  {
+    "suspect_id": "S007",
+    "name": "Rajesh Bhat",
+    "aliases": "Panther",
+    "age": 41,
+    "gender": "Male",
+    "district": "Bengaluru Urban",
+    "known_address": "441, 1st Cross, Brigade Road, Bengaluru Urban",
+    "risk_score": "High"
+  },
+  {
+    "suspect_id": "S008",
+    "name": "Kiran Hegde",
+    "aliases": "Munna",
+    "age": 27,
+    "gender": "Male",
+    "district": "Kalaburagi",
+    "known_address": "337, 4th Phase, Silk Board Junction, Kalaburagi",
+    "risk_score": "High"
+  },
+  {
+    "suspect_id": "S009",
+    "name": "Rajesh Nayak",
+    "aliases": "Scorpion, Blade",
+    "age": 28,
+    "gender": "Male",
+    "district": "Tumakuru",
+    "known_address": "2, 2nd Main, Commercial Street, Tumakuru",
+    "risk_score": "High"
+  },
+  {
+    "suspect_id": "S010",
+    "name": "Lakshmi Angadi",
+    "aliases": "Danny, Bullet",
+    "age": 40,
+    "gender": "Female",
+    "district": "Bengaluru Urban",
+    "known_address": "27, 4th Phase, KR Market, Bengaluru Urban",
+    "risk_score": "High"
+  },
+  {
+    "suspect_id": "S011",
+    "name": "Bharathi Patil",
+    "aliases": "",
+    "age": 24,
+    "gender": "Female",
+    "district": "Bengaluru Rural",
+    "known_address": "204, 5th Block, Malleshwaram Circle, Bengaluru Rural",
+    "risk_score": "Medium"
+  },
+  {
+    "suspect_id": "S012",
+    "name": "Suresh Naik",
+    "aliases": "",
+    "age": 30,
+    "gender": "Male",
+    "district": "Hubli-Dharwad",
+    "known_address": "382, 5th Block, Hebbal Flyover, Hubli-Dharwad",
+    "risk_score": "Medium"
+  },
+  {
+    "suspect_id": "S013",
+    "name": "Ravi Naik",
+    "aliases": "",
+    "age": 38,
+    "gender": "Male",
+    "district": "Mysuru",
+    "known_address": "248, 3rd Stage, Jayanagar 4th Block, Mysuru",
+    "risk_score": "Medium"
+  },
+  {
+    "suspect_id": "S014",
+    "name": "Anil Reddy",
+    "aliases": "Don",
+    "age": 25,
+    "gender": "Male",
+    "district": "Davangere",
+    "known_address": "468, 1st Cross, KR Market, Davangere",
+    "risk_score": "Medium"
+  },
+  {
+    "suspect_id": "S015",
+    "name": "Anand Joshi",
+    "aliases": "",
+    "age": 23,
+    "gender": "Male",
+    "district": "Kalaburagi",
+    "known_address": "227, 3rd Stage, Brigade Road, Kalaburagi",
+    "risk_score": "Medium"
+  },
+  {
+    "suspect_id": "S016",
+    "name": "Manoj Desai",
+    "aliases": "",
+    "age": 26,
+    "gender": "Male",
+    "district": "Bengaluru Rural",
+    "known_address": "153, 2nd Main, Peenya Industrial Area, Bengaluru Rural",
+    "risk_score": "Medium"
+  },
+  {
+    "suspect_id": "S017",
+    "name": "Ramesh Hiremath",
+    "aliases": "Panther",
+    "age": 41,
+    "gender": "Male",
+    "district": "Bengaluru Rural",
+    "known_address": "341, 2nd Main, Jayanagar 4th Block, Bengaluru Rural",
+    "risk_score": "Low"
+  },
+  {
+    "suspect_id": "S018",
+    "name": "Ravi Murthy",
+    "aliases": "",
+    "age": 41,
+    "gender": "Male",
+    "district": "Hubli-Dharwad",
+    "known_address": "133, 2nd Main, Malleshwaram Circle, Hubli-Dharwad",
+    "risk_score": "Low"
+  },
+  {
+    "suspect_id": "S019",
+    "name": "Prakash Hosamani",
+    "aliases": "",
+    "age": 21,
+    "gender": "Male",
+    "district": "Shivamogga",
+    "known_address": "41, 5th Block, Peenya Industrial Area, Shivamogga",
+    "risk_score": "Low"
+  },
+  {
+    "suspect_id": "S020",
+    "name": "Manoj Angadi",
+    "aliases": "Panther",
+    "age": 36,
+    "gender": "Male",
+    "district": "Kalaburagi",
+    "known_address": "270, 4th Phase, Banashankari, Kalaburagi",
+    "risk_score": "High"
+  },
+  {
+    "suspect_id": "S021",
+    "name": "Naveen Madiwalar",
+    "aliases": "Bullet, Tiger",
+    "age": 46,
+    "gender": "Male",
+    "district": "Shivamogga",
+    "known_address": "129, 2nd Main, Yeshwanthpur Industrial Area, Shivamogga",
+    "risk_score": "Low"
+  },
+  {
+    "suspect_id": "S022",
+    "name": "Manjunath Swamy",
+    "aliases": "Bullet, Don",
+    "age": 22,
+    "gender": "Male",
+    "district": "Hubli-Dharwad",
+    "known_address": "46, 5th Block, Yeshwanthpur Industrial Area, Hubli-Dharwad",
+    "risk_score": "Low"
+  },
+  {
+    "suspect_id": "S023",
+    "name": "Anand Hosamani",
+    "aliases": "Lucky, Shadow",
+    "age": 49,
+    "gender": "Male",
+    "district": "Hubli-Dharwad",
+    "known_address": "381, 3rd Stage, Whitefield Main Road, Hubli-Dharwad",
+    "risk_score": "Low"
+  },
+  {
+    "suspect_id": "S024",
+    "name": "Ganesh Kumar",
+    "aliases": "Shadow, Scorpion",
+    "age": 31,
+    "gender": "Male",
+    "district": "Belagavi",
+    "known_address": "86, 3rd Stage, Commercial Street, Belagavi",
+    "risk_score": "Low"
+  },
+  {
+    "suspect_id": "S025",
+    "name": "Anand Reddy",
+    "aliases": "Shadow, Bullet",
+    "age": 45,
+    "gender": "Male",
+    "district": "Tumakuru",
+    "known_address": "29, 2nd Main, Electronic City Phase 1, Tumakuru",
+    "risk_score": "Low"
+  },
+  {
+    "suspect_id": "S026",
+    "name": "Shobha Swamy",
+    "aliases": "",
+    "age": 41,
+    "gender": "Female",
+    "district": "Belagavi",
+    "known_address": "404, 1st Cross, Marathahalli Bridge, Belagavi",
+    "risk_score": "Low"
+  },
+  {
+    "suspect_id": "S027",
+    "name": "Mahesh Desai",
+    "aliases": "",
+    "age": 41,
+    "gender": "Male",
+    "district": "Shivamogga",
+    "known_address": "289, 1st Cross, Mysuru Road toll plaza, Shivamogga",
+    "risk_score": "Medium"
+  },
+  {
+    "suspect_id": "S028",
+    "name": "Shobha Reddy",
+    "aliases": "",
+    "age": 31,
+    "gender": "Female",
+    "district": "Kalaburagi",
+    "known_address": "19, 1st Cross, Yeshwanthpur Industrial Area, Kalaburagi",
+    "risk_score": "Medium"
+  },
+  {
+    "suspect_id": "S029",
+    "name": "Siddharth Nayak",
+    "aliases": "",
+    "age": 43,
+    "gender": "Male",
+    "district": "Kalaburagi",
+    "known_address": "394, 5th Block, Devanahalli Highway, Kalaburagi",
+    "risk_score": "High"
+  },
+  {
+    "suspect_id": "S030",
+    "name": "Shivaraj Bhat",
+    "aliases": "",
+    "age": 29,
+    "gender": "Male",
+    "district": "Mangaluru",
+    "known_address": "311, 1st Cross, Mysuru Road toll plaza, Mangaluru",
+    "risk_score": "High"
+  },
+  {
+    "suspect_id": "S031",
+    "name": "Mahesh Murthy",
+    "aliases": "",
+    "age": 48,
+    "gender": "Male",
+    "district": "Tumakuru",
+    "known_address": "278, 4th Phase, Hosur Road, Tumakuru",
+    "risk_score": "Low"
+  },
+  {
+    "suspect_id": "S032",
+    "name": "Chandrashekar Rao",
+    "aliases": "Lucky",
+    "age": 30,
+    "gender": "Male",
+    "district": "Tumakuru",
+    "known_address": "123, 3rd Stage, Silk Board Junction, Tumakuru",
+    "risk_score": "Medium"
+  },
+  {
+    "suspect_id": "S033",
+    "name": "Suresh Sharma",
+    "aliases": "Danny",
+    "age": 53,
+    "gender": "Male",
+    "district": "Bengaluru Rural",
+    "known_address": "42, 2nd Main, Yeshwanthpur Industrial Area, Bengaluru Rural",
+    "risk_score": "Low"
+  },
+  {
+    "suspect_id": "S034",
+    "name": "Anand Sharma",
+    "aliases": "",
+    "age": 24,
+    "gender": "Male",
+    "district": "Bengaluru Urban",
+    "known_address": "100, 4th Phase, Silk Board Junction, Bengaluru Urban",
+    "risk_score": "Low"
+  },
+  {
+    "suspect_id": "S035",
+    "name": "Rekha Shetty",
+    "aliases": "",
+    "age": 26,
+    "gender": "Female",
+    "district": "Bengaluru Urban",
+    "known_address": "277, 2nd Main, Silk Board Junction, Bengaluru Urban",
+    "risk_score": "Low"
+  },
+  {
+    "suspect_id": "S036",
+    "name": "Ganesh Rao",
+    "aliases": "",
+    "age": 43,
+    "gender": "Male",
+    "district": "Mysuru",
+    "known_address": "186, 3rd Stage, Brigade Road, Mysuru",
+    "risk_score": "Low"
+  },
+  {
+    "suspect_id": "S037",
+    "name": "Ramesh Bhat",
+    "aliases": "Wolf, Hawk",
+    "age": 33,
+    "gender": "Male",
+    "district": "Mangaluru",
+    "known_address": "437, 4th Phase, KR Market, Mangaluru",
+    "risk_score": "Medium"
+  },
+  {
+    "suspect_id": "S038",
+    "name": "Kavya Desai",
+    "aliases": "",
+    "age": 39,
+    "gender": "Female",
+    "district": "Mangaluru",
+    "known_address": "114, 4th Phase, Whitefield Main Road, Mangaluru",
+    "risk_score": "Low"
+  },
+  {
+    "suspect_id": "S039",
+    "name": "Naveen Angadi",
+    "aliases": "",
+    "age": 39,
+    "gender": "Male",
+    "district": "Davangere",
+    "known_address": "295, 5th Block, Peenya Industrial Area, Davangere",
+    "risk_score": "Low"
+  },
+  {
+    "suspect_id": "S040",
+    "name": "Harish Gowda",
+    "aliases": "Scorpion",
+    "age": 28,
+    "gender": "Male",
+    "district": "Davangere",
+    "known_address": "290, 4th Phase, Whitefield Main Road, Davangere",
+    "risk_score": "Medium"
+  }
+]

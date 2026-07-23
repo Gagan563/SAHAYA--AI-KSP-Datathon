@@ -6,27 +6,20 @@
  *   - Reasoning chain explaining which passages and connections led to the answer
  *   - MO-based cross-referencing
  *   - Session entity extraction
- * Currently uses mock case narratives. Wire to QuickML RAG endpoint when project is linked.
+ *
+ * Uses unified data-loader: Catalyst SDK when deployed, local JSON in dev.
  */
 
-const fs = require("fs");
-const path = require("path");
+const dataLoader = require("./data-loader");
 
 let narratives = [];
 let firRecords = [];
 let mappings = [];
-try {
-  narratives = JSON.parse(
-    fs.readFileSync(path.join(__dirname, "../../data/samples/case_narratives.json"), "utf-8")
-  );
-  firRecords = JSON.parse(
-    fs.readFileSync(path.join(__dirname, "../../data/samples/fir_records.json"), "utf-8")
-  );
-  mappings = JSON.parse(
-    fs.readFileSync(path.join(__dirname, "../../data/samples/fir_suspect_mapping.json"), "utf-8")
-  );
-} catch (e) {
-  console.warn("[SAHAYA] Narrative mock data not found");
+
+async function loadData(req) {
+  narratives = await dataLoader.getNarratives(req);
+  firRecords = await dataLoader.getFIRRecords(req);
+  mappings = await dataLoader.getMappings(req);
 }
 
 /**
@@ -127,7 +120,8 @@ function buildReasoningChain(query, relevant, topDoc) {
 /**
  * Handle narrative/RAG queries.
  */
-async function handleRAGQuery(message, intent) {
+async function handleRAGQuery(req, message, intent) {
+  await loadData(req);
   const relevant = findRelevantNarratives(message);
 
   if (relevant.length === 0) {

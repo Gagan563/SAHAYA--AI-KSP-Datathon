@@ -10,7 +10,7 @@
  *   - Summary path  → case summary + similar cases for a given FIR
  *
  * Session-aware: maintains conversation context for follow-up queries.
- * Currently runs with mock data. Wire to Catalyst SDK when project is linked.
+ * Uses Catalyst Data Store/Cache when available, with bundled demo data fallback.
  */
 
 const express = require("express");
@@ -61,7 +61,7 @@ app.post("/api/chat", async (req, res) => {
     }
 
     // Step 0: Get or create session
-    const session = getSession(session_id);
+    const session = await getSession(req, session_id);
 
     // Step 1: Resolve pronouns/references using session context
     const { resolvedMessage, resolvedEntities } = resolveReferences(message, session);
@@ -79,20 +79,20 @@ app.post("/api/chat", async (req, res) => {
     let response;
     switch (intent.type) {
       case "fact":
-        response = await handleFactQuery(resolvedMessage, intent);
+        response = await handleFactQuery(req, resolvedMessage, intent);
         break;
       case "network":
-        response = await handleNetworkQuery(resolvedMessage, intent);
+        response = await handleNetworkQuery(req, resolvedMessage, intent);
         break;
       case "profile":
-        response = await handleProfileQuery(resolvedMessage, intent, session.entities);
+        response = await handleProfileQuery(req, resolvedMessage, intent, session.entities);
         break;
       case "summary":
-        response = await handleSummaryQuery(resolvedMessage, intent, session.entities);
+        response = await handleSummaryQuery(req, resolvedMessage, intent, session.entities);
         break;
       case "narrative":
       default:
-        response = await handleRAGQuery(resolvedMessage, intent);
+        response = await handleRAGQuery(req, resolvedMessage, intent);
         break;
     }
 
@@ -102,7 +102,7 @@ app.post("/api/chat", async (req, res) => {
       ...extractEntitiesFromResponse(response, resolvedMessage),
       ...(response.session_entities || {}),
     };
-    addTurn(session, message, response, extracted);
+    await addTurn(req, session, message, response, extracted);
 
     // Step 5: Attach session ID and context resolution note
     response.session_id = session.id;
