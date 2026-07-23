@@ -19,6 +19,21 @@ interface DataPoint {
 
 type MetricKey = "urbanization_pct" | "literacy_rate" | "unemployment_rate" | "density_per_sq_km";
 
+interface DistrictDemographics {
+  district: string;
+  population: number;
+  urbanization_pct: number;
+  literacy_rate: number;
+  unemployment_rate: number;
+  density_per_sq_km: number;
+}
+
+interface HotspotRecord {
+  district: string;
+  count?: number;
+  case_count?: number;
+}
+
 const METRIC_LABELS: Record<MetricKey, string> = {
   urbanization_pct: "Urbanization %",
   literacy_rate: "Literacy Rate %",
@@ -42,8 +57,8 @@ function pearsonCorrelation(data: DataPoint[]): number {
 export function CorrelationChart() {
   const canvasRef = useRef<HTMLCanvasElement>(null);
   const [metric, setMetric] = useState<MetricKey>("urbanization_pct");
-  const { data: demographics, loading: loadingDemo } = usePublicData<any[]>("karnataka_districts.json", []);
-  const { data: hotspotData, loading: loadingHotspot } = usePublicData<any[]>("hotspot_answers.json", []);
+  const { data: demographics, loading: loadingDemo } = usePublicData<DistrictDemographics[]>("karnataka_districts.json", []);
+  const { data: hotspotData, loading: loadingHotspot } = usePublicData<HotspotRecord[]>("hotspot_answers.json", []);
 
   const loading = loadingDemo || loadingHotspot;
 
@@ -52,12 +67,12 @@ export function CorrelationChart() {
 
     const crimeTotals: Record<string, number> = {};
     for (const h of hotspotData) {
-      crimeTotals[h.district] = (crimeTotals[h.district] || 0) + h.count;
+      crimeTotals[h.district] = (crimeTotals[h.district] || 0) + (h.case_count ?? h.count ?? 0);
     }
 
     const points: DataPoint[] = demographics
-      .filter((d: any) => crimeTotals[d.district] !== undefined)
-      .map((d: any) => ({
+      .filter((d) => crimeTotals[d.district] !== undefined)
+      .map((d) => ({
         district: d.district,
         x: d[metric],
         y: (crimeTotals[d.district] / d.population) * 100000,

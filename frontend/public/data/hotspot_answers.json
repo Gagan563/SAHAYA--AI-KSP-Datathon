@@ -2,361 +2,369 @@
   {
     "district": "Bengaluru Urban",
     "crime_category": "Theft",
-    "count": 6,
+    "case_count": 7,
     "period": "2024-2025",
-    "computed_at": "2026-07-21T10:38:45.157Z",
+    "computed_at": "2026-07-23T07:03:48.219Z",
+    "trend": "Stable"
+  },
+  {
+    "district": "Mysuru",
+    "crime_category": "Drug",
+    "case_count": 2,
+    "period": "2024-2025",
+    "computed_at": "2026-07-23T07:03:48.219Z",
+    "trend": "Stable"
+  },
+  {
+    "district": "Kalaburagi",
+    "crime_category": "Drug",
+    "case_count": 3,
+    "period": "2024-2025",
+    "computed_at": "2026-07-23T07:03:48.219Z",
+    "trend": "Stable"
+  },
+  {
+    "district": "Mangaluru",
+    "crime_category": "Drug",
+    "case_count": 1,
+    "period": "2024-2025",
+    "computed_at": "2026-07-23T07:03:48.219Z",
+    "trend": "Stable"
+  },
+  {
+    "district": "Hubli-Dharwad",
+    "crime_category": "Drug",
+    "case_count": 1,
+    "period": "2024-2025",
+    "computed_at": "2026-07-23T07:03:48.219Z",
+    "trend": "Stable"
+  },
+  {
+    "district": "Bengaluru Urban",
+    "crime_category": "Cybercrime",
+    "case_count": 5,
+    "period": "2024-2025",
+    "computed_at": "2026-07-23T07:03:48.219Z",
+    "trend": "Stable"
+  },
+  {
+    "district": "Tumakuru",
+    "crime_category": "Robbery",
+    "case_count": 2,
+    "period": "2024-2025",
+    "computed_at": "2026-07-23T07:03:48.219Z",
+    "trend": "Stable"
+  },
+  {
+    "district": "Bengaluru Rural",
+    "crime_category": "Robbery",
+    "case_count": 2,
+    "period": "2024-2025",
+    "computed_at": "2026-07-23T07:03:48.219Z",
+    "trend": "Stable"
+  },
+  {
+    "district": "Mangaluru",
+    "crime_category": "Robbery",
+    "case_count": 4,
+    "period": "2024-2025",
+    "computed_at": "2026-07-23T07:03:48.219Z",
+    "trend": "Stable"
+  },
+  {
+    "district": "Mysuru",
+    "crime_category": "Missing",
+    "case_count": 1,
+    "period": "2024-2025",
+    "computed_at": "2026-07-23T07:03:48.219Z",
+    "trend": "Stable"
+  },
+  {
+    "district": "Belagavi",
+    "crime_category": "Fraud",
+    "case_count": 3,
+    "period": "2024-2025",
+    "computed_at": "2026-07-23T07:03:48.219Z",
+    "trend": "Stable"
+  },
+  {
+    "district": "Bengaluru Rural",
+    "crime_category": "Drug",
+    "case_count": 1,
+    "period": "2024-2025",
+    "computed_at": "2026-07-23T07:03:48.219Z",
+    "trend": "Stable"
+  },
+  {
+    "district": "Hubli-Dharwad",
+    "crime_category": "Fraud",
+    "case_count": 1,
+    "period": "2024-2025",
+    "computed_at": "2026-07-23T07:03:48.219Z",
+    "trend": "Stable"
+  },
+  {
+    "district": "Hubli-Dharwad",
+    "crime_category": "Assault",
+    "case_count": 1,
+    "period": "2024-2025",
+    "computed_at": "2026-07-23T07:03:48.219Z",
+    "trend": "Stable"
+  },
+  {
+    "district": "Hubli-Dharwad",
+    "crime_category": "Theft",
+    "case_count": 1,
+    "period": "2024-2025",
+    "computed_at": "2026-07-23T07:03:48.219Z",
+    "trend": "Stable"
+  },
+  {
+    "district": "Kalaburagi",
+    "crime_category": "Cybercrime",
+    "case_count": 2,
+    "period": "2024-2025",
+    "computed_at": "2026-07-23T07:03:48.219Z",
+    "trend": "Stable"
+  },
+  {
+    "district": "Mangaluru",
+    "crime_category": "Assault",
+    "case_count": 2,
+    "period": "2024-2025",
+    "computed_at": "2026-07-23T07:03:48.219Z",
+    "trend": "Stable"
+  },
+  {
+    "district": "Belagavi",
+    "crime_category": "Cybercrime",
+    "case_count": 1,
+    "period": "2024-2025",
+    "computed_at": "2026-07-23T07:03:48.219Z",
+    "trend": "Stable"
+  },
+  {
+    "district": "Mysuru",
+    "crime_category": "Theft",
+    "case_count": 1,
+    "period": "2024-2025",
+    "computed_at": "2026-07-23T07:03:48.219Z",
     "trend": "Rising"
   },
   {
-    "district": "Belagavi",
-    "crime_category": "Drug",
-    "count": 3,
-    "period": "2024-2025",
-    "computed_at": "2026-07-21T10:38:45.157Z",
-    "trend": "Stable"
-  },
-  {
-    "district": "Bengaluru Urban",
-    "crime_category": "Drug",
-    "count": 2,
-    "period": "2024-2025",
-    "computed_at": "2026-07-21T10:38:45.157Z",
-    "trend": "Declining"
-  },
-  {
-    "district": "Davangere",
-    "crime_category": "Drug",
-    "count": 2,
-    "period": "2024-2025",
-    "computed_at": "2026-07-21T10:38:45.157Z",
-    "trend": "Declining"
-  },
-  {
-    "district": "Mangaluru",
-    "crime_category": "Drug",
-    "count": 2,
-    "period": "2024-2025",
-    "computed_at": "2026-07-21T10:38:45.157Z",
-    "trend": "Declining"
-  },
-  {
-    "district": "Bengaluru Urban",
-    "crime_category": "Cybercrime",
-    "count": 6,
-    "period": "2024-2025",
-    "computed_at": "2026-07-21T10:38:45.157Z",
-    "trend": "Rising"
-  },
-  {
-    "district": "Hubli-Dharwad",
-    "crime_category": "Robbery",
-    "count": 1,
-    "period": "2024-2025",
-    "computed_at": "2026-07-21T10:38:45.157Z",
-    "trend": "Declining"
-  },
-  {
-    "district": "Tumakuru",
-    "crime_category": "Robbery",
-    "count": 1,
-    "period": "2024-2025",
-    "computed_at": "2026-07-21T10:38:45.157Z",
-    "trend": "Declining"
-  },
-  {
-    "district": "Mysuru",
-    "crime_category": "Robbery",
-    "count": 1,
-    "period": "2024-2025",
-    "computed_at": "2026-07-21T10:38:45.157Z",
-    "trend": "Declining"
-  },
-  {
-    "district": "Mangaluru",
-    "crime_category": "Robbery",
-    "count": 3,
-    "period": "2024-2025",
-    "computed_at": "2026-07-21T10:38:45.157Z",
-    "trend": "Stable"
-  },
-  {
     "district": "Bengaluru Rural",
     "crime_category": "Missing",
-    "count": 1,
+    "case_count": 3,
     "period": "2024-2025",
-    "computed_at": "2026-07-21T10:38:45.157Z",
-    "trend": "Declining"
-  },
-  {
-    "district": "Bengaluru Urban",
-    "crime_category": "Robbery",
-    "count": 1,
-    "period": "2024-2025",
-    "computed_at": "2026-07-21T10:38:45.157Z",
-    "trend": "Declining"
-  },
-  {
-    "district": "Hubli-Dharwad",
-    "crime_category": "Theft",
-    "count": 1,
-    "period": "2024-2025",
-    "computed_at": "2026-07-21T10:38:45.157Z",
-    "trend": "Declining"
-  },
-  {
-    "district": "Kalaburagi",
-    "crime_category": "Missing",
-    "count": 2,
-    "period": "2024-2025",
-    "computed_at": "2026-07-21T10:38:45.157Z",
-    "trend": "Declining"
+    "computed_at": "2026-07-23T07:03:48.219Z",
+    "trend": "Stable"
   },
   {
     "district": "Davangere",
     "crime_category": "Fraud",
-    "count": 2,
+    "case_count": 3,
     "period": "2024-2025",
-    "computed_at": "2026-07-21T10:38:45.157Z",
-    "trend": "Declining"
+    "computed_at": "2026-07-23T07:03:48.219Z",
+    "trend": "Stable"
   },
   {
-    "district": "Bengaluru Urban",
-    "crime_category": "Murder",
-    "count": 3,
+    "district": "Mangaluru",
+    "crime_category": "Fraud",
+    "case_count": 2,
     "period": "2024-2025",
-    "computed_at": "2026-07-21T10:38:45.157Z",
+    "computed_at": "2026-07-23T07:03:48.219Z",
     "trend": "Stable"
   },
   {
     "district": "Bengaluru Urban",
-    "crime_category": "Missing",
-    "count": 2,
+    "crime_category": "Assault",
+    "case_count": 1,
     "period": "2024-2025",
-    "computed_at": "2026-07-21T10:38:45.157Z",
-    "trend": "Declining"
+    "computed_at": "2026-07-23T07:03:48.219Z",
+    "trend": "Stable"
   },
   {
-    "district": "Belagavi",
-    "crime_category": "Missing",
-    "count": 2,
+    "district": "Mangaluru",
+    "crime_category": "Theft",
+    "case_count": 2,
     "period": "2024-2025",
-    "computed_at": "2026-07-21T10:38:45.157Z",
-    "trend": "Declining"
+    "computed_at": "2026-07-23T07:03:48.219Z",
+    "trend": "Stable"
+  },
+  {
+    "district": "Bengaluru Urban",
+    "crime_category": "Fraud",
+    "case_count": 1,
+    "period": "2024-2025",
+    "computed_at": "2026-07-23T07:03:48.219Z",
+    "trend": "Stable"
   },
   {
     "district": "Mysuru",
-    "crime_category": "Theft",
-    "count": 3,
-    "period": "2024-2025",
-    "computed_at": "2026-07-21T10:38:45.157Z",
-    "trend": "Stable"
-  },
-  {
-    "district": "Shivamogga",
-    "crime_category": "Assault",
-    "count": 2,
-    "period": "2024-2025",
-    "computed_at": "2026-07-21T10:38:45.157Z",
-    "trend": "Declining"
-  },
-  {
-    "district": "Mangaluru",
-    "crime_category": "Theft",
-    "count": 1,
-    "period": "2024-2025",
-    "computed_at": "2026-07-21T10:38:45.157Z",
-    "trend": "Declining"
-  },
-  {
-    "district": "Shivamogga",
-    "crime_category": "Theft",
-    "count": 2,
-    "period": "2024-2025",
-    "computed_at": "2026-07-21T10:38:45.157Z",
-    "trend": "Declining"
-  },
-  {
-    "district": "Belagavi",
-    "crime_category": "Assault",
-    "count": 1,
-    "period": "2024-2025",
-    "computed_at": "2026-07-21T10:38:45.157Z",
-    "trend": "Declining"
-  },
-  {
-    "district": "Mysuru",
-    "crime_category": "Assault",
-    "count": 1,
-    "period": "2024-2025",
-    "computed_at": "2026-07-21T10:38:45.157Z",
-    "trend": "Declining"
-  },
-  {
-    "district": "Tumakuru",
     "crime_category": "Murder",
-    "count": 3,
+    "case_count": 2,
     "period": "2024-2025",
-    "computed_at": "2026-07-21T10:38:45.157Z",
+    "computed_at": "2026-07-23T07:03:48.219Z",
     "trend": "Stable"
   },
   {
     "district": "Mangaluru",
     "crime_category": "Cybercrime",
-    "count": 1,
+    "case_count": 1,
     "period": "2024-2025",
-    "computed_at": "2026-07-21T10:38:45.157Z",
-    "trend": "Declining"
-  },
-  {
-    "district": "Kalaburagi",
-    "crime_category": "Drug",
-    "count": 1,
-    "period": "2024-2025",
-    "computed_at": "2026-07-21T10:38:45.157Z",
-    "trend": "Declining"
-  },
-  {
-    "district": "Mangaluru",
-    "crime_category": "Missing",
-    "count": 1,
-    "period": "2024-2025",
-    "computed_at": "2026-07-21T10:38:45.157Z",
-    "trend": "Declining"
-  },
-  {
-    "district": "Davangere",
-    "crime_category": "Robbery",
-    "count": 1,
-    "period": "2024-2025",
-    "computed_at": "2026-07-21T10:38:45.157Z",
-    "trend": "Declining"
-  },
-  {
-    "district": "Davangere",
-    "crime_category": "Cybercrime",
-    "count": 3,
-    "period": "2024-2025",
-    "computed_at": "2026-07-21T10:38:45.157Z",
+    "computed_at": "2026-07-23T07:03:48.219Z",
     "trend": "Stable"
-  },
-  {
-    "district": "Hubli-Dharwad",
-    "crime_category": "Fraud",
-    "count": 1,
-    "period": "2024-2025",
-    "computed_at": "2026-07-21T10:38:45.157Z",
-    "trend": "Declining"
-  },
-  {
-    "district": "Kalaburagi",
-    "crime_category": "Assault",
-    "count": 1,
-    "period": "2024-2025",
-    "computed_at": "2026-07-21T10:38:45.157Z",
-    "trend": "Declining"
   },
   {
     "district": "Shivamogga",
     "crime_category": "Fraud",
-    "count": 1,
+    "case_count": 1,
     "period": "2024-2025",
-    "computed_at": "2026-07-21T10:38:45.157Z",
-    "trend": "Declining"
+    "computed_at": "2026-07-23T07:03:48.219Z",
+    "trend": "Stable"
   },
   {
     "district": "Belagavi",
     "crime_category": "Robbery",
-    "count": 2,
+    "case_count": 1,
     "period": "2024-2025",
-    "computed_at": "2026-07-21T10:38:45.157Z",
-    "trend": "Declining"
-  },
-  {
-    "district": "Belagavi",
-    "crime_category": "Cybercrime",
-    "count": 1,
-    "period": "2024-2025",
-    "computed_at": "2026-07-21T10:38:45.157Z",
-    "trend": "Declining"
-  },
-  {
-    "district": "Tumakuru",
-    "crime_category": "Theft",
-    "count": 3,
-    "period": "2024-2025",
-    "computed_at": "2026-07-21T10:38:45.157Z",
+    "computed_at": "2026-07-23T07:03:48.219Z",
     "trend": "Stable"
   },
   {
     "district": "Bengaluru Rural",
     "crime_category": "Murder",
-    "count": 1,
+    "case_count": 1,
     "period": "2024-2025",
-    "computed_at": "2026-07-21T10:38:45.157Z",
-    "trend": "Declining"
-  },
-  {
-    "district": "Bengaluru Rural",
-    "crime_category": "Robbery",
-    "count": 1,
-    "period": "2024-2025",
-    "computed_at": "2026-07-21T10:38:45.157Z",
-    "trend": "Declining"
-  },
-  {
-    "district": "Hubli-Dharwad",
-    "crime_category": "Murder",
-    "count": 1,
-    "period": "2024-2025",
-    "computed_at": "2026-07-21T10:38:45.157Z",
-    "trend": "Declining"
-  },
-  {
-    "district": "Tumakuru",
-    "crime_category": "Cybercrime",
-    "count": 1,
-    "period": "2024-2025",
-    "computed_at": "2026-07-21T10:38:45.157Z",
-    "trend": "Declining"
-  },
-  {
-    "district": "Hubli-Dharwad",
-    "crime_category": "Drug",
-    "count": 1,
-    "period": "2024-2025",
-    "computed_at": "2026-07-21T10:38:45.157Z",
-    "trend": "Declining"
-  },
-  {
-    "district": "Tumakuru",
-    "crime_category": "Drug",
-    "count": 1,
-    "period": "2024-2025",
-    "computed_at": "2026-07-21T10:38:45.157Z",
-    "trend": "Declining"
-  },
-  {
-    "district": "Kalaburagi",
-    "crime_category": "Murder",
-    "count": 2,
-    "period": "2024-2025",
-    "computed_at": "2026-07-21T10:38:45.157Z",
-    "trend": "Declining"
-  },
-  {
-    "district": "Kalaburagi",
-    "crime_category": "Fraud",
-    "count": 1,
-    "period": "2024-2025",
-    "computed_at": "2026-07-21T10:38:45.157Z",
-    "trend": "Declining"
+    "computed_at": "2026-07-23T07:03:48.219Z",
+    "trend": "Stable"
   },
   {
     "district": "Hubli-Dharwad",
     "crime_category": "Missing",
-    "count": 1,
+    "case_count": 2,
     "period": "2024-2025",
-    "computed_at": "2026-07-21T10:38:45.157Z",
-    "trend": "Declining"
+    "computed_at": "2026-07-23T07:03:48.219Z",
+    "trend": "Stable"
+  },
+  {
+    "district": "Bengaluru Urban",
+    "crime_category": "Murder",
+    "case_count": 2,
+    "period": "2024-2025",
+    "computed_at": "2026-07-23T07:03:48.219Z",
+    "trend": "Stable"
+  },
+  {
+    "district": "Bengaluru Urban",
+    "crime_category": "Drug",
+    "case_count": 1,
+    "period": "2024-2025",
+    "computed_at": "2026-07-23T07:03:48.219Z",
+    "trend": "Stable"
+  },
+  {
+    "district": "Davangere",
+    "crime_category": "Missing",
+    "case_count": 1,
+    "period": "2024-2025",
+    "computed_at": "2026-07-23T07:03:48.219Z",
+    "trend": "Stable"
+  },
+  {
+    "district": "Belagavi",
+    "crime_category": "Theft",
+    "case_count": 1,
+    "period": "2024-2025",
+    "computed_at": "2026-07-23T07:03:48.219Z",
+    "trend": "Stable"
+  },
+  {
+    "district": "Mangaluru",
+    "crime_category": "Murder",
+    "case_count": 1,
+    "period": "2024-2025",
+    "computed_at": "2026-07-23T07:03:48.219Z",
+    "trend": "Stable"
+  },
+  {
+    "district": "Shivamogga",
+    "crime_category": "Cybercrime",
+    "case_count": 2,
+    "period": "2024-2025",
+    "computed_at": "2026-07-23T07:03:48.219Z",
+    "trend": "Stable"
+  },
+  {
+    "district": "Davangere",
+    "crime_category": "Murder",
+    "case_count": 1,
+    "period": "2024-2025",
+    "computed_at": "2026-07-23T07:03:48.219Z",
+    "trend": "Stable"
+  },
+  {
+    "district": "Davangere",
+    "crime_category": "Robbery",
+    "case_count": 3,
+    "period": "2024-2025",
+    "computed_at": "2026-07-23T07:03:48.219Z",
+    "trend": "Stable"
+  },
+  {
+    "district": "Kalaburagi",
+    "crime_category": "Fraud",
+    "case_count": 1,
+    "period": "2024-2025",
+    "computed_at": "2026-07-23T07:03:48.219Z",
+    "trend": "Stable"
+  },
+  {
+    "district": "Belagavi",
+    "crime_category": "Drug",
+    "case_count": 1,
+    "period": "2024-2025",
+    "computed_at": "2026-07-23T07:03:48.219Z",
+    "trend": "Stable"
+  },
+  {
+    "district": "Bengaluru Urban",
+    "crime_category": "Missing",
+    "case_count": 1,
+    "period": "2024-2025",
+    "computed_at": "2026-07-23T07:03:48.219Z",
+    "trend": "Stable"
+  },
+  {
+    "district": "Kalaburagi",
+    "crime_category": "Robbery",
+    "case_count": 1,
+    "period": "2024-2025",
+    "computed_at": "2026-07-23T07:03:48.219Z",
+    "trend": "Stable"
+  },
+  {
+    "district": "Davangere",
+    "crime_category": "Cybercrime",
+    "case_count": 1,
+    "period": "2024-2025",
+    "computed_at": "2026-07-23T07:03:48.219Z",
+    "trend": "Stable"
+  },
+  {
+    "district": "Mysuru",
+    "crime_category": "Assault",
+    "case_count": 1,
+    "period": "2024-2025",
+    "computed_at": "2026-07-23T07:03:48.219Z",
+    "trend": "Stable"
+  },
+  {
+    "district": "Mangaluru",
+    "crime_category": "Missing",
+    "case_count": 1,
+    "period": "2024-2025",
+    "computed_at": "2026-07-23T07:03:48.219Z",
+    "trend": "Stable"
   }
 ]

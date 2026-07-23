@@ -3,241 +3,704 @@
     "district": "Mysuru",
     "crime_category": "Theft",
     "historical_months": [
-      "2024-06",
-      "2024-09"
-    ],
-    "historical_counts": [
-      1,
-      2
-    ],
-    "moving_average_3m": 1.5,
-    "trend_slope": 1.0,
-    "trend_direction": "Rising",
-    "std_deviation": 0.0,
-    "forecasted_periods": [
-      {
-        "month": "2024-10",
-        "predicted_count": 3.0,
-        "lower_bound": 3.0,
-        "upper_bound": 3.0
-      },
-      {
-        "month": "2024-11",
-        "predicted_count": 4.0,
-        "lower_bound": 4.0,
-        "upper_bound": 4.0
-      },
-      {
-        "month": "2024-12",
-        "predicted_count": 5.0,
-        "lower_bound": 5.0,
-        "upper_bound": 5.0
-      }
-    ],
-    "computed_at": "2026-07-21T16:32:39.789460Z"
-  },
-  {
-    "district": "Bengaluru Urban",
-    "crime_category": "Cybercrime",
-    "historical_months": [
-      "2024-06",
-      "2024-12",
-      "2025-05",
-      "2025-12"
-    ],
-    "historical_counts": [
-      3,
-      1,
-      1,
-      1
-    ],
-    "moving_average_3m": 1.0,
-    "trend_slope": -0.6,
-    "trend_direction": "Declining",
-    "std_deviation": 0.77,
-    "forecasted_periods": [
-      {
-        "month": "2026-01",
-        "predicted_count": 0,
-        "lower_bound": 0,
-        "upper_bound": 0.8
-      },
-      {
-        "month": "2026-02",
-        "predicted_count": 0,
-        "lower_bound": 0,
-        "upper_bound": 0.8
-      },
-      {
-        "month": "2026-03",
-        "predicted_count": 0,
-        "lower_bound": 0,
-        "upper_bound": 0.8
-      }
-    ],
-    "computed_at": "2026-07-21T16:32:39.789187Z"
-  },
-  {
-    "district": "Bengaluru Urban",
-    "crime_category": "Theft",
-    "historical_months": [
-      "2024-04",
+      "2024-07",
+      "2024-08",
+      "2024-09",
+      "2024-10",
       "2024-11",
+      "2024-12",
       "2025-01",
+      "2025-02",
+      "2025-03",
+      "2025-04",
       "2025-05",
-      "2025-12"
+      "2025-06"
     ],
     "historical_counts": [
       2,
-      1,
-      1,
-      1,
-      1
+      2,
+      3,
+      3,
+      4,
+      5,
+      4,
+      5,
+      5,
+      4,
+      6,
+      5
     ],
-    "moving_average_3m": 1.0,
-    "trend_slope": -0.2,
-    "trend_direction": "Stable",
-    "std_deviation": 0.37,
+    "moving_average_3m": 5.0,
+    "trend_slope": 0.308,
+    "trend_direction": "Rising",
+    "std_deviation": 0.67,
     "forecasted_periods": [
       {
-        "month": "2026-01",
-        "predicted_count": 0.6,
-        "lower_bound": 0.2,
-        "upper_bound": 1.0
+        "report_month": "2025-07",
+        "predicted_count": 6.0,
+        "lower_bound": 5.3,
+        "upper_bound": 6.7
       },
       {
-        "month": "2026-02",
-        "predicted_count": 0.4,
-        "lower_bound": 0,
-        "upper_bound": 0.8
+        "report_month": "2025-08",
+        "predicted_count": 6.3,
+        "lower_bound": 5.6,
+        "upper_bound": 7.0
       },
       {
-        "month": "2026-03",
-        "predicted_count": 0.2,
-        "lower_bound": 0,
-        "upper_bound": 0.6
+        "report_month": "2025-09",
+        "predicted_count": 6.6,
+        "lower_bound": 5.9,
+        "upper_bound": 7.3
       }
     ],
-    "computed_at": "2026-07-21T16:32:39.788900Z"
+    "computed_at": "2026-07-23T07:25:27.572403Z"
   },
   {
-    "district": "Belagavi",
-    "crime_category": "Drug",
+    "district": "Shivamogga",
+    "crime_category": "Missing",
     "historical_months": [
-      "2024-01",
+      "2024-07",
+      "2024-08",
+      "2024-09",
+      "2024-10",
+      "2024-11",
+      "2024-12",
+      "2025-01",
+      "2025-02",
+      "2025-03",
       "2025-04",
+      "2025-05",
       "2025-06"
     ],
     "historical_counts": [
       1,
       1,
-      1
-    ],
-    "moving_average_3m": 1.0,
-    "trend_slope": 0.0,
-    "trend_direction": "Stable",
-    "std_deviation": 0.0,
-    "forecasted_periods": [
-      {
-        "month": "2025-07",
-        "predicted_count": 1.0,
-        "lower_bound": 1.0,
-        "upper_bound": 1.0
-      },
-      {
-        "month": "2025-08",
-        "predicted_count": 1.0,
-        "lower_bound": 1.0,
-        "upper_bound": 1.0
-      },
-      {
-        "month": "2025-09",
-        "predicted_count": 1.0,
-        "lower_bound": 1.0,
-        "upper_bound": 1.0
-      }
-    ],
-    "computed_at": "2026-07-21T16:32:39.789007Z"
-  },
-  {
-    "district": "Bengaluru Urban",
-    "crime_category": "Drug",
-    "historical_months": [
-      "2024-06",
-      "2024-07"
-    ],
-    "historical_counts": [
       1,
-      1
-    ],
-    "moving_average_3m": 1.0,
-    "trend_slope": 0.0,
-    "trend_direction": "Stable",
-    "std_deviation": 0.0,
-    "forecasted_periods": [
-      {
-        "month": "2024-08",
-        "predicted_count": 1.0,
-        "lower_bound": 1.0,
-        "upper_bound": 1.0
-      },
-      {
-        "month": "2024-09",
-        "predicted_count": 1.0,
-        "lower_bound": 1.0,
-        "upper_bound": 1.0
-      },
-      {
-        "month": "2024-10",
-        "predicted_count": 1.0,
-        "lower_bound": 1.0,
-        "upper_bound": 1.0
-      }
-    ],
-    "computed_at": "2026-07-21T16:32:39.789060Z"
-  },
-  {
-    "district": "Davangere",
-    "crime_category": "Drug",
-    "historical_months": [
-      "2024-12",
-      "2025-01"
-    ],
-    "historical_counts": [
       1,
-      1
+      2,
+      1,
+      1,
+      2,
+      2,
+      3,
+      7,
+      2
     ],
-    "moving_average_3m": 1.0,
-    "trend_slope": 0.0,
+    "moving_average_3m": 4.0,
+    "trend_slope": 0.294,
     "trend_direction": "Stable",
-    "std_deviation": 0.0,
+    "std_deviation": 1.4,
     "forecasted_periods": [
       {
-        "month": "2025-02",
-        "predicted_count": 1.0,
-        "lower_bound": 1.0,
-        "upper_bound": 1.0
+        "report_month": "2025-07",
+        "predicted_count": 3.9,
+        "lower_bound": 2.5,
+        "upper_bound": 5.3
       },
       {
-        "month": "2025-03",
-        "predicted_count": 1.0,
-        "lower_bound": 1.0,
-        "upper_bound": 1.0
+        "report_month": "2025-08",
+        "predicted_count": 4.2,
+        "lower_bound": 2.8,
+        "upper_bound": 5.6
       },
       {
-        "month": "2025-04",
-        "predicted_count": 1.0,
-        "lower_bound": 1.0,
-        "upper_bound": 1.0
+        "report_month": "2025-09",
+        "predicted_count": 4.5,
+        "lower_bound": 3.1,
+        "upper_bound": 5.9
       }
     ],
-    "computed_at": "2026-07-21T16:32:39.789099Z"
+    "computed_at": "2026-07-23T07:25:27.572439Z"
   },
   {
     "district": "Mangaluru",
+    "crime_category": "Robbery",
+    "historical_months": [
+      "2024-07",
+      "2024-08",
+      "2024-09",
+      "2024-10",
+      "2024-11",
+      "2024-12",
+      "2025-01",
+      "2025-02",
+      "2025-03",
+      "2025-04",
+      "2025-05",
+      "2025-06",
+      "2025-09"
+    ],
+    "historical_counts": [
+      1,
+      2,
+      2,
+      3,
+      7,
+      3,
+      2,
+      2,
+      3,
+      2,
+      2,
+      1,
+      1
+    ],
+    "moving_average_3m": 1.3,
+    "trend_slope": -0.094,
+    "trend_direction": "Stable",
+    "std_deviation": 1.57,
+    "forecasted_periods": [
+      {
+        "report_month": "2025-10",
+        "predicted_count": 1.6,
+        "lower_bound": 0,
+        "upper_bound": 3.2
+      },
+      {
+        "report_month": "2025-11",
+        "predicted_count": 1.5,
+        "lower_bound": 0,
+        "upper_bound": 3.1
+      },
+      {
+        "report_month": "2025-12",
+        "predicted_count": 1.4,
+        "lower_bound": 0,
+        "upper_bound": 3.0
+      }
+    ],
+    "computed_at": "2026-07-23T07:25:27.572325Z"
+  },
+  {
+    "district": "Bengaluru Urban",
+    "crime_category": "Fraud",
+    "historical_months": [
+      "2024-07",
+      "2024-08",
+      "2024-09",
+      "2024-10",
+      "2024-11",
+      "2024-12",
+      "2025-01",
+      "2025-02",
+      "2025-03",
+      "2025-04",
+      "2025-05",
+      "2025-06"
+    ],
+    "historical_counts": [
+      2,
+      2,
+      3,
+      8,
+      4,
+      3,
+      2,
+      3,
+      3,
+      2,
+      2,
+      3
+    ],
+    "moving_average_3m": 2.3,
+    "trend_slope": -0.087,
+    "trend_direction": "Stable",
+    "std_deviation": 1.73,
+    "forecasted_periods": [
+      {
+        "report_month": "2025-07",
+        "predicted_count": 2.5,
+        "lower_bound": 0.8,
+        "upper_bound": 4.2
+      },
+      {
+        "report_month": "2025-08",
+        "predicted_count": 2.4,
+        "lower_bound": 0.7,
+        "upper_bound": 4.1
+      },
+      {
+        "report_month": "2025-09",
+        "predicted_count": 2.3,
+        "lower_bound": 0.6,
+        "upper_bound": 4.0
+      }
+    ],
+    "computed_at": "2026-07-23T07:25:27.572092Z"
+  },
+  {
+    "district": "Kalaburagi",
+    "crime_category": "Murder",
+    "historical_months": [
+      "2024-07",
+      "2024-08",
+      "2024-09",
+      "2024-10",
+      "2024-11",
+      "2024-12",
+      "2025-01",
+      "2025-02",
+      "2025-03",
+      "2025-04",
+      "2025-05",
+      "2025-06"
+    ],
+    "historical_counts": [
+      1,
+      1,
+      5,
+      1,
+      1,
+      2,
+      1,
+      1,
+      1,
+      2,
+      1,
+      1
+    ],
+    "moving_average_3m": 1.3,
+    "trend_slope": -0.077,
+    "trend_direction": "Stable",
+    "std_deviation": 1.19,
+    "forecasted_periods": [
+      {
+        "report_month": "2025-07",
+        "predicted_count": 1.0,
+        "lower_bound": 0,
+        "upper_bound": 2.2
+      },
+      {
+        "report_month": "2025-08",
+        "predicted_count": 0.9,
+        "lower_bound": 0,
+        "upper_bound": 2.1
+      },
+      {
+        "report_month": "2025-09",
+        "predicted_count": 0.8,
+        "lower_bound": 0,
+        "upper_bound": 2.0
+      }
+    ],
+    "computed_at": "2026-07-23T07:25:27.572268Z"
+  },
+  {
+    "district": "Mysuru",
     "crime_category": "Drug",
     "historical_months": [
-      "2024-03",
+      "2024-05",
+      "2024-07",
+      "2024-08",
+      "2024-09",
+      "2024-10",
+      "2024-11",
+      "2024-12",
+      "2025-01",
+      "2025-02",
+      "2025-03",
+      "2025-04",
+      "2025-05",
+      "2025-06"
+    ],
+    "historical_counts": [
+      1,
+      2,
+      8,
+      3,
+      2,
+      3,
+      2,
+      2,
+      3,
+      2,
+      2,
+      3,
+      2
+    ],
+    "moving_average_3m": 2.3,
+    "trend_slope": -0.068,
+    "trend_direction": "Stable",
+    "std_deviation": 1.75,
+    "forecasted_periods": [
+      {
+        "report_month": "2025-07",
+        "predicted_count": 2.2,
+        "lower_bound": 0.4,
+        "upper_bound": 4.0
+      },
+      {
+        "report_month": "2025-08",
+        "predicted_count": 2.1,
+        "lower_bound": 0.3,
+        "upper_bound": 3.9
+      },
+      {
+        "report_month": "2025-09",
+        "predicted_count": 2.1,
+        "lower_bound": 0.3,
+        "upper_bound": 3.9
+      }
+    ],
+    "computed_at": "2026-07-23T07:25:27.572364Z"
+  },
+  {
+    "district": "Bengaluru Urban",
+    "crime_category": "Theft",
+    "historical_months": [
+      "2024-02",
+      "2024-07",
+      "2024-08",
+      "2024-09",
+      "2024-10",
+      "2024-11",
+      "2024-12",
+      "2025-01",
+      "2025-02",
+      "2025-03",
+      "2025-04",
+      "2025-05",
+      "2025-06",
+      "2025-11",
+      "2025-12"
+    ],
+    "historical_counts": [
+      1,
+      3,
+      4,
+      3,
+      5,
+      4,
+      9,
+      5,
+      4,
+      8,
+      3,
+      4,
+      3,
+      2,
+      1
+    ],
+    "moving_average_3m": 2.0,
+    "trend_slope": -0.036,
+    "trend_direction": "Stable",
+    "std_deviation": 2.29,
+    "forecasted_periods": [
+      {
+        "report_month": "2026-01",
+        "predicted_count": 3.5,
+        "lower_bound": 1.2,
+        "upper_bound": 5.8
+      },
+      {
+        "report_month": "2026-02",
+        "predicted_count": 3.5,
+        "lower_bound": 1.2,
+        "upper_bound": 5.8
+      },
+      {
+        "report_month": "2026-03",
+        "predicted_count": 3.4,
+        "lower_bound": 1.1,
+        "upper_bound": 5.7
+      }
+    ],
+    "computed_at": "2026-07-23T07:25:27.572136Z"
+  },
+  {
+    "district": "Belagavi",
+    "crime_category": "Theft",
+    "historical_months": [
+      "2024-07",
+      "2024-08",
+      "2024-09",
+      "2024-10",
+      "2024-11",
+      "2024-12",
+      "2025-01",
+      "2025-02",
+      "2025-03",
+      "2025-04",
+      "2025-05",
+      "2025-06"
+    ],
+    "historical_counts": [
+      1,
+      2,
+      1,
+      2,
+      2,
+      6,
+      2,
+      1,
+      2,
+      1,
+      2,
+      1
+    ],
+    "moving_average_3m": 1.3,
+    "trend_slope": -0.024,
+    "trend_direction": "Stable",
+    "std_deviation": 1.44,
+    "forecasted_periods": [
+      {
+        "report_month": "2025-07",
+        "predicted_count": 1.8,
+        "lower_bound": 0.4,
+        "upper_bound": 3.2
+      },
+      {
+        "report_month": "2025-08",
+        "predicted_count": 1.7,
+        "lower_bound": 0.3,
+        "upper_bound": 3.1
+      },
+      {
+        "report_month": "2025-09",
+        "predicted_count": 1.7,
+        "lower_bound": 0.3,
+        "upper_bound": 3.1
+      }
+    ],
+    "computed_at": "2026-07-23T07:25:27.571984Z"
+  },
+  {
+    "district": "Bengaluru Urban",
+    "crime_category": "Cybercrime",
+    "historical_months": [
+      "2024-07",
+      "2024-08",
+      "2024-09",
+      "2024-10",
+      "2024-11",
+      "2024-12",
+      "2025-01",
+      "2025-02",
+      "2025-03",
+      "2025-04",
+      "2025-05",
+      "2025-06",
+      "2025-11"
+    ],
+    "historical_counts": [
+      2,
+      3,
+      3,
+      4,
+      5,
+      7,
+      4,
+      5,
+      6,
+      4,
+      5,
+      4,
+      1
+    ],
+    "moving_average_3m": 3.3,
+    "trend_slope": -0.022,
+    "trend_direction": "Stable",
+    "std_deviation": 1.67,
+    "forecasted_periods": [
+      {
+        "report_month": "2025-12",
+        "predicted_count": 3.8,
+        "lower_bound": 2.1,
+        "upper_bound": 5.5
+      },
+      {
+        "report_month": "2026-01",
+        "predicted_count": 3.8,
+        "lower_bound": 2.1,
+        "upper_bound": 5.5
+      },
+      {
+        "report_month": "2026-02",
+        "predicted_count": 3.8,
+        "lower_bound": 2.1,
+        "upper_bound": 5.5
+      }
+    ],
+    "computed_at": "2026-07-23T07:25:27.572062Z"
+  },
+  {
+    "district": "Hubli-Dharwad",
+    "crime_category": "Assault",
+    "historical_months": [
+      "2024-07",
+      "2024-08",
+      "2024-09",
+      "2024-10",
+      "2024-11",
+      "2024-12",
+      "2025-01",
+      "2025-02",
+      "2025-03",
+      "2025-04",
+      "2025-05",
+      "2025-06"
+    ],
+    "historical_counts": [
+      2,
+      2,
+      3,
+      2,
+      3,
+      4,
+      8,
+      3,
+      2,
+      3,
+      2,
+      2
+    ],
+    "moving_average_3m": 2.3,
+    "trend_slope": 0.014,
+    "trend_direction": "Stable",
+    "std_deviation": 1.79,
+    "forecasted_periods": [
+      {
+        "report_month": "2025-07",
+        "predicted_count": 3.1,
+        "lower_bound": 1.3,
+        "upper_bound": 4.9
+      },
+      {
+        "report_month": "2025-08",
+        "predicted_count": 3.1,
+        "lower_bound": 1.3,
+        "upper_bound": 4.9
+      },
+      {
+        "report_month": "2025-09",
+        "predicted_count": 3.1,
+        "lower_bound": 1.3,
+        "upper_bound": 4.9
+      }
+    ],
+    "computed_at": "2026-07-23T07:25:27.572194Z"
+  },
+  {
+    "district": "Belagavi",
+    "crime_category": "Fraud",
+    "historical_months": [
+      "2024-10",
+      "2024-11",
+      "2025-02"
+    ],
+    "historical_counts": [
+      1,
+      1,
+      1
+    ],
+    "moving_average_3m": 1.0,
+    "trend_slope": 0.0,
+    "trend_direction": "Stable",
+    "std_deviation": 0.0,
+    "forecasted_periods": [
+      {
+        "report_month": "2025-03",
+        "predicted_count": 1.0,
+        "lower_bound": 1.0,
+        "upper_bound": 1.0
+      },
+      {
+        "report_month": "2025-04",
+        "predicted_count": 1.0,
+        "lower_bound": 1.0,
+        "upper_bound": 1.0
+      },
+      {
+        "report_month": "2025-05",
+        "predicted_count": 1.0,
+        "lower_bound": 1.0,
+        "upper_bound": 1.0
+      }
+    ],
+    "computed_at": "2026-07-23T07:25:27.571905Z"
+  },
+  {
+    "district": "Bengaluru Rural",
+    "crime_category": "Missing",
+    "historical_months": [
+      "2024-01",
+      "2024-08",
+      "2025-10"
+    ],
+    "historical_counts": [
+      1,
+      1,
+      1
+    ],
+    "moving_average_3m": 1.0,
+    "trend_slope": 0.0,
+    "trend_direction": "Stable",
+    "std_deviation": 0.0,
+    "forecasted_periods": [
+      {
+        "report_month": "2025-11",
+        "predicted_count": 1.0,
+        "lower_bound": 1.0,
+        "upper_bound": 1.0
+      },
+      {
+        "report_month": "2025-12",
+        "predicted_count": 1.0,
+        "lower_bound": 1.0,
+        "upper_bound": 1.0
+      },
+      {
+        "report_month": "2026-01",
+        "predicted_count": 1.0,
+        "lower_bound": 1.0,
+        "upper_bound": 1.0
+      }
+    ],
+    "computed_at": "2026-07-23T07:25:27.572012Z"
+  },
+  {
+    "district": "Bengaluru Rural",
+    "crime_category": "Robbery",
+    "historical_months": [
+      "2025-03",
+      "2025-07"
+    ],
+    "historical_counts": [
+      1,
+      1
+    ],
+    "moving_average_3m": 1.0,
+    "trend_slope": 0.0,
+    "trend_direction": "Stable",
+    "std_deviation": 0.0,
+    "forecasted_periods": [
+      {
+        "report_month": "2025-08",
+        "predicted_count": 1.0,
+        "lower_bound": 1.0,
+        "upper_bound": 1.0
+      },
+      {
+        "report_month": "2025-09",
+        "predicted_count": 1.0,
+        "lower_bound": 1.0,
+        "upper_bound": 1.0
+      },
+      {
+        "report_month": "2025-10",
+        "predicted_count": 1.0,
+        "lower_bound": 1.0,
+        "upper_bound": 1.0
+      }
+    ],
+    "computed_at": "2026-07-23T07:25:27.572031Z"
+  },
+  {
+    "district": "Bengaluru Urban",
+    "crime_category": "Murder",
+    "historical_months": [
+      "2024-06",
       "2025-04"
     ],
     "historical_counts": [
@@ -250,32 +713,184 @@
     "std_deviation": 0.0,
     "forecasted_periods": [
       {
-        "month": "2025-05",
+        "report_month": "2025-05",
         "predicted_count": 1.0,
         "lower_bound": 1.0,
         "upper_bound": 1.0
       },
       {
-        "month": "2025-06",
+        "report_month": "2025-06",
         "predicted_count": 1.0,
         "lower_bound": 1.0,
         "upper_bound": 1.0
       },
       {
-        "month": "2025-07",
+        "report_month": "2025-07",
         "predicted_count": 1.0,
         "lower_bound": 1.0,
         "upper_bound": 1.0
       }
     ],
-    "computed_at": "2026-07-21T16:32:39.789135Z"
+    "computed_at": "2026-07-23T07:25:27.572107Z"
   },
   {
-    "district": "Mangaluru",
+    "district": "Davangere",
+    "crime_category": "Fraud",
+    "historical_months": [
+      "2024-04",
+      "2024-09",
+      "2025-03"
+    ],
+    "historical_counts": [
+      1,
+      1,
+      1
+    ],
+    "moving_average_3m": 1.0,
+    "trend_slope": 0.0,
+    "trend_direction": "Stable",
+    "std_deviation": 0.0,
+    "forecasted_periods": [
+      {
+        "report_month": "2025-04",
+        "predicted_count": 1.0,
+        "lower_bound": 1.0,
+        "upper_bound": 1.0
+      },
+      {
+        "report_month": "2025-05",
+        "predicted_count": 1.0,
+        "lower_bound": 1.0,
+        "upper_bound": 1.0
+      },
+      {
+        "report_month": "2025-06",
+        "predicted_count": 1.0,
+        "lower_bound": 1.0,
+        "upper_bound": 1.0
+      }
+    ],
+    "computed_at": "2026-07-23T07:25:27.572153Z"
+  },
+  {
+    "district": "Davangere",
     "crime_category": "Robbery",
     "historical_months": [
-      "2025-01",
-      "2025-02",
+      "2024-01",
+      "2024-03",
+      "2025-02"
+    ],
+    "historical_counts": [
+      1,
+      1,
+      1
+    ],
+    "moving_average_3m": 1.0,
+    "trend_slope": 0.0,
+    "trend_direction": "Stable",
+    "std_deviation": 0.0,
+    "forecasted_periods": [
+      {
+        "report_month": "2025-03",
+        "predicted_count": 1.0,
+        "lower_bound": 1.0,
+        "upper_bound": 1.0
+      },
+      {
+        "report_month": "2025-04",
+        "predicted_count": 1.0,
+        "lower_bound": 1.0,
+        "upper_bound": 1.0
+      },
+      {
+        "report_month": "2025-05",
+        "predicted_count": 1.0,
+        "lower_bound": 1.0,
+        "upper_bound": 1.0
+      }
+    ],
+    "computed_at": "2026-07-23T07:25:27.572170Z"
+  },
+  {
+    "district": "Hubli-Dharwad",
+    "crime_category": "Missing",
+    "historical_months": [
+      "2025-04",
+      "2025-05"
+    ],
+    "historical_counts": [
+      1,
+      1
+    ],
+    "moving_average_3m": 1.0,
+    "trend_slope": 0.0,
+    "trend_direction": "Stable",
+    "std_deviation": 0.0,
+    "forecasted_periods": [
+      {
+        "report_month": "2025-06",
+        "predicted_count": 1.0,
+        "lower_bound": 1.0,
+        "upper_bound": 1.0
+      },
+      {
+        "report_month": "2025-07",
+        "predicted_count": 1.0,
+        "lower_bound": 1.0,
+        "upper_bound": 1.0
+      },
+      {
+        "report_month": "2025-08",
+        "predicted_count": 1.0,
+        "lower_bound": 1.0,
+        "upper_bound": 1.0
+      }
+    ],
+    "computed_at": "2026-07-23T07:25:27.572211Z"
+  },
+  {
+    "district": "Kalaburagi",
+    "crime_category": "Cybercrime",
+    "historical_months": [
+      "2024-11",
+      "2025-05"
+    ],
+    "historical_counts": [
+      1,
+      1
+    ],
+    "moving_average_3m": 1.0,
+    "trend_slope": 0.0,
+    "trend_direction": "Stable",
+    "std_deviation": 0.0,
+    "forecasted_periods": [
+      {
+        "report_month": "2025-06",
+        "predicted_count": 1.0,
+        "lower_bound": 1.0,
+        "upper_bound": 1.0
+      },
+      {
+        "report_month": "2025-07",
+        "predicted_count": 1.0,
+        "lower_bound": 1.0,
+        "upper_bound": 1.0
+      },
+      {
+        "report_month": "2025-08",
+        "predicted_count": 1.0,
+        "lower_bound": 1.0,
+        "upper_bound": 1.0
+      }
+    ],
+    "computed_at": "2026-07-23T07:25:27.572227Z"
+  },
+  {
+    "district": "Kalaburagi",
+    "crime_category": "Drug",
+    "historical_months": [
+      "2023-12",
+      "2025-03",
       "2025-07"
     ],
     "historical_counts": [
@@ -289,218 +904,31 @@
     "std_deviation": 0.0,
     "forecasted_periods": [
       {
-        "month": "2025-08",
+        "report_month": "2025-08",
         "predicted_count": 1.0,
         "lower_bound": 1.0,
         "upper_bound": 1.0
       },
       {
-        "month": "2025-09",
+        "report_month": "2025-09",
         "predicted_count": 1.0,
         "lower_bound": 1.0,
         "upper_bound": 1.0
       },
       {
-        "month": "2025-10",
+        "report_month": "2025-10",
         "predicted_count": 1.0,
         "lower_bound": 1.0,
         "upper_bound": 1.0
       }
     ],
-    "computed_at": "2026-07-21T16:32:39.789232Z"
+    "computed_at": "2026-07-23T07:25:27.572243Z"
   },
   {
-    "district": "Kalaburagi",
-    "crime_category": "Missing",
-    "historical_months": [
-      "2025-06",
-      "2025-10"
-    ],
-    "historical_counts": [
-      1,
-      1
-    ],
-    "moving_average_3m": 1.0,
-    "trend_slope": 0.0,
-    "trend_direction": "Stable",
-    "std_deviation": 0.0,
-    "forecasted_periods": [
-      {
-        "month": "2025-11",
-        "predicted_count": 1.0,
-        "lower_bound": 1.0,
-        "upper_bound": 1.0
-      },
-      {
-        "month": "2025-12",
-        "predicted_count": 1.0,
-        "lower_bound": 1.0,
-        "upper_bound": 1.0
-      },
-      {
-        "month": "2026-01",
-        "predicted_count": 1.0,
-        "lower_bound": 1.0,
-        "upper_bound": 1.0
-      }
-    ],
-    "computed_at": "2026-07-21T16:32:39.789270Z"
-  },
-  {
-    "district": "Davangere",
-    "crime_category": "Fraud",
-    "historical_months": [
-      "2024-01",
-      "2025-03"
-    ],
-    "historical_counts": [
-      1,
-      1
-    ],
-    "moving_average_3m": 1.0,
-    "trend_slope": 0.0,
-    "trend_direction": "Stable",
-    "std_deviation": 0.0,
-    "forecasted_periods": [
-      {
-        "month": "2025-04",
-        "predicted_count": 1.0,
-        "lower_bound": 1.0,
-        "upper_bound": 1.0
-      },
-      {
-        "month": "2025-05",
-        "predicted_count": 1.0,
-        "lower_bound": 1.0,
-        "upper_bound": 1.0
-      },
-      {
-        "month": "2025-06",
-        "predicted_count": 1.0,
-        "lower_bound": 1.0,
-        "upper_bound": 1.0
-      }
-    ],
-    "computed_at": "2026-07-21T16:32:39.789303Z"
-  },
-  {
-    "district": "Bengaluru Urban",
-    "crime_category": "Murder",
-    "historical_months": [
-      "2025-05",
-      "2025-07",
-      "2025-08"
-    ],
-    "historical_counts": [
-      1,
-      1,
-      1
-    ],
-    "moving_average_3m": 1.0,
-    "trend_slope": 0.0,
-    "trend_direction": "Stable",
-    "std_deviation": 0.0,
-    "forecasted_periods": [
-      {
-        "month": "2025-09",
-        "predicted_count": 1.0,
-        "lower_bound": 1.0,
-        "upper_bound": 1.0
-      },
-      {
-        "month": "2025-10",
-        "predicted_count": 1.0,
-        "lower_bound": 1.0,
-        "upper_bound": 1.0
-      },
-      {
-        "month": "2025-11",
-        "predicted_count": 1.0,
-        "lower_bound": 1.0,
-        "upper_bound": 1.0
-      }
-    ],
-    "computed_at": "2026-07-21T16:32:39.789349Z"
-  },
-  {
-    "district": "Bengaluru Urban",
-    "crime_category": "Missing",
-    "historical_months": [
-      "2024-01",
-      "2025-03"
-    ],
-    "historical_counts": [
-      1,
-      1
-    ],
-    "moving_average_3m": 1.0,
-    "trend_slope": 0.0,
-    "trend_direction": "Stable",
-    "std_deviation": 0.0,
-    "forecasted_periods": [
-      {
-        "month": "2025-04",
-        "predicted_count": 1.0,
-        "lower_bound": 1.0,
-        "upper_bound": 1.0
-      },
-      {
-        "month": "2025-05",
-        "predicted_count": 1.0,
-        "lower_bound": 1.0,
-        "upper_bound": 1.0
-      },
-      {
-        "month": "2025-06",
-        "predicted_count": 1.0,
-        "lower_bound": 1.0,
-        "upper_bound": 1.0
-      }
-    ],
-    "computed_at": "2026-07-21T16:32:39.789395Z"
-  },
-  {
-    "district": "Belagavi",
-    "crime_category": "Missing",
-    "historical_months": [
-      "2024-08",
-      "2025-02"
-    ],
-    "historical_counts": [
-      1,
-      1
-    ],
-    "moving_average_3m": 1.0,
-    "trend_slope": 0.0,
-    "trend_direction": "Stable",
-    "std_deviation": 0.0,
-    "forecasted_periods": [
-      {
-        "month": "2025-03",
-        "predicted_count": 1.0,
-        "lower_bound": 1.0,
-        "upper_bound": 1.0
-      },
-      {
-        "month": "2025-04",
-        "predicted_count": 1.0,
-        "lower_bound": 1.0,
-        "upper_bound": 1.0
-      },
-      {
-        "month": "2025-05",
-        "predicted_count": 1.0,
-        "lower_bound": 1.0,
-        "upper_bound": 1.0
-      }
-    ],
-    "computed_at": "2026-07-21T16:32:39.789427Z"
-  },
-  {
-    "district": "Shivamogga",
+    "district": "Mangaluru",
     "crime_category": "Assault",
     "historical_months": [
-      "2024-10",
+      "2025-04",
       "2025-08"
     ],
     "historical_counts": [
@@ -513,31 +941,68 @@
     "std_deviation": 0.0,
     "forecasted_periods": [
       {
-        "month": "2025-09",
+        "report_month": "2025-09",
         "predicted_count": 1.0,
         "lower_bound": 1.0,
         "upper_bound": 1.0
       },
       {
-        "month": "2025-10",
+        "report_month": "2025-10",
         "predicted_count": 1.0,
         "lower_bound": 1.0,
         "upper_bound": 1.0
       },
       {
-        "month": "2025-11",
+        "report_month": "2025-11",
         "predicted_count": 1.0,
         "lower_bound": 1.0,
         "upper_bound": 1.0
       }
     ],
-    "computed_at": "2026-07-21T16:32:39.789496Z"
+    "computed_at": "2026-07-23T07:25:27.572282Z"
   },
   {
-    "district": "Shivamogga",
-    "crime_category": "Theft",
+    "district": "Mangaluru",
+    "crime_category": "Fraud",
     "historical_months": [
       "2024-05",
+      "2024-08"
+    ],
+    "historical_counts": [
+      1,
+      1
+    ],
+    "moving_average_3m": 1.0,
+    "trend_slope": 0.0,
+    "trend_direction": "Stable",
+    "std_deviation": 0.0,
+    "forecasted_periods": [
+      {
+        "report_month": "2024-09",
+        "predicted_count": 1.0,
+        "lower_bound": 1.0,
+        "upper_bound": 1.0
+      },
+      {
+        "report_month": "2024-10",
+        "predicted_count": 1.0,
+        "lower_bound": 1.0,
+        "upper_bound": 1.0
+      },
+      {
+        "report_month": "2024-11",
+        "predicted_count": 1.0,
+        "lower_bound": 1.0,
+        "upper_bound": 1.0
+      }
+    ],
+    "computed_at": "2026-07-23T07:25:27.572297Z"
+  },
+  {
+    "district": "Mangaluru",
+    "crime_category": "Theft",
+    "historical_months": [
+      "2025-01",
       "2025-06"
     ],
     "historical_counts": [
@@ -550,36 +1015,34 @@
     "std_deviation": 0.0,
     "forecasted_periods": [
       {
-        "month": "2025-07",
+        "report_month": "2025-07",
         "predicted_count": 1.0,
         "lower_bound": 1.0,
         "upper_bound": 1.0
       },
       {
-        "month": "2025-08",
+        "report_month": "2025-08",
         "predicted_count": 1.0,
         "lower_bound": 1.0,
         "upper_bound": 1.0
       },
       {
-        "month": "2025-09",
+        "report_month": "2025-09",
         "predicted_count": 1.0,
         "lower_bound": 1.0,
         "upper_bound": 1.0
       }
     ],
-    "computed_at": "2026-07-21T16:32:39.789535Z"
+    "computed_at": "2026-07-23T07:25:27.572339Z"
   },
   {
-    "district": "Tumakuru",
+    "district": "Mysuru",
     "crime_category": "Murder",
     "historical_months": [
-      "2024-05",
-      "2024-07",
-      "2025-04"
+      "2024-10",
+      "2025-12"
     ],
     "historical_counts": [
-      1,
       1,
       1
     ],
@@ -589,71 +1052,32 @@
     "std_deviation": 0.0,
     "forecasted_periods": [
       {
-        "month": "2025-05",
+        "report_month": "2026-01",
         "predicted_count": 1.0,
         "lower_bound": 1.0,
         "upper_bound": 1.0
       },
       {
-        "month": "2025-06",
+        "report_month": "2026-02",
         "predicted_count": 1.0,
         "lower_bound": 1.0,
         "upper_bound": 1.0
       },
       {
-        "month": "2025-07",
+        "report_month": "2026-03",
         "predicted_count": 1.0,
         "lower_bound": 1.0,
         "upper_bound": 1.0
       }
     ],
-    "computed_at": "2026-07-21T16:32:39.789586Z"
+    "computed_at": "2026-07-23T07:25:27.572378Z"
   },
   {
-    "district": "Davangere",
+    "district": "Shivamogga",
     "crime_category": "Cybercrime",
     "historical_months": [
-      "2024-05",
-      "2025-05",
-      "2025-08"
-    ],
-    "historical_counts": [
-      1,
-      1,
-      1
-    ],
-    "moving_average_3m": 1.0,
-    "trend_slope": 0.0,
-    "trend_direction": "Stable",
-    "std_deviation": 0.0,
-    "forecasted_periods": [
-      {
-        "month": "2025-09",
-        "predicted_count": 1.0,
-        "lower_bound": 1.0,
-        "upper_bound": 1.0
-      },
-      {
-        "month": "2025-10",
-        "predicted_count": 1.0,
-        "lower_bound": 1.0,
-        "upper_bound": 1.0
-      },
-      {
-        "month": "2025-11",
-        "predicted_count": 1.0,
-        "lower_bound": 1.0,
-        "upper_bound": 1.0
-      }
-    ],
-    "computed_at": "2026-07-21T16:32:39.789625Z"
-  },
-  {
-    "district": "Belagavi",
-    "crime_category": "Robbery",
-    "historical_months": [
-      "2024-09",
-      "2025-08"
+      "2024-06",
+      "2025-10"
     ],
     "historical_counts": [
       1,
@@ -665,71 +1089,32 @@
     "std_deviation": 0.0,
     "forecasted_periods": [
       {
-        "month": "2025-09",
+        "report_month": "2025-11",
         "predicted_count": 1.0,
         "lower_bound": 1.0,
         "upper_bound": 1.0
       },
       {
-        "month": "2025-10",
+        "report_month": "2025-12",
         "predicted_count": 1.0,
         "lower_bound": 1.0,
         "upper_bound": 1.0
       },
       {
-        "month": "2025-11",
+        "report_month": "2026-01",
         "predicted_count": 1.0,
         "lower_bound": 1.0,
         "upper_bound": 1.0
       }
     ],
-    "computed_at": "2026-07-21T16:32:39.789661Z"
+    "computed_at": "2026-07-23T07:25:27.572416Z"
   },
   {
     "district": "Tumakuru",
-    "crime_category": "Theft",
+    "crime_category": "Robbery",
     "historical_months": [
       "2024-02",
-      "2025-02",
-      "2025-09"
-    ],
-    "historical_counts": [
-      1,
-      1,
-      1
-    ],
-    "moving_average_3m": 1.0,
-    "trend_slope": 0.0,
-    "trend_direction": "Stable",
-    "std_deviation": 0.0,
-    "forecasted_periods": [
-      {
-        "month": "2025-10",
-        "predicted_count": 1.0,
-        "lower_bound": 1.0,
-        "upper_bound": 1.0
-      },
-      {
-        "month": "2025-11",
-        "predicted_count": 1.0,
-        "lower_bound": 1.0,
-        "upper_bound": 1.0
-      },
-      {
-        "month": "2025-12",
-        "predicted_count": 1.0,
-        "lower_bound": 1.0,
-        "upper_bound": 1.0
-      }
-    ],
-    "computed_at": "2026-07-21T16:32:39.789703Z"
-  },
-  {
-    "district": "Kalaburagi",
-    "crime_category": "Murder",
-    "historical_months": [
-      "2024-01",
-      "2025-11"
+      "2025-07"
     ],
     "historical_counts": [
       1,
@@ -741,24 +1126,24 @@
     "std_deviation": 0.0,
     "forecasted_periods": [
       {
-        "month": "2025-12",
+        "report_month": "2025-08",
         "predicted_count": 1.0,
         "lower_bound": 1.0,
         "upper_bound": 1.0
       },
       {
-        "month": "2026-01",
+        "report_month": "2025-09",
         "predicted_count": 1.0,
         "lower_bound": 1.0,
         "upper_bound": 1.0
       },
       {
-        "month": "2026-02",
+        "report_month": "2025-10",
         "predicted_count": 1.0,
         "lower_bound": 1.0,
         "upper_bound": 1.0
       }
     ],
-    "computed_at": "2026-07-21T16:32:39.789759Z"
+    "computed_at": "2026-07-23T07:25:27.572452Z"
   }
 ]

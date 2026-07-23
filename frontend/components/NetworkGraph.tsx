@@ -1,5 +1,7 @@
 "use client";
 
+/* eslint-disable react-hooks/immutability */
+
 import { useRef, useEffect, useState, useCallback } from "react";
 import type { GraphData, GraphNode } from "@/lib/mock-data";
 
@@ -12,17 +14,6 @@ const RISK_COLORS: Record<string, string> = {
   Medium: "#f59e0b",
   Low: "#22c55e",
 };
-
-const GROUP_COLORS = [
-  "#00d4ff",
-  "#a855f7",
-  "#f59e0b",
-  "#22c55e",
-  "#ef4444",
-  "#3b82f6",
-  "#ec4899",
-  "#14b8a6",
-];
 
 /**
  * NetworkGraph — Canvas-based force-directed graph visualization.
@@ -44,7 +35,7 @@ export function NetworkGraph({ data }: NetworkGraphProps) {
     const centerX = dimensions.width / 2;
     const centerY = dimensions.height / 2;
 
-    nodesRef.current = data.nodes.map((node, i) => ({
+    nodesRef.current = data.nodes.map((node) => ({
       ...node,
       x: centerX + (Math.random() - 0.5) * 300,
       y: centerY + (Math.random() - 0.5) * 300,
@@ -158,7 +149,6 @@ export function NetworkGraph({ data }: NetworkGraphProps) {
     // Draw nodes
     for (const node of nodes) {
       const riskColor = RISK_COLORS[node.risk] || RISK_COLORS.Low;
-      const groupColor = GROUP_COLORS[(node.group - 1) % GROUP_COLORS.length] || GROUP_COLORS[0];
       const isHovered = hoveredNode?.id === node.id;
       const radius = isHovered ? 14 : 10;
 

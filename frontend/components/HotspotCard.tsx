@@ -4,10 +4,6 @@ import {
   TrendingUp,
   TrendingDown,
   Minus,
-  AlertTriangle,
-  Shield,
-  Users,
-  FileText,
   MapPin,
 } from "lucide-react";
 import type { HotspotEntry } from "@/lib/mock-data";
@@ -49,6 +45,11 @@ const TREND_CONFIG = {
   },
 };
 
+function sparklineHeight(caseCount: number, index: number): number {
+  const sequence = [0.42, 0.66, 0.5, 0.82, 0.58, 0.9];
+  return Math.max(4, (caseCount / 15) * 32 * sequence[index % sequence.length]);
+}
+
 export function HotspotCard({ entry, rank }: HotspotCardProps) {
   const trend = TREND_CONFIG[entry.trend];
   const TrendIcon = trend.icon;
@@ -84,11 +85,11 @@ export function HotspotCard({ entry, rank }: HotspotCardProps) {
         </div>
       </div>
 
-      {/* Count + Sparkline */}
+      {/* case_count + Sparkline */}
       <div className="flex items-end justify-between">
         <div>
           <p className="text-2xl font-bold text-[var(--color-text-primary)] font-mono">
-            {entry.count}
+            {entry.case_count}
           </p>
           <p className="text-[10px] text-[var(--color-text-tertiary)]">{entry.period}</p>
         </div>
@@ -96,10 +97,7 @@ export function HotspotCard({ entry, rank }: HotspotCardProps) {
         {/* Mini sparkline */}
         <div className="flex items-end gap-0.5 h-8">
           {Array.from({ length: 6 }, (_, i) => {
-            const height = Math.max(
-              4,
-              (entry.count / 15) * 32 * (0.3 + Math.random() * 0.7)
-            );
+            const height = sparklineHeight(entry.case_count, i);
             return (
               <div
                 key={i}

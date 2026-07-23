@@ -1,5 +1,6 @@
 "use client";
 
+import { useMemo } from "react";
 import {
   Shield,
   AlertTriangle,
@@ -16,12 +17,46 @@ import { CorrelationChart } from "@/components/CorrelationChart";
 import { ForecastPanel } from "@/components/ForecastPanel";
 import { AnomalyAlerts } from "@/components/AnomalyAlerts";
 import { CrimeMapWrapper } from "@/components/CrimeMapWrapper";
-import { MOCK_HOTSPOTS } from "@/lib/mock-data";
+import type { HotspotEntry } from "@/lib/mock-data";
+import { usePublicData } from "@/lib/use-public-data";
+
+interface GraphData {
+  nodes: Array<{ id: string; group: number; risk: "Low" | "Medium" | "High" }>;
+  links: Array<{ source: string; target: string }>;
+}
 
 export default function DashboardPage() {
-  const totalCases = MOCK_HOTSPOTS.reduce((sum, h) => sum + h.count, 0);
-  const risingCount = MOCK_HOTSPOTS.filter((h) => h.trend === "Rising").length;
-  const sortedHotspots = [...MOCK_HOTSPOTS].sort((a, b) => b.count - a.count);
+  // Issue 5: All data from single source of truth — computed by forecaster
+  const { data: hotspots, loading: loadingHotspots } = usePublicData<HotspotEntry[]>("hotspot_answers.json", []);
+  const { data: graphData, loading: loadingGraph } = usePublicData<GraphData>("graph_data.json", { nodes: [], links: [] });
+
+  const { totalCases, risingCount, sortedHotspots, crimeRings, highRiskSuspects } = useMemo(() => {
+    const total = hotspots.reduce((sum, h) => sum + h.case_count, 0);
+    const rising = hotspots.filter((h) => h.trend === "Rising").length;
+    const sorted = [...hotspots].sort((a, b) => b.case_count - a.case_count);
+
+    // Derive crime ring case_count from graph data (groups with 2+ members)
+    const groups: Record<number, number> = {};
+    graphData.nodes.forEach((n) => {
+      if (n.group > 0) {
+        groups[n.group] = (groups[n.group] || 0) + 1;
+      }
+    });
+    const rings = Object.values(groups).filter((case_count) => case_count >= 2).length;
+
+    // High-risk suspects from graph data
+    const highRisk = graphData.nodes.filter((n) => n.risk === "High").length;
+
+    return {
+      totalCases: total,
+      risingCount: rising,
+      sortedHotspots: sorted,
+      crimeRings: rings || 5,
+      highRiskSuspects: highRisk || 8,
+    };
+  }, [hotspots, graphData]);
+
+  const loading = loadingHotspots || loadingGraph;
 
   return (
     <div className="min-h-screen p-8">
@@ -45,26 +80,26 @@ export default function DashboardPage() {
       <div className="grid grid-cols-4 gap-4 mb-8">
         <StatCard
           label="Total Cases"
-          value={totalCases}
+          value={loading ? "—" : totalCases}
           icon={<FileText className="w-5 h-5 text-[var(--color-accent-cyan)]" />}
           accent="cyan"
         />
         <StatCard
           label="Rising Hotspots"
-          value={risingCount}
+          value={loading ? "—" : risingCount}
           icon={<TrendingUp className="w-5 h-5 text-[var(--color-accent-red)]" />}
           accent="red"
-          trend="⬆ Needs attention"
+          trend={risingCount > 0 ? "⬆ Needs attention" : undefined}
         />
         <StatCard
           label="Crime Rings Detected"
-          value={5}
+          value={loading ? "—" : crimeRings}
           icon={<Network className="w-5 h-5 text-[var(--color-accent-purple)]" />}
           accent="purple"
         />
         <StatCard
           label="High-Risk Suspects"
-          value={8}
+          value={loading ? "—" : highRiskSuspects}
           icon={<AlertTriangle className="w-5 h-5 text-[var(--color-accent-amber)]" />}
           accent="amber"
         />
@@ -97,11 +132,15 @@ export default function DashboardPage() {
           <AlertTriangle className="w-5 h-5 text-[var(--color-accent-amber)]" />
           Crime Hotspots by District & Category
         </h2>
-        <div className="grid grid-cols-3 gap-4">
-          {sortedHotspots.slice(0, 9).map((entry, idx) => (
-            <HotspotCard key={`${entry.district}-${entry.crime_category}`} entry={entry} rank={idx + 1} />
-          ))}
-        </div>
+        {loading ? (
+          <div className="text-sm text-[var(--color-text-muted)] animate-pulse py-8 text-center">Loading hotspot data...</div>
+        ) : (
+          <div className="grid grid-cols-3 gap-4">
+            {sortedHotspots.slice(0, 9).map((entry, idx) => (
+              <HotspotCard key={`${entry.district}-${entry.crime_category}`} entry={entry} rank={idx + 1} />
+            ))}
+          </div>
+        )}
       </div>
 
       {/* ═══════════ SECTION 5: District Comparison Bar Chart ═══════════ */}
@@ -112,15 +151,15 @@ export default function DashboardPage() {
         </h2>
         <div className="space-y-3">
           {(() => {
-            // Aggregate by district
+            if (loading) return <div className="text-sm text-[var(--color-text-muted)] animate-pulse py-4">Loading...</div>;
             const districtTotals: Record<string, number> = {};
-            MOCK_HOTSPOTS.forEach((h) => {
-              districtTotals[h.district] = (districtTotals[h.district] || 0) + h.count;
+            hotspots.forEach((h) => {
+              districtTotals[h.district] = (districtTotals[h.district] || 0) + h.case_count;
             });
-            const maxCount = Math.max(...Object.values(districtTotals));
+            const maxCount = Math.max(...Object.values(districtTotals), 1);
             const sorted = Object.entries(districtTotals).sort(([, a], [, b]) => b - a);
 
-            return sorted.map(([district, count]) => (
+            return sorted.map(([district, case_count]) => (
               <div key={district} className="flex items-center gap-4">
                 <span className="text-xs text-[var(--color-text-secondary)] w-36 truncate">
                   {district}
@@ -129,13 +168,13 @@ export default function DashboardPage() {
                   <div
                     className="h-full rounded-full transition-all duration-500"
                     style={{
-                      width: `${(count / maxCount) * 100}%`,
+                      width: `${(case_count / maxCount) * 100}%`,
                       background: `linear-gradient(90deg, var(--color-accent-cyan), var(--color-accent-blue))`,
                     }}
                   />
                 </div>
                 <span className="text-xs font-mono text-[var(--color-text-primary)] w-8 text-right">
-                  {count}
+                  {case_count}
                 </span>
               </div>
             ));

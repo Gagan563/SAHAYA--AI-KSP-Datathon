@@ -26,11 +26,11 @@ def aggregate_hotspots(fir_records):
     now = datetime.utcnow().isoformat() + "Z"
     hotspots = []
 
-    for (district, category), count in counts.items():
-        # Determine trend based on count thresholds
-        if count > 5:
+    for (district, category), case_count in counts.items():
+        # Determine trend based on case_count thresholds
+        if case_count > 5:
             trend = "Rising"
-        elif count > 2:
+        elif case_count > 2:
             trend = "Stable"
         else:
             trend = "Declining"
@@ -38,40 +38,40 @@ def aggregate_hotspots(fir_records):
         hotspots.append({
             "district": district,
             "crime_category": category,
-            "count": count,
+            "case_count": case_count,
             "period": "2024-2025",
             "computed_at": now,
             "trend": trend,
         })
 
-    # Sort by count descending
-    hotspots.sort(key=lambda h: h["count"], reverse=True)
+    # Sort by case_count descending
+    hotspots.sort(key=lambda h: h["case_count"], reverse=True)
     return hotspots
 
 
 def aggregate_monthly_hotspots(fir_records):
     """
-    Aggregate FIR records by district + category + month.
-    Enables "crime rose X% in region Y this month vs last month" comparisons.
+    Aggregate FIR records by district + category + report_month.
+    Enables "crime rose X% in region Y this report_month vs last report_month" comparisons.
     """
     counts = defaultdict(int)
     for fir in fir_records:
         date_str = fir.get("date_filed", "")
         if len(date_str) >= 7:
-            month = date_str[:7]  # "2024-11"
+            report_month = date_str[:7]  # "2024-11"
         else:
-            month = "unknown"
-        key = (fir["district"], fir["category"], month)
+            report_month = "unknown"
+        key = (fir["district"], fir["category"], report_month)
         counts[key] += 1
 
     now = datetime.utcnow().isoformat() + "Z"
     monthly = []
-    for (district, category, month), count in sorted(counts.items()):
+    for (district, category, report_month), case_count in sorted(counts.items()):
         monthly.append({
             "district": district,
             "crime_category": category,
-            "month": month,
-            "count": count,
+            "report_month": report_month,
+            "case_count": case_count,
             "computed_at": now,
         })
     return monthly
@@ -79,13 +79,13 @@ def aggregate_monthly_hotspots(fir_records):
 
 def detect_spikes(hotspots, threshold=1.5):
     """
-    Detect spikes: district/category count exceeds state-average by threshold.
+    Detect spikes: district/category case_count exceeds state-average by threshold.
     Returns list of spike alerts with reasoning.
     """
     # Compute average per category across all districts
     cat_totals = defaultdict(list)
     for h in hotspots:
-        cat_totals[h["crime_category"]].append(h["count"])
+        cat_totals[h["crime_category"]].append(h["case_count"])
 
     cat_averages = {}
     for cat, counts in cat_totals.items():
@@ -94,12 +94,12 @@ def detect_spikes(hotspots, threshold=1.5):
     spikes = []
     for h in hotspots:
         avg = cat_averages.get(h["crime_category"], 0)
-        if avg > 0 and h["count"] > avg * threshold:
-            ratio = round(h["count"] / avg, 2)
+        if avg > 0 and h["case_count"] > avg * threshold:
+            ratio = round(h["case_count"] / avg, 2)
             spikes.append({
                 "district": h["district"],
                 "crime_category": h["crime_category"],
-                "count": h["count"],
+                "case_count": h["case_count"],
                 "state_average": round(avg, 1),
                 "spike_ratio": ratio,
                 "alert": f"{h['district']} has {ratio}x the state average for {h['crime_category']}",
@@ -111,7 +111,7 @@ def detect_spikes(hotspots, threshold=1.5):
 
 def compute_monthly_deltas(monthly_hotspots):
     """
-    For each district/category, compute month-over-month change.
+    For each district/category, compute report_month-over-report_month change.
     Returns list of delta entries.
     """
     # Group by district+category
@@ -122,20 +122,20 @@ def compute_monthly_deltas(monthly_hotspots):
 
     deltas = []
     for (district, category), entries in grouped.items():
-        # Sort by month
-        entries.sort(key=lambda e: e["month"])
+        # Sort by report_month
+        entries.sort(key=lambda e: e["report_month"])
         for i in range(1, len(entries)):
             prev = entries[i - 1]
             curr = entries[i]
-            change = curr["count"] - prev["count"]
-            pct_change = round((change / max(prev["count"], 1)) * 100, 1)
+            change = curr["case_count"] - prev["case_count"]
+            pct_change = round((change / max(prev["case_count"], 1)) * 100, 1)
             deltas.append({
                 "district": district,
                 "crime_category": category,
-                "month": curr["month"],
-                "prev_month": prev["month"],
-                "count": curr["count"],
-                "prev_count": prev["count"],
+                "report_month": curr["report_month"],
+                "prev_month": prev["report_month"],
+                "case_count": curr["case_count"],
+                "prev_count": prev["case_count"],
                 "change": change,
                 "pct_change": pct_change,
                 "direction": "up" if change > 0 else "down" if change < 0 else "flat",
@@ -150,8 +150,8 @@ def get_district_summary(hotspots):
 
     for h in hotspots:
         d = h["district"]
-        district_stats[d]["total"] += h["count"]
-        district_stats[d]["categories"][h["crime_category"]] = h["count"]
+        district_stats[d]["total"] += h["case_count"]
+        district_stats[d]["categories"][h["crime_category"]] = h["case_count"]
 
     summaries = []
     for district, stats in sorted(district_stats.items(), key=lambda x: x[1]["total"], reverse=True):

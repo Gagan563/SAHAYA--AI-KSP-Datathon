@@ -72,7 +72,7 @@ CREATE TABLE FIR_Victim_Mapping (
 CREATE TABLE Hotspot_Answers (
     district        TEXT NOT NULL,
     crime_category  TEXT NOT NULL,
-    count           INT NOT NULL,
+    case_count      INT NOT NULL,
     period          TEXT NOT NULL,   -- e.g. "Q4 2024", "2024-H2"
     computed_at     TEXT NOT NULL,   -- ISO timestamp of last computation
     trend           TEXT DEFAULT 'Stable' -- Rising|Stable|Declining
@@ -84,8 +84,8 @@ CREATE TABLE Hotspot_Answers (
 CREATE TABLE Monthly_Hotspots (
     district        TEXT NOT NULL,
     crime_category  TEXT NOT NULL,
-    month           TEXT NOT NULL,   -- "2024-11" format
-    count           INT NOT NULL,
+    report_month    TEXT NOT NULL,   -- "2024-11" format
+    case_count      INT NOT NULL,
     computed_at     TEXT NOT NULL    -- ISO timestamp
 );
 
@@ -104,7 +104,23 @@ CREATE TABLE Suspect_Clusters (
     computed_at     TEXT NOT NULL    -- ISO timestamp
 );
 
--- 9. Conversation Sessions (NEW)
+-- 9. Case Narratives (RAG corpus mirror)
+-- Stored here for the serverless API; the same rows can be synced to
+-- Catalyst NoSQL / QuickML Knowledge Base for richer retrieval.
+CREATE TABLE Case_Narratives (
+    fir_id                  TEXT NOT NULL,
+    title                   TEXT NOT NULL,
+    narrative               TEXT NOT NULL,
+    modus_operandi          TEXT,
+    evidence_summary        TEXT,
+    investigating_officer   TEXT,
+    suspects_linked         TEXT, -- JSON array: ["S001","S002"]
+    status                  TEXT,
+    created_at              TEXT,
+    updated_at              TEXT
+);
+
+-- 10. Conversation Sessions (NEW)
 -- Stores session state for context-aware follow-up queries
 -- In production, consider Catalyst Cache for lower latency
 CREATE TABLE Conversation_Sessions (
@@ -121,7 +137,7 @@ CREATE TABLE Conversation_Sessions (
 CREATE TABLE Spike_Alerts (
     district        TEXT NOT NULL,
     crime_category  TEXT NOT NULL,
-    count           INT NOT NULL,    -- Actual count for this district/category
+    case_count      INT NOT NULL,    -- Actual count for this district/category
     state_average   DOUBLE NOT NULL, -- Average count across all districts for this category
     spike_ratio     DOUBLE NOT NULL, -- count / state_average (e.g. 2.3 = 2.3× average)
     alert           TEXT NOT NULL,   -- Human-readable alert string

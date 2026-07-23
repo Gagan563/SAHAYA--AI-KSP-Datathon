@@ -24,7 +24,7 @@ const path = require("path");
 // ── Configuration ───────────────────────────────────────
 
 const PROJECT_ID = process.env.CATALYST_PROJECT_ID || "";
-const ACCESS_TOKEN = process.env.CATALYST_ACCESS_TOKEN || "";
+const ACCESS_TOKEN = (process.env.CATALYST_ACCESS_TOKEN || "").replace(/^Zoho-oauthtoken\s+/i, "");
 const DOMAIN = process.env.CATALYST_DOMAIN || "";
 
 if (!PROJECT_ID || !ACCESS_TOKEN || !DOMAIN) {
@@ -54,6 +54,7 @@ const TABLE_MAP = [
   { file: "case_narratives.json",       table: "Case_Narratives" },
   { file: "hotspot_answers.json",       table: "Hotspot_Answers" },
   { file: "monthly_hotspots.json",      table: "Monthly_Hotspots" },
+  { file: "spike_alerts.json",          table: "Spike_Alerts",      optional: true },
   { file: "suspects_scored.json",       table: "Suspects_Scored",    optional: true },
   { file: "suspect_clusters.json",      table: "Suspect_Clusters",   optional: true },
 ];
@@ -70,6 +71,17 @@ function chunk(arr, size) {
     chunks.push(arr.slice(i, i + size));
   }
   return chunks;
+}
+
+function normalizeRow(row) {
+  return Object.fromEntries(
+    Object.entries(row).map(([key, value]) => [
+      key,
+      Array.isArray(value) || (value && typeof value === "object")
+        ? JSON.stringify(value)
+        : value,
+    ])
+  );
 }
 
 /**
@@ -121,7 +133,7 @@ async function main() {
       process.exit(1);
     }
 
-    const rows = JSON.parse(fs.readFileSync(filePath, "utf-8"));
+    const rows = JSON.parse(fs.readFileSync(filePath, "utf-8")).map(normalizeRow);
     console.log(`\n📤 Uploading ${file} → ${table} (${rows.length} rows)`);
 
     const batches = chunk(rows, BATCH_SIZE);

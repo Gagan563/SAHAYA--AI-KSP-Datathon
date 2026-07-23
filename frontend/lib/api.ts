@@ -8,7 +8,9 @@
 import type { ChatResponse } from "./mock-data";
 import { MOCK_RESPONSES } from "./mock-data";
 
-const API_URL = process.env.NEXT_PUBLIC_API_URL || "";
+const API_URL =
+  process.env.NEXT_PUBLIC_API_URL ||
+  (process.env.NODE_ENV === "production" ? "/server/chat-api" : "");
 
 /** Whether to use the live API or fall back to mocks. */
 export function isLiveAPI(): boolean {

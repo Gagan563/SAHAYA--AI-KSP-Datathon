@@ -32,8 +32,14 @@ interface TimeHeatmapProps {
   categoryFilter?: string;
 }
 
+interface FIRRecord {
+  category: string;
+  day_of_week: string;
+  hour_of_day: number;
+}
+
 export function TimeHeatmap({ categoryFilter }: TimeHeatmapProps) {
-  const { data: firData, loading } = usePublicData<any[]>("fir_records.json", []);
+  const { data: firData, loading } = usePublicData<FIRRecord[]>("fir_records.json", []);
 
   const { grid, maxVal, totalCrimes, peakTime } = useMemo(() => {
     const g: number[][] = Array.from({ length: 7 }, () => Array(24).fill(0));

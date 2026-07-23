@@ -1,7 +1,7 @@
 "use client";
 
 import { useState, useRef, useEffect, useCallback } from "react";
-import { Send, Mic, MicOff, Sparkles, Network, Volume2, VolumeX } from "lucide-react";
+import { Send, Mic, MicOff, Sparkles, Network } from "lucide-react";
 import { MessageBubble } from "./MessageBubble";
 import { NetworkGraph } from "./NetworkGraph";
 import { sendChatMessage } from "@/lib/api";
@@ -11,6 +11,14 @@ import {
   INITIAL_MESSAGES,
   SUGGESTED_QUERIES,
 } from "@/lib/mock-data";
+
+function createMessageId(suffix = "") {
+  return `msg-${globalThis.crypto?.randomUUID?.() ?? `${Date.now()}-${Math.random().toString(36).slice(2)}`}${suffix}`;
+}
+
+function createLocalSessionId() {
+  return `sess_${globalThis.crypto?.randomUUID?.() ?? `${Date.now()}_local`}`;
+}
 
 export function ChatWindow() {
   const [messages, setMessages] = useState<ChatMessage[]>(INITIAL_MESSAGES);
@@ -37,7 +45,7 @@ export function ChatWindow() {
     if (!messageText || isLoading) return;
 
     const userMessage: ChatMessage = {
-      id: `msg-${Date.now()}`,
+      id: createMessageId(),
       role: "user",
       content: messageText,
       timestamp: new Date().toISOString(),
@@ -54,11 +62,11 @@ export function ChatWindow() {
       if (response.session_id) {
         setSessionId(response.session_id);
       } else if (!sessionId) {
-        setSessionId(`sess_${Date.now()}_local`);
+        setSessionId(createLocalSessionId());
       }
 
       const aiMessage: ChatMessage = {
-        id: `msg-${Date.now()}-ai`,
+        id: createMessageId("-ai"),
         role: "assistant",
         content: response.answer,
         timestamp: new Date().toISOString(),
@@ -74,7 +82,7 @@ export function ChatWindow() {
     } catch (err) {
       console.error("[SAHAYA] Unexpected error:", err);
       const errorMessage: ChatMessage = {
-        id: `msg-${Date.now()}-err`,
+        id: createMessageId("-err"),
         role: "assistant",
         content: "An unexpected error occurred. Please try again.",
         timestamp: new Date().toISOString(),

@@ -1,6 +1,6 @@
 """
 SAHAYA AI -- Batch Analytics: Crime Forecaster
-Computes 3-month moving average forecasts per district/category.
+Computes 3-report_month moving average forecasts per district/category.
 Also computes simple linear trend extrapolation with confidence bands.
 
 Output: forecast_answers.json, anomaly_alerts.json
@@ -17,14 +17,14 @@ def _month_to_ordinal(month_str):
     """Convert 'YYYY-MM' to an integer ordinal (months since epoch).
     Ensures regression is fitted against calendar months, not observation
     positions (Issue 3)."""
-    year, month = map(int, month_str.split("-"))
-    return year * 12 + (month - 1)
+    year, report_month = map(int, month_str.split("-"))
+    return year * 12 + (report_month - 1)
 
 
 def compute_forecasts(monthly_hotspots, periods_ahead=3):
     """
     For each district/category, compute:
-    - 3-month moving average
+    - 3-report_month moving average
     - Linear trend (slope + intercept) fitted against calendar months
     - Forecast for next `periods_ahead` months
     - Confidence interval (+-1 std dev)
@@ -37,19 +37,19 @@ def compute_forecasts(monthly_hotspots, periods_ahead=3):
 
     forecasts = []
     for (district, category), entries in grouped.items():
-        # Sort by month
-        entries.sort(key=lambda e: e["month"])
-        counts = [e["count"] for e in entries]
-        months = [e["month"] for e in entries]
+        # Sort by report_month
+        entries.sort(key=lambda e: e["report_month"])
+        counts = [e["case_count"] for e in entries]
+        months = [e["report_month"] for e in entries]
 
         if len(counts) < 2:
             continue
 
-        # 3-month moving average (or whatever we have)
+        # 3-report_month moving average (or whatever we have)
         window = min(3, len(counts))
         ma = sum(counts[-window:]) / window
 
-        # Issue 3: Fit against calendar-month ordinals, not positions
+        # Issue 3: Fit against calendar-report_month ordinals, not positions
         x_vals = [_month_to_ordinal(m) for m in months]
         n = len(counts)
         x_mean = sum(x_vals) / n
@@ -79,19 +79,19 @@ def compute_forecasts(monthly_hotspots, periods_ahead=3):
             y_lower = max(0, round(y_pred - std_dev, 1))
             y_upper = round(y_pred + std_dev, 1)
 
-            # Compute future month string
+            # Compute future report_month string
             future_year = x_future // 12
             future_month_num = (x_future % 12) + 1
             future_month = f"{future_year}-{str(future_month_num).zfill(2)}"
 
             predicted.append({
-                "month": future_month,
+                "report_month": future_month,
                 "predicted_count": y_pred,
                 "lower_bound": y_lower,
                 "upper_bound": y_upper,
             })
 
-        # Trend direction (slope is now per calendar month)
+        # Trend direction (slope is now per calendar report_month)
         if slope > 0.3:
             trend = "Rising"
         elif slope < -0.3:
@@ -119,10 +119,10 @@ def compute_forecasts(monthly_hotspots, periods_ahead=3):
 
 def detect_anomalies_zscore(monthly_hotspots, threshold=2.0):
     """
-    Z-score anomaly detection: flag months where a district/category's count
+    Z-score anomaly detection: flag months where a district/category's case_count
     exceeds mu + threshold * sigma.
 
-    Issue 1 fix: Leave-one-out -- exclude the candidate month from the
+    Issue 1 fix: Leave-one-out -- exclude the candidate report_month from the
     baseline statistics so the extreme value doesn't inflate mean/stddev.
     """
     grouped = defaultdict(list)
@@ -132,7 +132,7 @@ def detect_anomalies_zscore(monthly_hotspots, threshold=2.0):
 
     anomalies = []
     for (district, category), entries in grouped.items():
-        counts = [e["count"] for e in entries]
+        counts = [e["case_count"] for e in entries]
         if len(counts) < 4:
             # Need at least 4 data points for leave-one-out to be meaningful
             continue
@@ -149,18 +149,18 @@ def detect_anomalies_zscore(monthly_hotspots, threshold=2.0):
             if std == 0:
                 continue
 
-            z = (entry["count"] - mean) / std
+            z = (entry["case_count"] - mean) / std
             if z > threshold:
                 anomalies.append({
                     "district": district,
                     "crime_category": category,
-                    "month": entry["month"],
-                    "count": entry["count"],
+                    "report_month": entry["report_month"],
+                    "case_count": entry["case_count"],
                     "mean": round(mean, 1),
                     "std_dev": round(std, 2),
                     "z_score": round(z, 2),
                     "severity": "Critical" if z > 3 else "High" if z > 2.5 else "Elevated",
-                    "alert": f"[!] {category} in {district} spiked to {entry['count']} in {entry['month']} ({round(z, 1)} sigma above normal)",
+                    "alert": f"[!] {category} in {district} spiked to {entry['case_count']} in {entry['report_month']} ({round(z, 1)} sigma above normal)",
                 })
 
     anomalies.sort(key=lambda a: a["z_score"], reverse=True)
@@ -170,7 +170,7 @@ def detect_anomalies_zscore(monthly_hotspots, threshold=2.0):
 def compute_trend_for_hotspots(hotspots, monthly_hotspots):
     """
     Issue 5: Derive trend labels from one shared linear regression
-    calculation, rather than using ad-hoc count thresholds.
+    calculation, rather than using ad-hoc case_count thresholds.
     Returns hotspots list with `trend` field set from actual slope analysis.
     """
     # Build a slope lookup from monthly data
@@ -181,9 +181,9 @@ def compute_trend_for_hotspots(hotspots, monthly_hotspots):
 
     slope_lookup = {}
     for (district, category), entries in grouped.items():
-        entries.sort(key=lambda e: e["month"])
-        counts = [e["count"] for e in entries]
-        months = [e["month"] for e in entries]
+        entries.sort(key=lambda e: e["report_month"])
+        counts = [e["case_count"] for e in entries]
+        months = [e["report_month"] for e in entries]
 
         if len(counts) < 2:
             slope_lookup[(district, category)] = "Stable"
@@ -220,7 +220,7 @@ if __name__ == "__main__":
     with open(os.path.join(data_dir, "monthly_hotspots.json")) as f:
         monthly = json.load(f)
 
-    print("[FORECAST] Computing forecasts (calendar-month regression)...")
+    print("[FORECAST] Computing forecasts (calendar-report_month regression)...")
     forecasts = compute_forecasts(monthly, periods_ahead=3)
     print(f"  Generated {len(forecasts)} forecast entries")
 

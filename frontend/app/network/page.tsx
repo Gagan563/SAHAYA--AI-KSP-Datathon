@@ -2,12 +2,14 @@
 
 import { Network } from "lucide-react";
 import { NetworkGraph } from "@/components/NetworkGraph";
-import { MOCK_RESPONSES } from "@/lib/mock-data";
+import { usePublicData } from "@/lib/use-public-data";
+import type { GraphData } from "@/lib/mock-data";
 
 export default function NetworkPage() {
-  const graphData = MOCK_RESPONSES.network_crime_ring.graph;
+  const { data: graphData, loading } = usePublicData<GraphData>("graph_data.json", { nodes: [], links: [] });
 
-  if (!graphData) return null;
+  const highRiskCount = graphData.nodes.filter((n) => n.risk === "High").length;
+  const clusterCount = new Set(graphData.nodes.map((n) => n.group)).size;
 
   return (
     <div className="min-h-screen p-8 flex flex-col">
@@ -27,32 +29,38 @@ export default function NetworkPage() {
         <div className="glass-card rounded-lg px-4 py-2">
           <span className="text-[10px] text-[var(--color-text-tertiary)] uppercase">Suspects</span>
           <p className="text-lg font-bold font-mono text-[var(--color-text-primary)]">
-            {graphData.nodes.length}
+            {loading ? "—" : graphData.nodes.length}
           </p>
         </div>
         <div className="glass-card rounded-lg px-4 py-2">
           <span className="text-[10px] text-[var(--color-text-tertiary)] uppercase">Connections</span>
           <p className="text-lg font-bold font-mono text-[var(--color-text-primary)]">
-            {graphData.links.length}
+            {loading ? "—" : graphData.links.length}
           </p>
         </div>
         <div className="glass-card rounded-lg px-4 py-2">
           <span className="text-[10px] text-[var(--color-text-tertiary)] uppercase">High Risk</span>
           <p className="text-lg font-bold font-mono text-[var(--color-accent-red)]">
-            {graphData.nodes.filter((n) => n.risk === "High").length}
+            {loading ? "—" : highRiskCount}
           </p>
         </div>
         <div className="glass-card rounded-lg px-4 py-2">
           <span className="text-[10px] text-[var(--color-text-tertiary)] uppercase">Clusters</span>
           <p className="text-lg font-bold font-mono text-[var(--color-accent-purple)]">
-            {new Set(graphData.nodes.map((n) => n.group)).size}
+            {loading ? "—" : clusterCount}
           </p>
         </div>
       </div>
 
       {/* Graph */}
       <div className="flex-1 min-h-[500px]">
-        <NetworkGraph data={graphData} />
+        {loading ? (
+          <div className="w-full h-full flex items-center justify-center text-sm text-[var(--color-text-muted)] animate-pulse">
+            Loading network graph data...
+          </div>
+        ) : (
+          <NetworkGraph data={graphData} />
+        )}
       </div>
     </div>
   );

@@ -93,7 +93,7 @@ export interface GraphLink {
 export interface HotspotEntry {
   district: string;
   crime_category: string;
-  count: number;
+  case_count: number;
   period: string;
   trend: "Rising" | "Stable" | "Declining";
   computed_at: string;
@@ -292,16 +292,16 @@ export const MOCK_RESPONSES: Record<string, ChatResponse> = {
 // ── Mock Hotspot Data ──
 
 export const MOCK_HOTSPOTS: HotspotEntry[] = [
-  { district: "Bengaluru Urban", crime_category: "Theft", count: 12, period: "2024-2025", trend: "Rising", computed_at: new Date().toISOString() },
-  { district: "Bengaluru Urban", crime_category: "Cybercrime", count: 8, period: "2024-2025", trend: "Rising", computed_at: new Date().toISOString() },
-  { district: "Bengaluru Urban", crime_category: "Fraud", count: 6, period: "2024-2025", trend: "Stable", computed_at: new Date().toISOString() },
-  { district: "Mysuru", crime_category: "Theft", count: 6, period: "2024-2025", trend: "Stable", computed_at: new Date().toISOString() },
-  { district: "Mysuru", crime_category: "Drug", count: 4, period: "2024-2025", trend: "Rising", computed_at: new Date().toISOString() },
-  { district: "Mangaluru", crime_category: "Robbery", count: 5, period: "2024-2025", trend: "Declining", computed_at: new Date().toISOString() },
-  { district: "Hubli-Dharwad", crime_category: "Assault", count: 4, period: "2024-2025", trend: "Stable", computed_at: new Date().toISOString() },
-  { district: "Belagavi", crime_category: "Theft", count: 3, period: "2024-2025", trend: "Declining", computed_at: new Date().toISOString() },
-  { district: "Kalaburagi", crime_category: "Murder", count: 2, period: "2024-2025", trend: "Stable", computed_at: new Date().toISOString() },
-  { district: "Shivamogga", crime_category: "Missing", count: 3, period: "2024-2025", trend: "Rising", computed_at: new Date().toISOString() },
+  { district: "Bengaluru Urban", crime_category: "Theft", case_count: 12, period: "2024-2025", trend: "Rising", computed_at: new Date().toISOString() },
+  { district: "Bengaluru Urban", crime_category: "Cybercrime", case_count: 8, period: "2024-2025", trend: "Rising", computed_at: new Date().toISOString() },
+  { district: "Bengaluru Urban", crime_category: "Fraud", case_count: 6, period: "2024-2025", trend: "Stable", computed_at: new Date().toISOString() },
+  { district: "Mysuru", crime_category: "Theft", case_count: 6, period: "2024-2025", trend: "Stable", computed_at: new Date().toISOString() },
+  { district: "Mysuru", crime_category: "Drug", case_count: 4, period: "2024-2025", trend: "Rising", computed_at: new Date().toISOString() },
+  { district: "Mangaluru", crime_category: "Robbery", case_count: 5, period: "2024-2025", trend: "Declining", computed_at: new Date().toISOString() },
+  { district: "Hubli-Dharwad", crime_category: "Assault", case_count: 4, period: "2024-2025", trend: "Stable", computed_at: new Date().toISOString() },
+  { district: "Belagavi", crime_category: "Theft", case_count: 3, period: "2024-2025", trend: "Declining", computed_at: new Date().toISOString() },
+  { district: "Kalaburagi", crime_category: "Murder", case_count: 2, period: "2024-2025", trend: "Stable", computed_at: new Date().toISOString() },
+  { district: "Shivamogga", crime_category: "Missing", case_count: 3, period: "2024-2025", trend: "Rising", computed_at: new Date().toISOString() },
 ];
 
 // ── Suggested Queries ──

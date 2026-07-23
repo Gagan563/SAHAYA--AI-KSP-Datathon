@@ -1,19 +1,10 @@
 {
-  "project_name": "SAHAYA-AI",
-  "project_id": null,
-  "note": "This is a placeholder. Run 'catalyst init' after 'catalyst login' to link this to your Zoho Catalyst project.",
-  "cli_version": "2.x",
-  "functions": [
-    {
-      "name": "chat-api",
-      "type": "advancedio",
-      "path": "functions/chat-api"
-    }
-  ],
-  "appsail": [
-    {
-      "name": "circuit-worker",
-      "path": "functions/circuit-worker"
-    }
-  ]
+  "functions": {
+    "targets": [
+      "chat-api"
+    ]
+  },
+  "client": {
+    "source": "frontend/out"
+  }
 }

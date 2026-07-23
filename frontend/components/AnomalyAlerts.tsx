@@ -9,8 +9,8 @@ import { usePublicData } from "@/lib/use-public-data";
 interface Anomaly {
   district: string;
   crime_category: string;
-  month: string;
-  count: number;
+  report_month: string;
+  case_count: number;
   mean: number;
   std_dev: number;
   z_score: number;
@@ -77,7 +77,7 @@ export function AnomalyAlerts() {
       <div className="space-y-2 max-h-[280px] overflow-y-auto custom-scrollbar">
         {anomalies.map((anomaly, i) => {
           const style = SEVERITY_STYLES[anomaly.severity];
-          const pctAbove = (((anomaly.count - anomaly.mean) / anomaly.mean) * 100).toFixed(0);
+          const pctAbove = (((anomaly.case_count - anomaly.mean) / anomaly.mean) * 100).toFixed(0);
 
           return (
             <div key={i} className={`rounded-lg border ${style.border} ${style.bg} p-3 transition-all hover:scale-[1.01]`}>
@@ -89,7 +89,7 @@ export function AnomalyAlerts() {
                       {anomaly.crime_category} in {anomaly.district}
                     </div>
                     <div className="text-[10px] text-[var(--color-text-muted)] mt-0.5">
-                      {anomaly.month} • {anomaly.count} incidents ({pctAbove}% above mean of {anomaly.mean})
+                      {anomaly.report_month} • {anomaly.case_count} incidents ({pctAbove}% above mean of {anomaly.mean})
                     </div>
                   </div>
                 </div>
@@ -104,12 +104,12 @@ export function AnomalyAlerts() {
                   <div
                     className="h-full rounded-full"
                     style={{
-                      width: `${Math.min((anomaly.count / (anomaly.mean * 3)) * 100, 100)}%`,
+                      width: `${Math.min((anomaly.case_count / (anomaly.mean * 3)) * 100, 100)}%`,
                       background: anomaly.severity === "Critical" ? "#ef4444" : anomaly.severity === "High" ? "#f59e0b" : "#3b82f6",
                     }}
                   />
                 </div>
-                <span className="text-[9px] text-[var(--color-text-muted)] w-6 text-right">{anomaly.count}</span>
+                <span className="text-[9px] text-[var(--color-text-muted)] w-6 text-right">{anomaly.case_count}</span>
               </div>
             </div>
           );

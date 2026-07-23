@@ -16,6 +16,7 @@ import json
 import os
 import sys
 from datetime import datetime
+from http.server import BaseHTTPRequestHandler, HTTPServer
 
 from graph_analysis import build_suspect_graph, detect_crime_rings, build_graph_json
 from hotspot_aggregator import (
@@ -132,8 +133,79 @@ def run_pipeline(data_dir):
     }
 
 
+def resolve_data_dir():
+    """Prefer packaged AppSail data, then fall back to the repo data folder."""
+    candidates = [
+        os.path.join(os.path.dirname(__file__), "data", "samples"),
+        os.path.join(os.path.dirname(__file__), "..", "..", "data", "samples"),
+        os.getenv("SAHAYA_DATA_DIR", ""),
+    ]
+
+    for candidate in candidates:
+        if candidate and os.path.isdir(candidate):
+            return candidate
+
+    return candidates[0]
+
+
+class AnalyticsHandler(BaseHTTPRequestHandler):
+    def _send_json(self, status, payload):
+        body = json.dumps(payload, indent=2).encode("utf-8")
+        self.send_response(status)
+        self.send_header("Content-Type", "application/json")
+        self.send_header("Content-Length", str(len(body)))
+        self.end_headers()
+        self.wfile.write(body)
+
+    def do_GET(self):
+        if self.path in ("/", "/health"):
+            self._send_json(200, {
+                "status": "ok",
+                "service": "sahaya-circuit-worker",
+                "timestamp": datetime.utcnow().isoformat() + "Z",
+            })
+            return
+
+        if self.path.startswith("/run"):
+            data_dir = resolve_data_dir()
+            if not os.path.isdir(data_dir):
+                self._send_json(500, {
+                    "status": "error",
+                    "message": f"Data directory not found: {data_dir}",
+                })
+                return
+
+            try:
+                self._send_json(200, run_pipeline(data_dir))
+            except Exception as exc:
+                self._send_json(500, {
+                    "status": "error",
+                    "message": str(exc),
+                })
+            return
+
+        self._send_json(404, {
+            "status": "not_found",
+            "message": "Use /health for status or /run to execute the analytics pipeline.",
+        })
+
+    def log_message(self, format, *args):
+        print(f"[AppSail] {self.address_string()} - {format % args}")
+
+
+def serve_appsail():
+    port = int(os.getenv("X_ZOHO_CATALYST_LISTEN_PORT", os.getenv("PORT", "9000")))
+    server = HTTPServer(("0.0.0.0", port), AnalyticsHandler)
+    print(f"[AppSail] SAHAYA circuit-worker listening on port {port}")
+    server.serve_forever()
+
+
 if __name__ == "__main__":
-    data_dir = os.path.join(os.path.dirname(__file__), "..", "..", "data", "samples")
+    if os.getenv("X_ZOHO_CATALYST_LISTEN_PORT") or os.getenv("SAHAYA_APPSAIL_SERVER") == "1":
+        serve_appsail()
+        sys.exit(0)
+
+    data_dir = resolve_data_dir()
     if not os.path.isdir(data_dir):
         print(f"❌ Data directory not found: {data_dir}")
         sys.exit(1)

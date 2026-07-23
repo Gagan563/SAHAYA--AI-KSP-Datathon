@@ -8,32 +8,48 @@ SAHAYA AI is a conversational intelligence platform built for the KSP - Datathon
 
 ```
 SAHAYA--AI-KSP-Datathon/
-├── frontend/              # Next.js 16 app (Tailwind v4 + Radix UI)
-│   ├── app/               # Pages: Chat, Dashboard, Network, Reports
-│   ├── components/        # Reusable UI components
-│   └── lib/               # Mock data, utilities
-├── functions/             # Catalyst serverless functions
-│   ├── chat-api/          # Advanced I/O function for /api/chat
-│   │   ├── index.js       # Main controller with session middleware
-│   │   ├── intent-classifier.js  # 5-intent regex router
-│   │   ├── fact-handler.js       # Stats + spike detection
-│   │   ├── rag-handler.js        # RAG with passage matching
-│   │   ├── network-handler.js    # Graph queries
-│   │   ├── profile-handler.js    # Suspect dossier + MO profiling
-│   │   ├── summary-handler.js    # Case summary + similar cases
-│   │   └── session-manager.js    # Context-aware session state
-│   └── circuit-worker/    # Batch analytics (NetworkX, Python)
-│       ├── main.py             # Pipeline orchestrator
-│       ├── graph_analysis.py   # Connected component detection
-│       ├── hotspot_aggregator.py # District + monthly + spike analysis
-│       └── risk_scorer.py      # Rule-based risk assessment
-├── data/                  # Data foundation
-│   ├── generator/         # Synthetic data generator (Node.js)
-│   ├── samples/           # Generated JSON data files
-│   └── schemas/           # SQL schema definitions
-├── docs/                  # Architecture & requirements docs
-├── catalyst.json          # Catalyst project config (placeholder)
-└── README.md              # This file
+├── frontend/                # Next.js 16 app (Tailwind v4 + Radix UI)
+│   ├── app/                 # Pages: Chat, Dashboard, Network, Reports
+│   ├── components/          # 12 UI components
+│   │   ├── ChatWindow.tsx          # AI chat interface + voice
+│   │   ├── MessageBubble.tsx       # Rich response rendering
+│   │   ├── ExplainabilityPanel.tsx  # Reasoning chain viewer
+│   │   ├── CrimeMap.tsx            # Leaflet geospatial map
+│   │   ├── TimeHeatmap.tsx         # 7×24 spatiotemporal grid
+│   │   ├── ForecastPanel.tsx       # Crime trend sparklines
+│   │   ├── CorrelationChart.tsx    # Socio-economic scatter plot
+│   │   ├── AnomalyAlerts.tsx       # Z-score anomaly cards
+│   │   ├── NetworkGraph.tsx        # Force-directed suspect graph
+│   │   ├── HotspotCard.tsx         # Crime stat cards
+│   │   └── Sidebar.tsx             # Navigation + system status
+│   ├── lib/                 # Hooks, utilities, mock data
+│   └── public/data/         # Published JSON artifacts for dashboard
+├── functions/               # Catalyst serverless functions
+│   ├── chat-api/            # Advanced I/O function for /api/chat
+│   │   ├── index.js                # Main controller with session middleware
+│   │   ├── intent-classifier.js    # 5-intent NLP router
+│   │   ├── fact-handler.js         # Stats + spike detection
+│   │   ├── rag-handler.js          # RAG with passage matching (QuickML)
+│   │   ├── network-handler.js      # Graph queries
+│   │   ├── profile-handler.js      # Suspect dossier + MO profiling
+│   │   ├── summary-handler.js      # Case summary + similar cases
+│   │   └── session-manager.js      # Context-aware session state
+│   └── circuit-worker/      # Batch analytics (Python + NetworkX)
+│       ├── main.py                 # Pipeline orchestrator
+│       ├── forecaster.py           # Moving avg + linear regression + anomaly detection
+│       ├── graph_analysis.py       # Connected component detection
+│       ├── hotspot_aggregator.py   # District + monthly + spike analysis
+│       ├── risk_scorer.py          # Rule-based risk assessment
+│       └── Dockerfile              # AppSail container
+├── data/                    # Data foundation
+│   ├── generator/           # Synthetic data generator (Node.js)
+│   ├── samples/             # 11 generated JSON data files
+│   ├── demographics/        # Karnataka district stats (real data)
+│   └── schemas/             # SQL schema definitions
+├── scripts/                 # Deployment & upload helpers
+├── docs/                    # Architecture & requirements docs
+├── catalyst.json            # Catalyst project config
+└── README.md                # This file
 ```
 
 ## 🚀 Quick Start
@@ -81,12 +97,19 @@ python main.py
 - **Context-Aware Conversations** — Session state tracks entities; follow-ups like "show his other cases" resolve automatically
 - **Explainability + Reasoning** — Every answer shows its source AND a "Why this answer?" reasoning chain
 
+### Advanced Visualization (6 modules)
+- **Geospatial Crime Map** — Interactive Leaflet map of Karnataka with district markers, FIR pins, and pulsing spike alerts
+- **Spatiotemporal Heatmap** — 7×24 grid (day-of-week × hour) revealing crime timing patterns with peak-time detection
+- **Crime Trend Forecasting** — 3-month moving average + linear regression with confidence bands and sparkline charts
+- **Socio-Economic Correlation** — Canvas scatter plot correlating crime rates against urbanization, literacy, unemployment, and population density (Pearson r)
+- **Z-Score Anomaly Detection** — Leave-one-out anomaly baseline with severity badges (Critical / High / Elevated)
+- **Suspect Network Graph** — Force-directed visualization of criminal connections and crime ring clusters
+
 ### Analytics
-- **Suspect Network Graph** — Force-directed visualization of criminal connections
-- **Crime Hotspot Detection** — Per-district, per-category analytics with trends
+- **Crime Hotspot Detection** — Per-district, per-category analytics with regression-derived trend labels
 - **Spike Detection** — Flags district/category exceeding 1.5x state average
-- **Monthly Trend Analysis** — Time-based bucketing with month-over-month deltas
-- **Risk Scoring** — Rule-based (upgradeable to Zia AutoML) threat assessment
+- **Monthly Trend Analysis** — Calendar-month bucketing with shared regression (not position-based)
+- **Risk Scoring** — Rule-based threat assessment (upgradeable to Zia AutoML)
 - **Crime Ring Detection** — NetworkX connected-component analysis
 
 ### Profiling
@@ -96,10 +119,10 @@ python main.py
 - **Similar Case Retrieval** — Word-trigram Jaccard similarity + category boosting
 
 ### UX
-- **Kannada Voice Input** — Mic button with STT integration
-- **Text-to-Speech** — 🔊 button on every AI response for read-aloud (Web Speech API)
+- **Kannada Voice Input** — Mic button with STT integration (Zia Services)
+- **Text-to-Speech** — 🔊 button on every AI response for read-aloud
 - **Dark "Police Intelligence" Theme** — Premium glassmorphism UI
-- **Interactive Dashboard** — Stat cards, bar charts, trend indicators
+- **Interactive Dashboard** — 8 analytical sections, all data from single source of truth
 - **PDF Export** — SmartBrowz-based report generation
 
 ## 🔌 Zoho Catalyst Setup
@@ -176,12 +199,15 @@ POST /api/chat
 
 ### Batch-Generated Artifacts
 
-The batch pipeline (`circuit-worker/main.py`) also persists these derived files:
+The batch pipeline (`circuit-worker/main.py` + `forecaster.py`) persists these derived files:
 
 | File | Schema | Description |
 |---|---|---|
+| `forecast_answers.json` | `[{ district, crime_category, historical_counts, trend_slope, trend_direction, forecasted_periods }]` | Calendar-month regression forecasts with confidence bands |
+| `anomaly_alerts.json` | `[{ district, crime_category, month, count, mean, std_dev, z_score, severity }]` | Leave-one-out Z-score anomalies |
+| `hotspot_answers.json` | `[{ district, crime_category, count, period, trend, computed_at }]` | Aggregated hotspots with regression-derived trend labels |
+| `graph_data.json` | `{ nodes: [{ id, name, risk, district, group }], links: [{ source, target, fir_id, label }] }` | Prebuilt force-graph JSON |
 | `spike_alerts.json` | `[{ district, crime_category, count, state_average, spike_ratio, alert }]` | Districts exceeding 1.5× state average |
-| `graph_data.json` | `{ nodes: [{ id, name, risk, district, group }], links: [{ source, target, fir_id, label }] }` | Prebuilt force-graph JSON for frontend visualization |
 
 ## 🏆 Tech Stack
 
@@ -197,20 +223,28 @@ The batch pipeline (`circuit-worker/main.py`) also persists these derived files:
 | Reports | SmartBrowz (PDF) |
 | Orchestration | Catalyst Circuits + Job Scheduling |
 
-## 📋 Demo Script
+## 📋 Demo Script (15 Steps)
 
-1. **Open Dashboard** → Show hotspot cards and district comparison (53 cases, 6 crime rings)
-2. **Ask a fact** → "Which district has the highest theft cases?" → See DB-verified badge + reasoning chain
-3. **Ask about spikes** → "Show emerging crime trends" → See spike alerts with ratios
-4. **Ask a narrative** → "Tell me about chain snatching patterns" → See RAG sources + MO cross-references
-5. **Ask about networks** → "Show suspect connections" → See force-directed graph panel
-6. **Profile a suspect** → "Profile of Ravi Kumar" → See dossier + repeat MO alert + crime ring
-7. **Follow up** → "Show his other cases" → Context resolves "his" to Ravi Kumar
-8. **Summarize a case** → "Summarize FIR-2024-BLR-0042" → See auto-summary + similar cases
-9. **Click "Why this answer?"** → See step-by-step reasoning chain
-10. **Use Kannada mic** → Click 🎤 and speak → See transcription + response
-11. **Listen to response** → Click 🔊 → Hear TTS read-aloud
-12. **Export** → Click "Save as PDF" for report generation
+### Dashboard Analytics (Steps 1-6)
+1. **Open Dashboard** → Show stat cards (total cases, rising hotspots, crime rings, high-risk suspects)
+2. **Scroll to Map** → Interactive Leaflet map with district markers, pulsing spike alerts, zoom to Bengaluru
+3. **Spatiotemporal Analysis** → Point out peak crime time (e.g. "Wednesday 11PM-12AM")
+4. **Forecasting** → Show sparklines — highlight rising trends with confidence bands
+5. **Correlation** → Toggle metric selector — show urbanization vs crime rate with Pearson r
+6. **Anomaly Detection** → Show Z-score alerts or "all within 2σ" — explain leave-one-out methodology
+
+### Conversational AI (Steps 7-13)
+7. **Ask a fact** → "Which district has the highest theft cases?" → See DB-verified badge + reasoning chain
+8. **Ask about spikes** → "Show emerging crime trends" → See spike alerts with ratios
+9. **Ask a narrative** → "Tell me about chain snatching patterns" → See RAG sources
+10. **Ask about networks** → "Show suspect connections" → See force-directed graph panel
+11. **Profile a suspect** → "Profile of Ravi Kumar" → See dossier + repeat MO alert + crime ring
+12. **Follow up** → "Show his other cases" → Context resolves "his" to Ravi Kumar
+13. **Summarize a case** → "Summarize FIR-2024-BLR-0042" → See auto-summary + similar cases
+
+### Polish (Steps 14-15)
+14. **Explainability** → Click "Why this answer?" → See step-by-step reasoning chain
+15. **Voice** → Click 🎤 for Kannada input, 🔊 for TTS read-aloud
 
 ---
 

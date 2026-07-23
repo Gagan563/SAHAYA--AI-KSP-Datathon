@@ -133,9 +133,9 @@ const CRIME_DESCRIPTIONS = {
   ],
   Fraud: [
     "Real estate fraud — multiple buyers cheated by fake property documents for a site at {location}. Total fraud worth ₹{amount}.",
-    "Employment fraud — suspect collected ₹{amount} from {count} job seekers promising government posts.",
+    "Employment fraud — suspect collected ₹{amount} from {case_count} job seekers promising government posts.",
     "Insurance fraud — staged accident at {location} to claim insurance of ₹{amount}. Suspect colluded with local garage.",
-    "Ponzi scheme — suspect collected ₹{amount} from {count} investors promising 30% monthly returns.",
+    "Ponzi scheme — suspect collected ₹{amount} from {case_count} investors promising 30% monthly returns.",
   ],
   Missing: [
     "Missing person — {missingName} ({age}, {gender}) not seen since leaving home at {location} on {date}.",
@@ -286,7 +286,7 @@ function fillTemplate(template, district) {
     .replace("{amount}", (randInt(10, 500) * 1000).toLocaleString("en-IN"))
     .replace("{quantity}", randInt(2, 50))
     .replace("{age}", randInt(18, 65))
-    .replace("{count}", randInt(5, 50))
+    .replace("{case_count}", randInt(5, 50))
     .replace("{missingName}", `${pick([...FIRST_NAMES_MALE, ...FIRST_NAMES_FEMALE])} ${pick(LAST_NAMES)}`)
     .replace("{gender}", pick(["male", "female"]))
     .replace("{date}", formatDate(randDate()))
@@ -334,9 +334,9 @@ const CRIME_RINGS = [
 
 // ── Generate Suspects ───────────────────────────────────
 
-function generateSuspects(count) {
+function generateSuspects(case_count) {
   const suspects = [];
-  for (let i = 0; i < count; i++) {
+  for (let i = 0; i < case_count; i++) {
     const isMale = Math.random() > 0.2;
     const firstName = pick(isMale ? FIRST_NAMES_MALE : FIRST_NAMES_FEMALE);
     const lastName = pick(LAST_NAMES);
@@ -407,7 +407,7 @@ function generateVictims(firs) {
 
 // ── Generate FIR Records ────────────────────────────────
 
-function generateFIRs(count, suspects) {
+function generateFIRs(case_count, suspects) {
   const firs = [];
   const mappings = [];
   let firNum = 1;
@@ -464,7 +464,7 @@ function generateFIRs(count, suspects) {
   });
 
   // Then: fill remaining FIRs with random suspects
-  const remainingCount = count - firs.length;
+  const remainingCount = case_count - firs.length;
   for (let i = 0; i < remainingCount; i++) {
     const district = pick(DISTRICTS);
     const station = pick(STATIONS[district.name]);
@@ -513,8 +513,8 @@ function generateFIRs(count, suspects) {
 
 // ── Generate Case Narratives ────────────────────────────
 
-function generateNarratives(firs, suspects, mappings, count) {
-  const selectedFirs = pickN(firs, count);
+function generateNarratives(firs, suspects, mappings, case_count) {
+  const selectedFirs = pickN(firs, case_count);
   return selectedFirs.map((fir) => {
     const linkedMappings = mappings.filter((m) => m.fir_id === fir.fir_id);
     const linkedSuspectIds = linkedMappings.map((m) => m.suspect_id);
@@ -555,15 +555,15 @@ function aggregateHotspots(firs) {
   });
 
   const now = new Date().toISOString();
-  return Object.entries(counts).map(([key, count]) => {
+  return Object.entries(counts).map(([key, case_count]) => {
     const [district, category] = key.split("|");
     return {
       district,
       crime_category: category,
-      count,
+      case_count,
       period: "2024-2025",
       computed_at: now,
-      trend: count > 5 ? "Rising" : count > 2 ? "Stable" : "Declining",
+      trend: case_count > 5 ? "Rising" : case_count > 2 ? "Stable" : "Declining",
     };
   });
 }
@@ -580,13 +580,13 @@ function aggregateMonthlyHotspots(firs) {
   });
 
   const now = new Date().toISOString();
-  return Object.entries(counts).map(([key, count]) => {
-    const [district, category, month] = key.split("|");
+  return Object.entries(counts).map(([key, case_count]) => {
+    const [district, category, report_month] = key.split("|");
     return {
       district,
       crime_category: category,
-      month,
-      count,
+      report_month,
+      case_count,
       computed_at: now,
     };
   });

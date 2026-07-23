@@ -1,0 +1,9 @@
+{
+	"name": "sahaya_ai_function",
+	"version": "1.0.0",
+	"main": "index.js",
+	"author": "gaganggagan28@gmail.com",
+	"dependencies": {
+		"zcatalyst-sdk-node": "latest"
+	}
+}

@@ -1,6 +1,7 @@
 "use client";
 
-import { useEffect, useState, useRef } from "react";
+import { useCallback, useEffect, useState, useRef } from "react";
+import type { Map as LeafletMap } from "leaflet";
 
 /**
  * Interactive Crime Map using Leaflet.js
@@ -32,6 +33,8 @@ interface DistrictStats {
   isSpike: boolean;
 }
 
+type LeafletModule = typeof import("leaflet");
+
 // Karnataka district coordinates
 const DISTRICT_COORDS: Record<string, [number, number]> = {
   "Bengaluru Urban": [12.9716, 77.5946],
@@ -53,58 +56,39 @@ function getSeverityColor(count: number, maxCount: number): string {
   return "#22c55e"; // green
 }
 
+function renderMockData(L: LeafletModule, map: LeafletMap) {
+  // Fallback with hardcoded data if JSON import fails
+  const mockDistricts = [
+    { name: "Bengaluru Urban", lat: 12.9716, lon: 77.5946, count: 22, spike: true },
+    { name: "Mysuru", lat: 12.2958, lon: 76.6394, count: 12, spike: false },
+    { name: "Mangaluru", lat: 12.8745, lon: 74.8423, count: 8, spike: false },
+    { name: "Hubli-Dharwad", lat: 15.3647, lon: 75.124, count: 9, spike: false },
+    { name: "Belagavi", lat: 15.8497, lon: 74.4977, count: 7, spike: false },
+    { name: "Kalaburagi", lat: 17.329, lon: 76.8343, count: 6, spike: false },
+  ];
+
+  for (const d of mockDistricts) {
+    const color = d.spike ? "#ef4444" : d.count > 10 ? "#f59e0b" : "#22c55e";
+    const radius = 15 + (d.count / 22) * 35;
+
+    L.circleMarker([d.lat, d.lon], {
+      radius,
+      fillColor: color,
+      color: d.spike ? "#ef4444" : color,
+      weight: d.spike ? 3 : 1.5,
+      fillOpacity: 0.35,
+    })
+      .bindPopup(`<strong>${d.name}</strong><br/>${d.count} crimes`)
+      .addTo(map);
+  }
+}
+
 export function CrimeMap() {
   const mapRef = useRef<HTMLDivElement>(null);
-  const mapInstanceRef = useRef<any>(null);
+  const mapInstanceRef = useRef<LeafletMap | null>(null);
   const [isLoaded, setIsLoaded] = useState(false);
-  const [viewMode, setViewMode] = useState<"markers" | "heatmap">("markers");
-  const [selectedDistrict, setSelectedDistrict] = useState<DistrictStats | null>(null);
 
-  useEffect(() => {
-    if (typeof window === "undefined" || mapInstanceRef.current) return;
-
-    // Dynamically import Leaflet to avoid SSR issues
-    import("leaflet").then((L) => {
-      // Fix default marker icons
-      delete (L.Icon.Default.prototype as any)._getIconUrl;
-      L.Icon.Default.mergeOptions({
-        iconRetinaUrl: "https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/images/marker-icon-2x.png",
-        iconUrl: "https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/images/marker-icon.png",
-        shadowUrl: "https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/images/marker-shadow.png",
-      });
-
-      if (!mapRef.current) return;
-
-      // Create the map centered on Karnataka
-      const map = L.map(mapRef.current, {
-        center: [14.5, 76.0],
-        zoom: 7,
-        zoomControl: true,
-        scrollWheelZoom: true,
-      });
-
-      // Dark tile layer matching our theme
-      L.tileLayer("https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png", {
-        attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OSM</a> &copy; <a href="https://carto.com/attributions">CARTO</a>',
-        maxZoom: 19,
-      }).addTo(map);
-
-      mapInstanceRef.current = map;
-
-      // Load FIR data and add markers
-      loadAndRenderData(L, map);
-      setIsLoaded(true);
-    });
-
-    return () => {
-      if (mapInstanceRef.current) {
-        mapInstanceRef.current.remove();
-        mapInstanceRef.current = null;
-      }
-    };
-  }, []);
-
-  async function loadAndRenderData(L: any, map: any) {
+  const loadAndRenderData = useCallback(async (L: LeafletModule, map: LeafletMap) => {
     // Load FIR data from public/data/ at runtime
     const firData: FIRRecord[] = await fetch("/data/fir_records.json").then(r => r.json()).catch(() => []);
     
@@ -210,34 +194,51 @@ export function CrimeMap() {
         }),
       }).addTo(map);
     }
-  }
+  }, []);
 
-  function renderMockData(L: any, map: any) {
-    // Fallback with hardcoded data if JSON import fails
-    const mockDistricts = [
-      { name: "Bengaluru Urban", lat: 12.9716, lon: 77.5946, count: 22, spike: true },
-      { name: "Mysuru", lat: 12.2958, lon: 76.6394, count: 12, spike: false },
-      { name: "Mangaluru", lat: 12.8745, lon: 74.8423, count: 8, spike: false },
-      { name: "Hubli-Dharwad", lat: 15.3647, lon: 75.124, count: 9, spike: false },
-      { name: "Belagavi", lat: 15.8497, lon: 74.4977, count: 7, spike: false },
-      { name: "Kalaburagi", lat: 17.329, lon: 76.8343, count: 6, spike: false },
-    ];
+  useEffect(() => {
+    if (typeof window === "undefined" || mapInstanceRef.current) return;
 
-    for (const d of mockDistricts) {
-      const color = d.spike ? "#ef4444" : d.count > 10 ? "#f59e0b" : "#22c55e";
-      const radius = 15 + (d.count / 22) * 35;
+    // Dynamically import Leaflet to avoid SSR issues
+    import("leaflet").then((L) => {
+      // Fix default marker icons
+      delete (L.Icon.Default.prototype as { _getIconUrl?: unknown })._getIconUrl;
+      L.Icon.Default.mergeOptions({
+        iconRetinaUrl: "https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/images/marker-icon-2x.png",
+        iconUrl: "https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/images/marker-icon.png",
+        shadowUrl: "https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/images/marker-shadow.png",
+      });
 
-      L.circleMarker([d.lat, d.lon], {
-        radius,
-        fillColor: color,
-        color: d.spike ? "#ef4444" : color,
-        weight: d.spike ? 3 : 1.5,
-        fillOpacity: 0.35,
-      })
-        .bindPopup(`<strong>${d.name}</strong><br/>${d.count} crimes`)
-        .addTo(map);
-    }
-  }
+      if (!mapRef.current) return;
+
+      // Create the map centered on Karnataka
+      const map = L.map(mapRef.current, {
+        center: [14.5, 76.0],
+        zoom: 7,
+        zoomControl: true,
+        scrollWheelZoom: true,
+      });
+
+      // Dark tile layer matching our theme
+      L.tileLayer("https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png", {
+        attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OSM</a> &copy; <a href="https://carto.com/attributions">CARTO</a>',
+        maxZoom: 19,
+      }).addTo(map);
+
+      mapInstanceRef.current = map;
+
+      // Load FIR data and add markers
+      loadAndRenderData(L, map);
+      setIsLoaded(true);
+    });
+
+    return () => {
+      if (mapInstanceRef.current) {
+        mapInstanceRef.current.remove();
+        mapInstanceRef.current = null;
+      }
+    };
+  }, [loadAndRenderData]);
 
   return (
     <div className="relative w-full rounded-xl overflow-hidden border border-[var(--color-border-default)]" style={{ height: 480 }}>
